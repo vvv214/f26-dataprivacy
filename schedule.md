@@ -2,13 +2,14 @@
 # Schedule
 {% endif %}
 
-- Tentative Fall 2026 schedule for a Monday/Wednesday offering. The exact calendar will be aligned with the official UVA Fall 2026 schedule before release.
+- Tentative Fall 2026 schedule for a Monday/Wednesday offering. It is aligned to the current UVA Fall 2026 academic calendar, but room assignments and some due dates may still change.
+- Fall reading days in October vary by school in the current UVA calendar, so one October Monday meeting may shift or become asynchronous.
 
 | Week | Dates | Monday | Wednesday | Out / due |
 | ---- | ----- | ------ | --------- | --------- |
-| 1 | Aug 24 - Aug 28 | Course overview + what privacy means in practice | Case studies: privacy failures in ML and data release |  |
+| 1 | Aug 24 - Aug 28 | No class (arrival / welcome period) | Course overview + what privacy means in practice |  |
 | 2 | Aug 31 - Sep 4 | ML background for privacy | Privacy attacks: extraction and memorization |  |
-| 3 | Sep 7 - Sep 11 | No class (Labor Day) / attack recap | Membership inference + attack evaluation | Lab 1 out |
+| 3 | Sep 7 - Sep 11 | Attack recap + extraction discussion | Membership inference + attack evaluation | Lab 1 out |
 | 4 | Sep 14 - Sep 18 | Linkage, singling-out, and reconstruction | Defenses before DP: anonymization and its limits | Reading warm-up 1 |
 | 5 | Sep 21 - Sep 25 | Differential privacy: definition, adjacency, sensitivity | Laplace, Gaussian, and report noisy max | Quiz 1 |
 | 6 | Sep 28 - Oct 2 | Composition and privacy accounting | DP case studies in data analysis | Lab 2 out |
