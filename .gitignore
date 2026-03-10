@@ -1,0 +1,40 @@
+# Jekyll build artifacts
+_site/
+.jekyll-cache/
+.sass-cache/
+.bundle/
+vendor/
+
+# OS/editor cruft
+.DS_Store
+Thumbs.db
+
+# Python virtual environments
+.venv/
+.venv
+
+# Local drafts/notes not meant for publishing
+note.md
+
+# Editor
+.vscode/
+
+# Python / Jupyter caches
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Notebook artifacts (plots, temporary outputs)
+artifacts/
+labs/artifacts/
+
+# Student data (do not commit)
+labs/*submissions*
+labs/grading/
+notes/*.csv
+notes/*Student Analysis Report.csv
+
+# Agent Context
+GEMINI.md
+AGENTS.md
+CLAUDE.md

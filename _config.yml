@@ -1,0 +1,26 @@
+name: Data Privacy Course, UVA, Fall 2026
+title: null
+
+# Keep private/back-up-only course materials out of the published site.
+exclude:
+  - _site
+  - .bundle
+  - .claude
+  - .git
+  - .github
+  - .jekyll-cache
+  - .pytest_cache
+  - .sass-cache
+  - .venv
+  - .venv-labs
+  - .vscode
+  - vendor
+  - notes
+  - materials
+  - labs
+  - grading
+  - Gemfile
+  - Gemfile.lock
+  - AGENTS.md
+  - GEMINI.md
+  - CLAUDE.md
