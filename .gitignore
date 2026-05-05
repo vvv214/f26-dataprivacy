@@ -12,14 +12,21 @@ Thumbs.db
 # Python virtual environments
 .venv/
 .venv
+.venv-labs/
 
 # Local drafts/notes not meant for publishing
 note.md
+notes/
+materials/
+labs/
+project/
 
 # Editor
 .vscode/
+.claude/
 
 # Python / Jupyter caches
+.pytest_cache/
 __pycache__/
 *.pyc
 .ipynb_checkpoints/
@@ -31,6 +38,7 @@ labs/artifacts/
 # Student data (do not commit)
 labs/*submissions*
 labs/grading/
+labs/solutions/
 notes/*.csv
 notes/*Student Analysis Report.csv
 

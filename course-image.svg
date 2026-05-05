@@ -22,7 +22,7 @@
   <rect x="100" y="200" width="520" height="10" fill="url(#accent)"/>
 
   <text x="100" y="320" fill="#F7F4EF" font-size="96" font-family="Alegreya, Georgia, 'Times New Roman', serif" font-weight="700" letter-spacing="2">Data Privacy</text>
-  <text x="100" y="400" fill="#F7F4EF" font-size="40" font-family="Source Sans Pro, 'Helvetica Neue', Arial, sans-serif" font-weight="500" letter-spacing="1">Spring 2026</text>
+  <text x="100" y="400" fill="#F7F4EF" font-size="40" font-family="Source Sans Pro, 'Helvetica Neue', Arial, sans-serif" font-weight="500" letter-spacing="1">Fall 2026</text>
   <text x="100" y="460" fill="#E6DCCF" font-size="28" font-family="Source Sans Pro, 'Helvetica Neue', Arial, sans-serif" font-weight="400" letter-spacing="0.5">University of Virginia</text>
 
   <g transform="translate(1100 320)" opacity="0.92">

@@ -19,6 +19,8 @@ exclude:
   - materials
   - labs
   - grading
+  - project
+  - note.md
   - Gemfile
   - Gemfile.lock
   - AGENTS.md
