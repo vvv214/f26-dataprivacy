@@ -3,6 +3,15 @@
 
 # Data Privacy (Fall 2026 draft)
 
+<nav class="course-nav" aria-label="Course pages">
+  <a href="schedule.html">Schedule</a>
+  <a href="lab.html">Labs</a>
+  <a href="project.html">Project</a>
+  <a href="project-rubric.html">Rubric</a>
+  <a href="project-present.html">Milestones</a>
+  <a href="policy.html">Policies</a>
+</nav>
+
 ## Course overview
 
 How can we use data to build useful systems without exposing the people behind the data? This course introduces the core ideas of modern data privacy through concrete attacks, practical defenses, and hands-on labs.
@@ -46,7 +55,7 @@ Privacy is now part of the job in machine learning, data science, and systems wo
 - Canvas: will be posted before the semester begins
 - Format: in-person lectures with labs, quizzes, reading warm-ups, and a scoped final project
 - Note: this is a draft for Fall 2026. Exact logistics, room, and due dates may shift.
-- [Policy](policy.md)
+- [Policy](policy.html)
 
 ## Grading
 

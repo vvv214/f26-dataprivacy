@@ -19,7 +19,7 @@ exclude:
   - materials
   - labs
   - grading
-  - project
+  - project/
   - note.md
   - Gemfile
   - Gemfile.lock

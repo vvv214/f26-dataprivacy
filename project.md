@@ -3,6 +3,15 @@
 
 # Project (Fall 2026 draft)
 
+<nav class="course-nav" aria-label="Course pages">
+  <a href="index.html">Home</a>
+  <a href="schedule.html">Schedule</a>
+  <a href="lab.html">Labs</a>
+  <a href="project-rubric.html">Rubric</a>
+  <a href="project-present.html">Milestones</a>
+  <a href="policy.html">Policies</a>
+</nav>
+
 The final project is meant to help students go deeper on one privacy topic without turning the course into a full research seminar. The strongest undergraduate projects are usually well-scoped, technically correct, and honest about limitations.
 
 ## Project scope
@@ -38,8 +47,8 @@ Projects do not need to be novel research. A strong project can reproduce an exi
 | Poster / demo | 15 | poster-style presentation or live demo | 10% |
 | Final report | 16 | written report | 10% |
 
-For milestone logistics, see [project milestone guide](project-present.md).  
-For grading details, see [project rubric](project-rubric.md).
+For milestone logistics, see [project milestone guide](project-present.html).
+For grading details, see [project rubric](project-rubric.html).
 
 ## Suggested project directions
 

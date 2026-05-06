@@ -1,5 +1,14 @@
 {% if page.name == "schedule.md" %}
 # Schedule
+
+<nav class="course-nav" aria-label="Course pages">
+  <a href="index.html">Home</a>
+  <a href="lab.html">Labs</a>
+  <a href="project.html">Project</a>
+  <a href="project-rubric.html">Rubric</a>
+  <a href="project-present.html">Milestones</a>
+  <a href="policy.html">Policies</a>
+</nav>
 {% endif %}
 
 <p class="schedule-note">
