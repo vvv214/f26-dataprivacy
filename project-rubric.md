@@ -3,15 +3,6 @@
 
 # Project rubric
 
-<nav class="course-nav" aria-label="Course pages">
-  <a href="index.html">Home</a>
-  <a href="schedule.html">Schedule</a>
-  <a href="lab.html">Labs</a>
-  <a href="project.html">Project</a>
-  <a href="project-present.html">Milestones</a>
-  <a href="policy.html">Policies</a>
-</nav>
-
 The course project contributes **30%** of the course grade, split across four milestones:
 
 - **Topic check-in (5%)**

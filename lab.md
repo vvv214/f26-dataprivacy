@@ -3,15 +3,6 @@
 
 # Data Privacy (Fall 2026 draft) lab syllabus
 
-<nav class="course-nav" aria-label="Course pages">
-  <a href="index.html">Home</a>
-  <a href="schedule.html">Schedule</a>
-  <a href="project.html">Project</a>
-  <a href="project-rubric.html">Rubric</a>
-  <a href="project-present.html">Milestones</a>
-  <a href="policy.html">Policies</a>
-</nav>
-
 ## Lab goals
 
 The labs are where students move from vocabulary to actual technical reasoning. Each lab is designed to answer a concrete question:

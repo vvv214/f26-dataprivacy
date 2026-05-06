@@ -3,15 +3,6 @@
 
 # Data Privacy (Fall 2026 draft)
 
-<nav class="course-nav" aria-label="Course pages">
-  <a href="schedule.html">Schedule</a>
-  <a href="lab.html">Labs</a>
-  <a href="project.html">Project</a>
-  <a href="project-rubric.html">Rubric</a>
-  <a href="project-present.html">Milestones</a>
-  <a href="policy.html">Policies</a>
-</nav>
-
 ## Course overview
 
 How can we use data to build useful systems without exposing the people behind the data? This course introduces the core ideas of modern data privacy through concrete attacks, practical defenses, and hands-on labs.
@@ -59,8 +50,8 @@ Privacy is now part of the job in machine learning, data science, and systems wo
 
 ## Grading
 
-- Labs (35%): four take-home labs; most labs are pair-based, but individual submission is allowed.
-- Project (30%): topic check-in (5%), proposal (5%), poster/demo (10%), final report (10%).
+- [Labs](lab.html) (35%): four take-home labs; most labs are pair-based, but individual submission is allowed.
+- [Project](project.html) (30%): topic check-in (5%), proposal (5%), poster/demo (10%), final report (10%). See the [milestone guide](project-present.html) and [project rubric](project-rubric.html).
 - Quizzes (20%): two in-class quizzes on foundations and core mechanisms.
 - Exit tickets / participation (10%): short check-ins tied to lecture attendance and engagement.
 - Reading warm-ups (5%): short individual responses on selected course readings.

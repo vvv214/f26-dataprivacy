@@ -3,15 +3,6 @@
 
 # Project (Fall 2026 draft)
 
-<nav class="course-nav" aria-label="Course pages">
-  <a href="index.html">Home</a>
-  <a href="schedule.html">Schedule</a>
-  <a href="lab.html">Labs</a>
-  <a href="project-rubric.html">Rubric</a>
-  <a href="project-present.html">Milestones</a>
-  <a href="policy.html">Policies</a>
-</nav>
-
 The final project is meant to help students go deeper on one privacy topic without turning the course into a full research seminar. The strongest undergraduate projects are usually well-scoped, technically correct, and honest about limitations.
 
 ## Project scope

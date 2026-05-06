@@ -1,14 +1,5 @@
 {% if page.name == "schedule.md" %}
 # Schedule
-
-<nav class="course-nav" aria-label="Course pages">
-  <a href="index.html">Home</a>
-  <a href="lab.html">Labs</a>
-  <a href="project.html">Project</a>
-  <a href="project-rubric.html">Rubric</a>
-  <a href="project-present.html">Milestones</a>
-  <a href="policy.html">Policies</a>
-</nav>
 {% endif %}
 
 <p class="schedule-note">
@@ -115,7 +106,7 @@ and courses end on December 8. Room assignments and some due dates may still cha
     <div class="deliverable"><span>Lab 2 out</span></div>
   </article>
 
-  <article class="schedule-week break-week">
+  <article class="schedule-week">
     <div class="week-stamp">
       <span class="week-number">Week 7</span>
       <span class="week-date">Oct 5-9</span>
@@ -227,7 +218,7 @@ and courses end on December 8. Room assignments and some due dates may still cha
     <div class="deliverable"><span>Quiz 2</span></div>
   </article>
 
-  <article class="schedule-week break-week">
+  <article class="schedule-week">
     <div class="week-stamp">
       <span class="week-number">Week 14</span>
       <span class="week-date">Nov 23-27</span>
