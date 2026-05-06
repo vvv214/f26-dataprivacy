@@ -25,6 +25,10 @@ The labs are where students move from vocabulary to actual technical reasoning. 
 - Most labs are intended for Google Colab or a lightweight local setup.
 - Selected labs may include a short reading warm-up or reflection prompt.
 
+## Distribution
+
+Lab notebooks and support files will be distributed separately through the course workflow, such as Canvas or a shared Drive folder. They are not published as raw files from this public website repository.
+
 ## Lab 1: Privacy attacks on models
 
 **Theme**: See the leak before you study the defense.

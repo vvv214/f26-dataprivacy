@@ -2,24 +2,267 @@
 # Schedule
 {% endif %}
 
-- Tentative Fall 2026 schedule for a Monday/Wednesday offering. It is aligned to the UVA Fall 2026 academic calendar, but room assignments and some due dates may still change.
-- Fall Reading Days run from Saturday, October 3 through Tuesday, October 6, so there is no class on Monday, October 5.
+<p class="schedule-note">
+Tentative Monday/Wednesday plan for Fall 2026. It follows the
+<a href="https://registrar.virginia.edu/calendar/academic/2026-2027">UVA academic calendar</a>:
+courses begin on August 25, Fall Reading Days run October 3-6, Thanksgiving recess runs November 25-29,
+and courses end on December 8. Room assignments and some due dates may still change.
+</p>
 
-| Week | Dates | Monday | Wednesday | Out / due |
-| ---- | ----- | ------ | --------- | --------- |
-| 1 | Aug 24 - Aug 28 | No class (arrival / welcome period) | Course overview + what privacy means in practice |  |
-| 2 | Aug 31 - Sep 4 | ML background for privacy | Privacy attacks: extraction and memorization |  |
-| 3 | Sep 7 - Sep 11 | Attack recap + extraction discussion | Membership inference + attack evaluation | Lab 1 out |
-| 4 | Sep 14 - Sep 18 | Linkage, singling-out, and reconstruction | Defenses before DP: anonymization and its limits | Reading warm-up 1 |
-| 5 | Sep 21 - Sep 25 | Differential privacy: definition, adjacency, sensitivity | Laplace, Gaussian, and report noisy max | Quiz 1 |
-| 6 | Sep 28 - Oct 2 | Composition and privacy accounting | DP case studies in data analysis | Lab 2 out |
-| 7 | Oct 5 - Oct 9 | No class (Fall Reading Days) | Private learning: DP-SGD intuition and practice | Project topic check-in due |
-| 8 | Oct 12 - Oct 16 | Local DP and federated settings | Exponential mechanism and private selection | Reading warm-up 2 |
-| 9 | Oct 19 - Oct 23 | Project workshop + paper discussion | Cryptography background for privacy engineers | Project proposal due |
-| 10 | Oct 26 - Oct 30 | MPC basics and trust models | MPC for simple analytics and inference | Lab 3 out |
-| 11 | Nov 2 - Nov 6 | HE, TEE, and system trade-offs | Network privacy, telemetry, and metadata |  |
-| 12 | Nov 9 - Nov 13 | Privacy engineering case studies | Applied PETs: choosing the right tool | Lab 4 out |
-| 13 | Nov 16 - Nov 20 | Project workshop / poster clinic | Guest lecture or advanced topic | Quiz 2 |
-| 14 | Nov 23 - Nov 27 | Review and synthesis | No class (Thanksgiving recess) | Reading warm-up 3 |
-| 15 | Nov 30 - Dec 4 | Poster / demo session (1/2) | Poster / demo session (2/2) |  |
-| 16 | Dec 7 - Dec 11 | Course wrap-up + what to do next in privacy | No class / finals period | Final report due |
+<section class="schedule-board" aria-label="Fall 2026 course schedule">
+  <article class="schedule-week">
+    <div class="week-stamp">
+      <span class="week-number">Week 1</span>
+      <span class="week-date">Aug 24-28</span>
+    </div>
+    <div class="class-slot muted">
+      <span class="slot-label">Monday</span>
+      <p>No class. Arrival and welcome period.</p>
+    </div>
+    <div class="class-slot">
+      <span class="slot-label">Wednesday</span>
+      <p>Course overview and what privacy means in practice.</p>
+    </div>
+    <div class="deliverable empty">No deliverable</div>
+  </article>
+
+  <article class="schedule-week">
+    <div class="week-stamp">
+      <span class="week-number">Week 2</span>
+      <span class="week-date">Aug 31-Sep 4</span>
+    </div>
+    <div class="class-slot">
+      <span class="slot-label">Monday</span>
+      <p>ML background for privacy.</p>
+    </div>
+    <div class="class-slot">
+      <span class="slot-label">Wednesday</span>
+      <p>Privacy attacks: extraction and memorization.</p>
+    </div>
+    <div class="deliverable empty">No deliverable</div>
+  </article>
+
+  <article class="schedule-week">
+    <div class="week-stamp">
+      <span class="week-number">Week 3</span>
+      <span class="week-date">Sep 7-11</span>
+    </div>
+    <div class="class-slot">
+      <span class="slot-label">Monday</span>
+      <p>Attack recap and extraction discussion.</p>
+    </div>
+    <div class="class-slot">
+      <span class="slot-label">Wednesday</span>
+      <p>Membership inference and attack evaluation.</p>
+    </div>
+    <div class="deliverable"><span>Lab 1 out</span></div>
+  </article>
+
+  <article class="schedule-week">
+    <div class="week-stamp">
+      <span class="week-number">Week 4</span>
+      <span class="week-date">Sep 14-18</span>
+    </div>
+    <div class="class-slot">
+      <span class="slot-label">Monday</span>
+      <p>Linkage, singling-out, and reconstruction.</p>
+    </div>
+    <div class="class-slot">
+      <span class="slot-label">Wednesday</span>
+      <p>Defenses before DP: anonymization and its limits.</p>
+    </div>
+    <div class="deliverable"><span>Reading warm-up 1</span></div>
+  </article>
+
+  <article class="schedule-week milestone">
+    <div class="week-stamp">
+      <span class="week-number">Week 5</span>
+      <span class="week-date">Sep 21-25</span>
+    </div>
+    <div class="class-slot">
+      <span class="slot-label">Monday</span>
+      <p>Differential privacy: definition, adjacency, sensitivity.</p>
+    </div>
+    <div class="class-slot">
+      <span class="slot-label">Wednesday</span>
+      <p>Laplace, Gaussian, and report noisy max.</p>
+    </div>
+    <div class="deliverable"><span>Quiz 1</span></div>
+  </article>
+
+  <article class="schedule-week">
+    <div class="week-stamp">
+      <span class="week-number">Week 6</span>
+      <span class="week-date">Sep 28-Oct 2</span>
+    </div>
+    <div class="class-slot">
+      <span class="slot-label">Monday</span>
+      <p>Composition and privacy accounting.</p>
+    </div>
+    <div class="class-slot">
+      <span class="slot-label">Wednesday</span>
+      <p>DP case studies in data analysis.</p>
+    </div>
+    <div class="deliverable"><span>Lab 2 out</span></div>
+  </article>
+
+  <article class="schedule-week break-week">
+    <div class="week-stamp">
+      <span class="week-number">Week 7</span>
+      <span class="week-date">Oct 5-9</span>
+    </div>
+    <div class="class-slot muted">
+      <span class="slot-label">Monday</span>
+      <p>No class. Fall Reading Days.</p>
+    </div>
+    <div class="class-slot">
+      <span class="slot-label">Wednesday</span>
+      <p>Private learning: DP-SGD intuition and practice.</p>
+    </div>
+    <div class="deliverable"><span>Project topic check-in</span></div>
+  </article>
+
+  <article class="schedule-week">
+    <div class="week-stamp">
+      <span class="week-number">Week 8</span>
+      <span class="week-date">Oct 12-16</span>
+    </div>
+    <div class="class-slot">
+      <span class="slot-label">Monday</span>
+      <p>Local DP and federated settings.</p>
+    </div>
+    <div class="class-slot">
+      <span class="slot-label">Wednesday</span>
+      <p>Exponential mechanism and private selection.</p>
+    </div>
+    <div class="deliverable"><span>Reading warm-up 2</span></div>
+  </article>
+
+  <article class="schedule-week">
+    <div class="week-stamp">
+      <span class="week-number">Week 9</span>
+      <span class="week-date">Oct 19-23</span>
+    </div>
+    <div class="class-slot">
+      <span class="slot-label">Monday</span>
+      <p>Project workshop and paper discussion.</p>
+    </div>
+    <div class="class-slot">
+      <span class="slot-label">Wednesday</span>
+      <p>Cryptography background for privacy engineers.</p>
+    </div>
+    <div class="deliverable"><span>Project proposal</span></div>
+  </article>
+
+  <article class="schedule-week">
+    <div class="week-stamp">
+      <span class="week-number">Week 10</span>
+      <span class="week-date">Oct 26-30</span>
+    </div>
+    <div class="class-slot">
+      <span class="slot-label">Monday</span>
+      <p>MPC basics and trust models.</p>
+    </div>
+    <div class="class-slot">
+      <span class="slot-label">Wednesday</span>
+      <p>MPC for simple analytics and inference.</p>
+    </div>
+    <div class="deliverable"><span>Lab 3 out</span></div>
+  </article>
+
+  <article class="schedule-week">
+    <div class="week-stamp">
+      <span class="week-number">Week 11</span>
+      <span class="week-date">Nov 2-6</span>
+    </div>
+    <div class="class-slot">
+      <span class="slot-label">Monday</span>
+      <p>HE, TEE, and system trade-offs.</p>
+    </div>
+    <div class="class-slot">
+      <span class="slot-label">Wednesday</span>
+      <p>Network privacy, telemetry, and metadata.</p>
+    </div>
+    <div class="deliverable empty">No deliverable</div>
+  </article>
+
+  <article class="schedule-week">
+    <div class="week-stamp">
+      <span class="week-number">Week 12</span>
+      <span class="week-date">Nov 9-13</span>
+    </div>
+    <div class="class-slot">
+      <span class="slot-label">Monday</span>
+      <p>Privacy engineering case studies.</p>
+    </div>
+    <div class="class-slot">
+      <span class="slot-label">Wednesday</span>
+      <p>Applied PETs: choosing the right tool.</p>
+    </div>
+    <div class="deliverable"><span>Lab 4 out</span></div>
+  </article>
+
+  <article class="schedule-week milestone">
+    <div class="week-stamp">
+      <span class="week-number">Week 13</span>
+      <span class="week-date">Nov 16-20</span>
+    </div>
+    <div class="class-slot">
+      <span class="slot-label">Monday</span>
+      <p>Project workshop and poster clinic.</p>
+    </div>
+    <div class="class-slot">
+      <span class="slot-label">Wednesday</span>
+      <p>Guest lecture or advanced topic.</p>
+    </div>
+    <div class="deliverable"><span>Quiz 2</span></div>
+  </article>
+
+  <article class="schedule-week break-week">
+    <div class="week-stamp">
+      <span class="week-number">Week 14</span>
+      <span class="week-date">Nov 23-27</span>
+    </div>
+    <div class="class-slot">
+      <span class="slot-label">Monday</span>
+      <p>Review and synthesis.</p>
+    </div>
+    <div class="class-slot muted">
+      <span class="slot-label">Wednesday</span>
+      <p>No class. Thanksgiving recess.</p>
+    </div>
+    <div class="deliverable"><span>Reading warm-up 3</span></div>
+  </article>
+
+  <article class="schedule-week milestone">
+    <div class="week-stamp">
+      <span class="week-number">Week 15</span>
+      <span class="week-date">Nov 30-Dec 4</span>
+    </div>
+    <div class="class-slot">
+      <span class="slot-label">Monday</span>
+      <p>Poster / demo session, group 1.</p>
+    </div>
+    <div class="class-slot">
+      <span class="slot-label">Wednesday</span>
+      <p>Poster / demo session, group 2.</p>
+    </div>
+    <div class="deliverable empty">No deliverable</div>
+  </article>
+
+  <article class="schedule-week milestone">
+    <div class="week-stamp">
+      <span class="week-number">Week 16</span>
+      <span class="week-date">Dec 7-11</span>
+    </div>
+    <div class="class-slot">
+      <span class="slot-label">Monday</span>
+      <p>Course wrap-up and what to do next in privacy.</p>
+    </div>
+    <div class="class-slot muted">
+      <span class="slot-label">Wednesday</span>
+      <p>No class. Finals period.</p>
+    </div>
+    <div class="deliverable"><span>Final report</span></div>
+  </article>
+</section>

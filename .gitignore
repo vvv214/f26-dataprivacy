@@ -39,6 +39,9 @@ labs/artifacts/
 labs/*submissions*
 labs/grading/
 labs/solutions/
+labs/mp-spdz/
+labs/.claude/
+labs/setup/mpc_noise_utils/
 notes/*.csv
 notes/*Student Analysis Report.csv
 

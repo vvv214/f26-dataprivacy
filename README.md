@@ -16,7 +16,15 @@ Published site:
 - `project-present.md`
 - `policy.md`
 
-Private lab assets, student submissions, grading notes, and draft notes are intentionally not tracked in this repository.
+## Lab files
+
+The local working copy may contain a `labs/` folder with notebooks, helper code,
+small model checkpoints, and setup notes. That folder is intentionally ignored by
+git and excluded from Jekyll processing. Use it for local editing, Canvas/Drive
+distribution, or any private course workflow.
+
+Do not commit lab releases, private lab solutions, grading scripts, student
+submissions, or scratch build directories to this public site repository.
 
 ## Local preview
 
@@ -33,3 +41,14 @@ This repository publishes with GitHub Pages through `.github/workflows/pages.yml
 3. GitHub Actions builds the Jekyll site with the repository base path.
 
 The project URL should match the repository name, so this site should live under `/f26-dataprivacy/`.
+
+## Private material policy
+
+Keep these out of the repository:
+
+- student data and submissions
+- grading notes and autograders
+- solution notebooks
+- lab release folders and checkpoints
+- private drafts in `notes/` or `materials/`
+- local build products such as `_site/`, `vendor/`, `.venv/`, and `labs/mp-spdz/`
