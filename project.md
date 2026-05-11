@@ -57,6 +57,24 @@ For grading details, see [project rubric](project-rubric.html).
 - If you choose an ambitious topic, narrow the evaluation rather than overpromising.
 - A careful negative result is acceptable if the execution and analysis are strong.
 
+## Evidence expectations
+
+Strong projects make the evidence easy to audit. In the proposal and final report, be concrete about:
+
+- **Scale**: report dataset size, number of prompts or queries, number of trials, number of seeds, and any train/test split.
+- **Threat model**: state who the attacker is, what they observe, what they are allowed to query, and what counts as a privacy failure.
+- **Baselines**: compare against at least one simple baseline. If your project is a defense, include a no-defense or weak-defense condition.
+- **Uncertainty**: use repeated runs, error bars, confidence intervals, or exact count tables when the result depends on sampling.
+- **Artifacts**: include enough detail for review: code link if appropriate, configs, prompts, judge prompts, representative logs, or example outputs. Do not include private student or sensitive data.
+- **Visuals**: figures and tables should be readable without zooming. Captions should explain the takeaway, not just name the plot.
+
+Be careful with privacy claims:
+
+- A heuristic defense is fine, but do not call it differential privacy unless you define adjacency, sensitivity or clipping/public bounds, privacy accounting, and the released output.
+- For RAG systems, adding noise to retrieval scores and returning raw private documents is not the same thing as document-level DP.
+- For side-channel projects, avoid random splits that leak information across the same session, capture, user, or trace. Use grouped splits when the threat model requires generalization.
+- If you use an LLM judge, validate it with examples, manual spot checks, or a clear calibration procedure.
+
 ## Proposal and final report template
 
 Use this structure for the proposal, then expand it for the final report.
@@ -68,7 +86,8 @@ Use this structure for the proposal, then expand it for the final report.
 5. **Approach**: what you will implement, compare, or analyze.
 6. **Evaluation plan**: datasets, metrics, baselines, and what evidence will count as success.
 7. **Scope control**: what you will leave out if time or compute becomes tight.
-8. **Contribution statement**: who is doing what.
+8. **Evidence log**: expected sample/query/trial counts, splits, seeds, artifacts, and examples you will report.
+9. **Contribution statement**: who is doing what.
 
 ## Deliverable expectations
 

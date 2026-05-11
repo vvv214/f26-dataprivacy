@@ -41,19 +41,28 @@ For milestone logistics and expectations, see [project milestone guide](project-
 
 | Criteria | Points | Description |
 |---|---|---|
-| Technical correctness | 3 | Claims and methods are correct and well-supported. |
-| Evidence and analysis | 3 | Results are interpreted carefully, including limitations or failure cases. |
-| Writing quality | 2 | The report is organized, readable, and properly cited. |
-| Reflection and next steps | 2 | The team explains what was learned and what remains unresolved. |
+| Technical correctness | 3 | Methods match the stated threat model; privacy claims, DP claims, and metrics are technically justified. |
+| Evidence and analysis | 3 | Results include concrete scale, baselines, uncertainty or exact counts, representative examples, and limitations or failure cases. |
+| Writing quality | 2 | The report is organized, readable, properly cited, and uses clear figures, tables, and captions. |
+| Reflection and next steps | 2 | The team explains what was learned, what remains unresolved, and what artifacts support the result. |
 
 ## Additional notes
 
 1. **Novelty is not required**
    - This is an undergraduate course project, not a conference submission.
    - Strong reproduction, benchmarking, or application projects can earn top marks.
-2. **Individual vs. group**
+2. **Claims should match evidence**
+   - A narrow but carefully tested claim is stronger than a broad claim with thin evidence.
+   - Be precise with differential privacy, RAG privacy, side-channel generalization, and LLM-judge results.
+3. **Auditability matters**
+   - Reports should include enough detail to check the result: counts, splits, seeds, prompts, configs, examples, or logs as appropriate.
+   - If code or artifacts are shared, they should support the report without exposing private or sensitive data.
+4. **Visuals count as communication**
+   - Figures and tables should be readable and should make the main comparison or failure case easy to see.
+   - Visual polish cannot replace weak evidence, but unclear visuals can make strong work hard to evaluate.
+5. **Individual vs. group**
    - Individuals may submit narrower projects.
    - Teams of 2 should show either broader experiments, stronger comparisons, or a more polished system.
-3. **Contribution statements**
+6. **Contribution statements**
    - Every project submission should include a short contribution note for each member.
    - If there is a serious contribution imbalance, grades may be adjusted.
