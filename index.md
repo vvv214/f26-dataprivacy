@@ -1,150 +1,101 @@
 ---
-title: Data Privacy
-description: An advanced undergraduate course on privacy attacks, differential privacy, and privacy-enhancing technologies.
 ---
 
-<div class="course-home">
-  <nav class="course-nav" aria-label="Course navigation">
-    <a class="course-brand" href="{{ '/' | relative_url }}">Data Privacy</a>
-    <div class="course-nav-links">
-      <a href="#schedule">Schedule</a>
-      <a href="{{ '/lab.html' | relative_url }}">Labs</a>
-      <a href="{{ '/project.html' | relative_url }}">Project</a>
-      <a href="{{ '/policy.html' | relative_url }}">Policy</a>
-      <a href="{{ '/resources.html' | relative_url }}">Resources</a>
-    </div>
-  </nav>
+# Data Privacy (Fall 2026 draft)
 
-  <header class="course-hero">
-    <p class="hero-kicker">University of Virginia / Fall 2026</p>
-    <h1>Data Privacy</h1>
-    <p class="hero-lede">
-      Learn to find privacy failures, reason about meaningful guarantees, and build systems that hold up under scrutiny.
-    </p>
-    <div class="hero-actions">
-      <a class="primary-action" href="#schedule">View the schedule</a>
-      <a class="secondary-action" href="{{ '/project.html' | relative_url }}">Explore the final project &rarr;</a>
-    </div>
-  </header>
+## Course overview
 
-  <section class="course-facts" aria-label="Course at a glance">
-    <div>
-      <span>Level</span>
-      <strong>Advanced undergraduate</strong>
-    </div>
-    <div>
-      <span>Meetings</span>
-      <strong>Tuesday + Thursday</strong>
-    </div>
-    <div>
-      <span>Practice</span>
-      <strong>Four labs</strong>
-    </div>
-    <div>
-      <span>Capstone</span>
-      <strong>Scoped final project</strong>
-    </div>
-  </section>
+How can we use data to build useful systems without exposing the people behind the data? This course introduces the core ideas of modern data privacy through concrete attacks, practical defenses, and hands-on labs.
 
-  <section class="home-section course-story" aria-labelledby="story-title">
-    <div class="section-heading">
-      <p class="section-kicker">The course arc</p>
-      <h2 id="story-title">From attack to assurance.</h2>
-      <p>We begin with failures students can observe directly, then develop the tools needed to evaluate and reduce privacy risk.</p>
-    </div>
-    <div class="lens-grid">
-      <article>
-        <span class="lens-index">01</span>
-        <h3>Find the leak</h3>
-        <p>Extraction, memorization, membership inference, linkage, singling-out, and reconstruction.</p>
-      </article>
-      <article>
-        <span class="lens-index">02</span>
-        <h3>Measure the risk</h3>
-        <p>Attack evaluation, adjacency, sensitivity, privacy mechanisms, composition, and accounting.</p>
-      </article>
-      <article>
-        <span class="lens-index">03</span>
-        <h3>Build the defense</h3>
-        <p>Private learning, MPC, homomorphic encryption, trusted execution, and network privacy.</p>
-      </article>
-    </div>
-  </section>
+The course is designed for advanced undergraduates. We will start with privacy failures that students can observe directly, then build toward differential privacy, privacy-aware machine learning, and privacy-enhancing technologies such as MPC, HE, TEE, and network privacy tools. The emphasis is on technical understanding, experimental reasoning, and clear communication rather than graduate-level novelty.
 
-  <section class="home-section course-structure" aria-labelledby="structure-title">
-    <div class="section-heading compact">
-      <p class="section-kicker">How it works</p>
-      <h2 id="structure-title">Technical depth, with room to practice.</h2>
-    </div>
-    <div class="structure-grid">
-      <div class="structure-copy">
-        <p>
-          This course is built for students who want to make technically defensible privacy decisions, not just recognize vocabulary. Lectures connect mechanisms to real failure modes; labs turn those ideas into experiments; the final project asks you to explain and defend a focused result.
-        </p>
-        <p>
-          You should be comfortable with Python, basic probability, and modifying short pieces of code. Prior privacy research, LLM training, and advanced cryptography are not required.
-        </p>
-      </div>
-      <dl class="course-details">
-        <div>
-          <dt>Instructor</dt>
-          <dd><a href="https://tianhao.wang">Tianhao Wang</a></dd>
-        </div>
-        <div>
-          <dt>Format</dt>
-          <dd>In-person lectures, labs, quizzes, reading warm-ups, and a project</dd>
-        </div>
-        <div>
-          <dt>Background</dt>
-          <dd>Python programming and basic probability</dd>
-        </div>
-        <div>
-          <dt>Logistics</dt>
-          <dd>Room, time, TA, and Canvas details will be posted before classes begin</dd>
-        </div>
-      </dl>
-    </div>
-  </section>
+## What you will learn
 
-  <section class="home-section grading-section" aria-labelledby="grading-title">
-    <div class="section-heading compact">
-      <p class="section-kicker">Assessment</p>
-      <h2 id="grading-title">Grading at a glance.</h2>
-    </div>
-    <div class="grading-grid" aria-label="Grading weights">
-      <a href="{{ '/lab.html' | relative_url }}"><strong>35%</strong><span>Labs</span></a>
-      <a href="{{ '/project.html' | relative_url }}"><strong>30%</strong><span>Project</span></a>
-      <div><strong>20%</strong><span>Quizzes</span></div>
-      <div><strong>10%</strong><span>Participation</span></div>
-      <div><strong>5%</strong><span>Reading</span></div>
-    </div>
-    <p class="section-footnote">
-      Project milestones include a topic check-in, proposal, poster/demo, and final report. See the <a href="{{ '/project-present.html' | relative_url }}">milestone guide</a>, <a href="{{ '/project-rubric.html' | relative_url }}">rubric</a>, and <a href="{{ '/policy.html' | relative_url }}">course policies</a>.
-    </p>
-  </section>
+- How common privacy attacks work, including extraction, membership inference, linkage, and reconstruction.
+- How to reason about privacy defenses, especially differential privacy and its utility trade-offs.
+- How privacy engineering differs across machine learning, databases, and systems settings.
+- How to read, critique, and explain privacy papers and experimental results.
 
-  <section id="schedule" class="home-section schedule-section" aria-labelledby="schedule-title">
-    <div class="schedule-intro">
-      <div class="section-heading compact">
-        <p class="section-kicker">Fall 2026</p>
-        <h2 id="schedule-title">Schedule</h2>
-      </div>
-      <p>One week per row. Topics and due dates may shift as the semester develops.</p>
-    </div>
+## Who should enroll?
 
-    {% include_relative schedule.md %}
-  </section>
+This version of the course is aimed at advanced undergraduates in computer science, data science, or related areas.
 
-  <section class="resource-band" aria-labelledby="resource-title">
-    <div>
-      <p class="section-kicker">Go further</p>
-      <h2 id="resource-title">Privacy courses and books worth keeping nearby.</h2>
-    </div>
-    <a class="secondary-action" href="{{ '/resources.html' | relative_url }}">Browse resources &rarr;</a>
-  </section>
+Required background:
 
-  <footer class="course-footer">
-    <span>Data Privacy / UVA / Fall 2026</span>
-    <a href="https://tianhao.wang">Tianhao Wang</a>
-  </footer>
-</div>
+- Python programming.
+- Basic probability.
+- Comfort reading and modifying short pieces of code.
+
+Recommended background:
+
+- One prior course in machine learning, security, cryptography, or data science.
+- Familiarity with vectors, matrices, and simple model evaluation metrics.
+
+You do not need prior experience with LLM training, privacy research, or advanced cryptography.
+
+## Why take this course?
+
+Privacy is now part of the job in machine learning, data science, and systems work. Engineers are expected to understand not only how to build models, but also how those models leak, what protections are realistic, and where the trade-offs appear in practice. This course is intended to prepare students for that level of technical judgment.
+
+## Course info
+
+- Instructor: [Tianhao Wang](https://tianhao.wang)
+- TA: TBD
+- Location: TBD
+- Time: TBD
+- Canvas: will be posted before the semester begins
+- Format: in-person lectures with labs, quizzes, reading warm-ups, and a scoped final project
+- Note: this is a draft for Fall 2026. Exact logistics, room, and due dates may shift.
+- [Policy](policy.html)
+
+## Grading
+
+- [Labs](lab.html) (35%): four take-home labs; most labs are pair-based, but individual submission is allowed.
+- [Project](project.html) (30%): topic check-in (5%), proposal (5%), poster/demo (10%), final report (10%). See the [milestone guide](project-present.html) and [project rubric](project-rubric.html).
+- Quizzes (20%): two in-class quizzes on foundations and core mechanisms.
+- Exit tickets / participation (10%): short check-ins tied to lecture attendance and engagement.
+- Reading warm-ups (5%): short individual responses on selected course readings.
+- Grading scale: we use the [UVA default Grading Basis](https://virginia.service-now.com/its?id=itsweb_kb_article&sys_id=1153c16fdba41f444f32fb671d961934)
+
+## Schedule
+
+{% include_relative schedule.md %}
+
+## More resources
+
+### Courses
+
+#### Core DP & privacy
+
+- [Privacy in Statistics and Machine Learning](https://dpcourse.github.io/) ([video](https://drive.google.com/drive/folders/1Ds5KlyWrX93DeiQWrFLpBS0Zsk104bnd?usp=sharing)) Spring 2023 by Adam Smith (BU) and Jonathan Ullman (NEU)
+- [Algorithms for Private Data Analysis](http://www.gautamkamath.com/courses/CS860-wi2026.html) ([video](https://www.youtube.com/playlist?list=PLmd_zeMNzSvRRNpoEWkVo6QY_6rR3SHjp)) Winter 2026 by Gautam Kamath (Waterloo)
+- [Applied Privacy for Data Science](https://opendp.github.io/cs208/) Spring 2022 by James Honaker, Wanrong Zhang, and Salil Vadhan (Harvard)
+- [Introduction to Differential Privacy: Theory, Algorithms and Applications](https://cseweb.ucsd.edu/~yuxiangw/classes/DSC291-2024Fall/) ([video](https://www.youtube.com/watch?v=OzjmWObjgzg)) Fall 2024 by Yuxiang Wang (UCSD)
+- [Algorithms for Private Data Analysis](https://www.cs.toronto.edu/~anikolov/CSC2412F20/CSC2412.html) Fall 2020 by Aleksandar Nikolov (UofT)
+- [Privacy Enhancing Technologies](https://www.cs.unc.edu/~saba/priv_class/summer25/index.html) Summer 2025 by Saba Eskandarian (UNC)
+
+#### Other flavors (theory, systems, fairness, ML)
+
+- Theory: [The Algorithmic Foundations of Adaptive Data Analysis](https://adaptivedataanalysis.com/lecture-schedule-and-notes/) Fall 2017 by Aaron Roth (Penn) and Adam Smith (BU)
+- Systems: [Private Systems](https://systems.cs.columbia.edu/private-systems-class/) Spring 2020 by Roxana Geambasu (Columbia)
+- Mechanism design: [Differential Privacy in Game Theory and Mechanism Design](https://www.cis.upenn.edu/~aaroth/courses/gametheoryprivacyS14.html) Spring 2014 by Aaron Roth (Penn)
+- Fairness: [CS 294: Fairness in Machine Learning](https://fairmlclass.github.io/) (UC Berkeley, Moritz Hardt)
+- ML: [Privacy Preserving Machine Learning](https://researchers.lille.inria.fr/abellet/teaching/private_machine_learning_course.html) Spring 2022 by Aurelien Bellet (Inria)
+
+### Books
+
+#### Cryptography & MPC
+
+- [The Joy of Cryptography](https://joyofcryptography.com/)
+- [A Pragmatic Introduction to Secure Multi-Party Computation](https://securecomputation.org/)
+- [A Graduate Course in Applied Cryptography](https://crypto.stanford.edu/~dabo/cryptobook/)
+- [Handbook of Applied Cryptography](https://cacr.uwaterloo.ca/hac/)
+
+#### Privacy-enhancing technologies (DP, anonymization)
+
+- [The Algorithmic Foundations of Differential Privacy](https://www.cis.upenn.edu/~aaroth/Papers/privacybook.pdf)
+- [Differential Privacy: From Theory to Practice](https://www.morganclaypool.com/doi/pdf/10.2200/S00735ED1V01Y201609SPT018)
+- [The Complexity of Differential Privacy](https://privacytools.seas.harvard.edu/files/privacytools/files/complexityprivacy_1_01.pdf)
+- [Differential Privacy: A Primer for a Non-Technical Audience](https://salil.seas.harvard.edu/files/salil/files/differential_privacy_primer_nontechnical_audience.pdf)
+- [Protecting Your Privacy In A Data-driven World](https://www.clairemckaybowen.com/book)
+- [Differential Privacy for Databases](https://dpfordb.github.io/)
