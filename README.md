@@ -1,6 +1,6 @@
 # F26 Data Privacy
 
-Undergraduate-oriented Fall 2026 draft of the UVA Data Privacy course site.
+Undergraduate-oriented Fall 2026 UVA Data Privacy course site.
 
 Published site:
 
@@ -15,6 +15,7 @@ Published site:
 - `project-rubric.md`
 - `project-present.md`
 - `policy.md`
+- `resources.md`
 
 ## Lab files
 
