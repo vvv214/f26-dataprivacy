@@ -7,6 +7,7 @@
 
 - Labs may be completed in pairs or individually.
 - Quizzes, reading warm-ups, and exit tickets are individual work.
+- The oral defense is individual, including for students who worked in teams.
 - High-level discussion across teams is fine, but do not share code, filled-in tables, or polished written answers.
 - Every submitted assignment should clearly list collaborators.
 
@@ -16,15 +17,15 @@ Generative AI tools may be used for brainstorming, debugging, or polishing, but 
 
 - You remain responsible for correctness, citations, privacy, and policy compliance.
 - Do not paste private course materials or sensitive data into external tools unless explicitly permitted.
-- If GenAI materially shaped a lab or project submission, include a brief note describing how you used it.
-- Quizzes must be completed without GenAI unless explicitly announced otherwise.
+- If GenAI materially shaped a lab or project submission, include a short AI Decision Ledger covering 5-10 consequential decisions, how you checked the advice, and what you decided. Complete chat transcripts are not required.
+- Quizzes and the individual oral defense must be completed without GenAI unless explicitly announced otherwise.
 
 ### Late work
 
 - Each student has 3 late days for the semester.
 - Late days may be used on labs, the topic check-in, the project proposal, and reading warm-ups.
 - No more than 2 late days may be used on a single assignment.
-- Late days may not be used for quizzes, poster / demo days, final reports, or end-of-semester deadlines.
+- Late days may not be used for quizzes, poster / demo days, the oral defense, final reports, or end-of-semester deadlines.
 - If you have a documented conflict or a serious issue, contact the instructor as early as possible.
 
 ### Regrades

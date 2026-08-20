@@ -1,9 +1,9 @@
 ---
 ---
 
-# Project (Fall 2026 draft)
+# Project
 
-The final project is meant to help students go deeper on one privacy topic without turning the course into a full research seminar. The strongest undergraduate projects are usually well-scoped, technically correct, and honest about limitations.
+The final project is meant to help students go deeper on one privacy topic without turning the course into a full research seminar. The strongest undergraduate projects are usually well-scoped, technically correct, and honest about limitations. The project develops through a build-break-repair-transfer cycle rather than one final submission.
 
 ## Project scope
 
@@ -22,6 +22,15 @@ Projects do not need to be novel research. A strong project can reproduce an exi
 - **Comparative evaluation**: compare several privacy attacks or defenses on a shared task and explain the trade-offs.
 - **Build / application**: implement a small privacy-aware tool, pipeline, or demo and evaluate where it works and where it breaks.
 
+## Project cycle
+
+1. **Build**: create a working baseline and a claim that can be checked against code, data, and outputs.
+2. **Break**: exchange a frozen challenge bundle with another team. The reviewing team produces one bounded, reproducible failure or an evidence-backed clean or insufficient finding.
+3. **Repair**: explain the root cause, make a focused repair, and add a regression test. The repair may narrow the original claim.
+4. **Transfer**: apply the system and its checks to one changed dataset, threat model, tool boundary, or operating condition.
+
+The break exchange is a formative course activity. The instructor will scope and pair the exchanges; teams are not expected to audit an arbitrary large repository or reveal private data. The final individual [oral defense](oral.html) checks ownership of selected decisions.
+
 ## Team policy
 
 - Teams of up to 2 are allowed.
@@ -34,8 +43,8 @@ Projects do not need to be novel research. A strong project can reproduce an exi
 | Milestone | Week(s) | Format | Weight |
 |---|---|---|---|
 | Topic check-in | 7 | one-page memo or lightning talk | 5% |
-| Proposal | 9 | written plan (1-2 pages) | 5% |
-| Poster / demo | 15 | poster-style presentation or live demo | 10% |
+| Proposal | 10 | written plan (1-2 pages) | 5% |
+| Poster / demo | 15 | poster-style presentation or live demo | 5% |
 | Final report | 16 | written report | 10% |
 
 For milestone logistics, see [project milestone guide](project-present.html).
@@ -66,6 +75,8 @@ Strong projects make the evidence easy to audit. In the proposal and final repor
 - **Baselines**: compare against at least one simple baseline. If your project is a defense, include a no-defense or weak-defense condition.
 - **Uncertainty**: use repeated runs, error bars, confidence intervals, or exact count tables when the result depends on sampling.
 - **Artifacts**: include enough detail for review: code link if appropriate, configs, prompts, judge prompts, representative logs, or example outputs. Do not include private student or sensitive data.
+- **Failures and repairs**: include the challenge input, root-cause evidence, repair, and a regression test. A clean or insufficient-evidence result is acceptable when justified.
+- **Transfer**: distinguish what generalized to the changed setting from what still required new public assumptions, configuration, or evidence.
 - **Visuals**: figures and tables should be readable without zooming. Captions should explain the takeaway, not just name the plot.
 
 Be careful with privacy claims:
@@ -85,13 +96,16 @@ Use this structure for the proposal, then expand it for the final report.
 4. **Related work**: the main prior work you build on.
 5. **Approach**: what you will implement, compare, or analyze.
 6. **Evaluation plan**: datasets, metrics, baselines, and what evidence will count as success.
-7. **Scope control**: what you will leave out if time or compute becomes tight.
-8. **Evidence log**: expected sample/query/trial counts, splits, seeds, artifacts, and examples you will report.
-9. **Contribution statement**: who is doing what.
+7. **Break and repair plan**: what artifact another team can challenge and what regression evidence a repair should produce.
+8. **Transfer plan**: one related condition that tests whether the system generalizes.
+9. **Scope control**: what you will leave out if time or compute becomes tight.
+10. **Evidence log**: expected sample/query/trial counts, splits, seeds, artifacts, and examples you will report.
+11. **Contribution statement**: who is doing what.
 
 ## Deliverable expectations
 
 - **Topic check-in**: a feasible idea with enough technical detail to get feedback early.
-- **Proposal**: a concrete evaluation plan and realistic scope.
-- **Poster / demo**: clear communication of the question, method, and results.
-- **Final report**: technical write-up with evidence, limitations, and discussion.
+- **Proposal**: a concrete build, evaluation, break, and transfer plan with realistic scope.
+- **Break exchange**: a compact challenge bundle and one reproducible, evidence-backed review of another team's frozen artifact.
+- **Poster / demo**: clear communication of the question, evidence, failure, repair, and remaining limitations.
+- **Final report**: technical write-up covering the complete cycle, transfer result, evidence, and limitations.

@@ -5,7 +5,7 @@
 
 ## Course overview
 
-How can we use data to build useful systems without exposing the people behind the data? This course introduces the core ideas of modern data privacy through concrete attacks, practical defenses, and hands-on labs.
+How can we use data to build useful systems without exposing the people behind the data? This course introduces the core ideas of modern data privacy through concrete attacks, practical defenses, and hands-on system audits.
 
 The course is designed for advanced undergraduates. We will start with privacy failures that students can observe directly, then build toward differential privacy, privacy-aware machine learning, and privacy-enhancing technologies such as MPC, HE, TEE, and network privacy tools. The emphasis is on technical understanding, experimental reasoning, and clear communication rather than graduate-level novelty.
 
@@ -14,6 +14,7 @@ The course is designed for advanced undergraduates. We will start with privacy f
 - How common privacy attacks work, including extraction, membership inference, linkage, and reconstruction.
 - How to reason about privacy defenses, especially differential privacy and its utility trade-offs.
 - How privacy engineering differs across machine learning, databases, and systems settings.
+- How to trace a privacy claim through data, code, configuration, accounting, and tests.
 - How to read, critique, and explain privacy papers and experimental results.
 
 ## Who should enroll?
@@ -45,15 +46,16 @@ Privacy is now part of the job in machine learning, data science, and systems wo
 - Time: Tuesdays and Thursdays, 2:00-3:15 PM
 - Dates: August 25-December 8, 2026
 - Canvas: [course site](https://canvas.its.virginia.edu/courses/190753)
-- Format: in-person lectures with labs, quizzes, reading warm-ups, and a scoped final project
+- Format: in-person lectures, short practicals, three audit labs, quizzes, and a scoped final project
 - [Policy](policy.html)
 
 ## Grading
 
-- [Labs](lab.html) (35%): four take-home labs; most labs are pair-based, but individual submission is allowed.
-- [Project](project.html) (30%): topic check-in (5%), proposal (5%), poster/demo (10%), final report (10%). See the [milestone guide](project-present.html) and [project rubric](project-rubric.html).
+- [Labs](lab.html) (30%): three privacy-engineering audits using Opacus, JAX Privacy, and Google DPSynth; teams of 2 or individual work.
+- [Project](project.html) (25%): topic check-in (5%), proposal (5%), poster/demo (5%), and final report (10%). See the [milestone guide](project-present.html) and [project rubric](project-rubric.html).
+- [Individual oral defense](oral.html) (10%): explain and adapt selected lab and project decisions.
 - Quizzes (20%): two in-class quizzes on foundations and core mechanisms.
-- Exit tickets / participation (10%): short check-ins tied to lecture attendance and engagement.
+- Exit tickets / participation (10%): short check-ins, audit studios, and the formative project break exchange.
 - Reading warm-ups (5%): short individual responses on selected course readings.
 - Grading scale: we use the [UVA default Grading Basis](https://virginia.service-now.com/its?id=itsweb_kb_article&sys_id=1153c16fdba41f444f32fb671d961934)
 
@@ -84,6 +86,13 @@ For a maintained collection of courses, books, tutorials, and software, see the 
 - Mechanism design: [Differential Privacy in Game Theory and Mechanism Design](https://www.cis.upenn.edu/~aaroth/courses/gametheoryprivacyS14.html) Spring 2014 by Aaron Roth (Penn)
 - Fairness: [CS 294: Fairness in Machine Learning](https://fairmlclass.github.io/) (UC Berkeley, Moritz Hardt)
 - ML: [Privacy Preserving Machine Learning](https://researchers.lille.inria.fr/abellet/teaching/private_machine_learning_course.html), course materials from 2020-2023 by Aurelien Bellet (Inria)
+
+### Software used in the labs
+
+- [Opacus](https://opacus.ai/) for private training in PyTorch.
+- [JAX Privacy](https://jax-privacy.readthedocs.io/) for auditable DP training in JAX and Keras.
+- [Google DPSynth](https://github.com/google/dpsynth) for differentially private tabular synthesis.
+- [OpenDP](https://opendp.org/) for additional mechanisms, documentation, and learning resources.
 
 ### Books
 

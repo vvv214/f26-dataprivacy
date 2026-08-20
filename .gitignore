@@ -24,6 +24,7 @@ project/
 # Editor
 .vscode/
 .claude/
+.playwright-cli/
 
 # Python / Jupyter caches
 .pytest_cache/

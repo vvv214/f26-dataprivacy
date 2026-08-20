@@ -3,11 +3,11 @@
 
 # Project rubric
 
-The course project contributes **30%** of the course grade, split across four milestones:
+The course project contributes **25%** of the course grade, split across four milestones:
 
 - **Topic check-in (5%)**
 - **Proposal (5%)**
-- **Poster / demo (10%)**
+- **Poster / demo (5%)**
 - **Final report (10%)**
 
 For milestone logistics and expectations, see [project milestone guide](project-present.html).
@@ -28,23 +28,23 @@ For milestone logistics and expectations, see [project milestone guide](project-
 | Method and baselines | 2 | Specific plan for what will be implemented, compared, or measured. |
 | Scope control | 1 | Realistic milestones, risks, and fallback plan. |
 
-## 3. Poster / demo (10 points)
+## 3. Poster / demo (5 points)
 
 | Criteria | Points | Description |
 |---|---|---|
-| Technical content | 4 | The core question, method, and evidence are understandable and technically sound. |
-| Communication | 3 | Visuals, structure, and spoken explanation are clear. |
-| Results and honesty | 2 | The team shows actual results and does not overclaim. |
-| Contribution clarity | 1 | Team member roles and contributions are visible. |
+| Technical content | 2 | The core question, method, and evidence are understandable and technically sound. |
+| Break and repair | 1 | The team shows a reproducible challenge, root cause, and repair or a justified clean/insufficient finding. |
+| Results and honesty | 1 | The team shows actual results, limitations, and residual risk without overclaiming. |
+| Communication and contributions | 1 | The presentation is clear and team member roles are visible. |
 
 ## 4. Final report (10 points)
 
 | Criteria | Points | Description |
 |---|---|---|
 | Technical correctness | 3 | Methods match the stated threat model; privacy claims, DP claims, and metrics are technically justified. |
-| Evidence and analysis | 3 | Results include concrete scale, baselines, uncertainty or exact counts, representative examples, and limitations or failure cases. |
-| Writing quality | 2 | The report is organized, readable, properly cited, and uses clear figures, tables, and captions. |
-| Reflection and next steps | 2 | The team explains what was learned, what remains unresolved, and what artifacts support the result. |
+| Evidence, failure, and repair | 3 | Results include concrete scale and baselines plus a reproducible challenge, root-cause analysis, repair, and regression evidence. |
+| Transfer and limitations | 2 | The changed setting tests generalization, and the report states what transferred, what did not, and the residual risks. |
+| Writing and artifacts | 2 | The report is organized, properly cited, and supported by clear figures, tables, configs, tests, and contribution notes. |
 
 ## Additional notes
 

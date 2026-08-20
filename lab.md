@@ -1,98 +1,102 @@
 ---
 ---
 
-# Data Privacy (Fall 2026 draft) lab syllabus
+# Labs
 
-## Lab goals
+The three labs are privacy-engineering audits rather than step-by-step
+notebooks. Each one asks you to build a small working system, test a concrete
+privacy contract, repair or defend it with evidence, and transfer the result to
+a changed setting.
 
-The labs are where students move from vocabulary to actual technical reasoning. Each lab is designed to answer a concrete question:
+Labs contribute 30% of the course grade, 10% each. They begin after the course
+has established attacks, adjacency, sensitivity, mechanisms, and accounting.
 
-- What can an attacker really do?
-- What does a privacy defense protect, and what does it cost?
-- How much of the difficulty is conceptual versus tooling?
+## The repeated workflow
 
-## Group policy
+1. Build a working baseline and record the system's privacy contract.
+2. Break the assigned instance, or show that it is clean or cannot be decided
+   from the available evidence.
+3. Repair the root cause and add a regression test.
+4. Transfer the repair or audit method to a related new setting.
 
-- Labs are designed for teams of 2.
-- Individual submission is allowed.
-- You may keep the same partner all semester or switch partners between labs.
-- Group members submit one shared notebook and receive the same grade unless there is a documented contribution issue.
+Some instances are intentionally clean, and some do not contain enough
+evidence for a definitive conclusion. Finding a novel upstream bug is not a
+requirement. The goal is a reproducible, well-supported judgment.
 
-## Format
+## Lab 1: Opacus training contract audit
 
-- Labs are notebook-based and emphasize short written interpretations in addition to code.
-- We provide scaffolded starter code. Students are still responsible for understanding outputs and explaining trade-offs.
-- Most labs are intended for Google Colab or a lightweight local setup.
-- Selected labs may include a short reading warm-up or reflection prompt.
+Question: Does the sampler, private optimizer, and privacy accountant describe
+the same training process?
 
-## Distribution
+You will train a small model with [Opacus](https://opacus.ai/), record the
+sampling and accounting contract, audit an assigned data-loader configuration,
+and test the repair under a changed sampling or grouping condition.
 
-Lab notebooks and support files will be distributed separately through the course workflow, such as Canvas or a shared Drive folder. They are not published as raw files from this public website repository.
+Main concepts include record- versus user-level adjacency, sampling events,
+expected batch size, optimizer updates, privacy events, and secure randomness.
 
-## Lab 1: Privacy attacks on models
+## Lab 2: JAX Privacy step accounting
 
-**Theme**: See the leak before you study the defense.
+Question: Are physical batches, accumulated batches, optimizer updates, and
+privacy events counted in consistent units?
 
-- Extract a memorized secret from a small language model.
-- Use loss-based membership inference to distinguish a canary-trained model from a control model.
-- Explore why simple keyword filters are weak defenses.
+You will work with a pinned snapshot of
+[JAX Privacy](https://jax-privacy.readthedocs.io/), instrument a bounded training
+path, reproduce or reject an assigned contract failure, make a narrow patch or
+guard, and add parameterized regression tests.
 
-**Main learning outcome**: Students should be able to explain the difference between memorization, extraction, and inference attacks.
+Main concepts include effective batch size, gradient accumulation, privacy
+calibration, resume behavior, boundary cases, and source-level testing.
 
----
+## Lab 3: Google DPSynth release audit
 
-## Lab 2: Re-identification and reconstruction
+Question: Do the domain, contribution bounds, mechanism, and evaluation support
+the privacy claim made for a synthetic-data release?
 
-**Theme**: Privacy can fail even when names are removed.
+You will use the in-memory API of
+[Google DPSynth](https://github.com/google/dpsynth) to generate a small tabular
+release, trace every private-data access, audit the release boundary, and apply
+the repaired pipeline to a related schema.
 
-- Measure singling-out risk in synthetic microdata.
-- Perform a linkage-style attack using quasi-identifiers.
-- Reconstruct sensitive attributes from released statistics, then observe how DP noise changes feasibility.
+Main concepts include public domains and bounds, contribution limits, private
+query selection, provenance, caching, release artifacts, and utility
+evaluation. The required path is CPU-friendly; distributed Beam execution is
+optional.
 
-**Main learning outcome**: Students should understand why de-identification alone is fragile and how statistical releases can still leak.
+## Teams and submissions
 
----
+- Labs may be completed in teams of 2 or individually.
+- A team submits one shared code bundle and audit dossier.
+- Every submission includes a contribution statement.
+- Each student remains responsible for understanding the complete submitted
+  artifact; individual ownership is assessed in the
+  [oral defense](oral.html).
 
-## Lab 3: Private learning
+Each lab submission includes runnable code and tests, a machine-readable
+contract or manifest, a concise audit dossier, a transfer result, and an AI
+Decision Ledger when AI materially shaped the work. Complete AI chat transcripts
+are not required.
 
-**Theme**: Protecting training is not free.
+## Per-lab rubric
 
-- Use DP-SGD on a small model and interpret the privacy / utility trade-off.
-- Work with private selection ideas such as the exponential mechanism in a simplified setting.
-- Compare centralized privacy with noisier local or federated variants.
+| Criterion | Points |
+|---|---:|
+| Build and reproducibility | 2 |
+| Finding and root-cause evidence | 3 |
+| Repair or guard and regression test | 3 |
+| Transfer and residual-risk analysis | 2 |
 
-**Instructor note for the undergraduate version**: the release should prioritize one clear core path over breadth. If needed, this lab can ship with a required core section plus one optional extension.
+A correct clean or insufficient-evidence finding can earn full credit. Grades
+reward the quality of the contract, evidence, repair, and transfer rather than
+the rarity of a bug.
 
-**Main learning outcome**: Students should be able to explain what the privacy budget buys, what it costs, and why implementation choices matter.
+## Distribution and setup
 
----
+Release bundles, instance-specific materials, hidden tests, and solution files
+are distributed through Canvas or the course Drive. They are not published as
+raw resources from this website.
 
-## Lab 4: Secure multi-party computation (MPC)
-
-**Theme**: Private computation under different trust assumptions.
-
-- Use MP-SPDZ to run basic MPC programs.
-- Compare cheap operations (addition) with expensive ones (multiplication, comparison, ReLU).
-- Study a simple private mean, a millionaire comparison, a toy private neural network, and a debugging exercise about incorrect reveals.
-
-**Main learning outcome**: Students should leave with the right mental model for when MPC is appropriate and where the performance bottlenecks come from.
-
----
-
-## Technical setup
-
-### Default platform
-
-- Google Colab is the default for most students.
-- We provide starter notebooks and small helper files.
-- Labs should avoid requiring specialized hardware beyond optional GPU access.
-
-### Software expectations
-
-- Lab 1-3 rely primarily on Python notebooks.
-- Lab 4 uses MP-SPDZ rather than a full custom cryptographic implementation.
-- When possible, released labs should prefer synthetic or lightweight data over large downloads.
-
-### Instructional design guideline
-
-For the undergraduate version, labs should reward interpretation and careful experimentation more than framework wrestling. If a toolchain becomes the main obstacle, the release should be simplified.
+Every lab release includes a pinned package environment, small input data,
+starter commands, and a CPU-compatible core path. Legacy attack,
+re-identification, and MPC notebooks may still appear as shorter in-class
+practicals, but they are not part of the three graded take-home labs.

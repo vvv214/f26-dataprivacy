@@ -14,6 +14,7 @@ Published site:
 - `project.md`
 - `project-rubric.md`
 - `project-present.md`
+- `oral.md`
 - `policy.md`
 
 ## Lab files

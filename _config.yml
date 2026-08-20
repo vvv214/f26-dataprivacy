@@ -10,6 +10,7 @@ exclude:
   - .github
   - .jekyll-cache
   - .pytest_cache
+  - .playwright-cli
   - .sass-cache
   - .venv
   - .venv-labs
