@@ -10,6 +10,7 @@ Published site:
 
 - `index.md`
 - `schedule.md`
+- `syllabus.md`
 - `lab.md`
 - `project.md`
 - `project-rubric.md`

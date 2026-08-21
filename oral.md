@@ -9,14 +9,16 @@ AI assistance. It is not a memory test or a search for a surprise bug.
 
 ## Format
 
-- A brief individual conversation during the final assessment period. Exact
-  duration and scheduling will be announced in Canvas after enrollment and
-  staffing are confirmed.
+- A 5-10 minute individual conversation.
+- The defense may take place during a designated class period or through a
+  mutually arranged office-hour appointment. Exact logistics will be announced
+  in Canvas, with an equivalent option for students who cannot use an
+  office-hour appointment.
 - Individual, including for students who completed labs or the project in a
   team.
 - No slides are required.
 - You may open your submitted code, manifests, dossiers, and project report.
-- External AI assistance is not used during the defense.
+- External AI assistance may not be used during the defense.
 
 The instructor will select one submitted lab artifact and one project decision.
 The conversation will sample from the following tasks:

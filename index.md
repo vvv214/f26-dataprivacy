@@ -47,7 +47,7 @@ Privacy is now part of the job in machine learning, data science, and systems wo
 - Dates: August 25-December 8, 2026
 - Canvas: [course site](https://canvas.its.virginia.edu/courses/190753)
 - Format: in-person lectures, short practicals, three audit labs, quizzes, and a scoped final project
-- [Policy](policy.html)
+- Course documents: [Syllabus](syllabus.html) | [Policy](policy.html)
 
 ## Grading
 
