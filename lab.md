@@ -5,120 +5,96 @@
 
 <p class="overview-back"><a href="index.html">Back to the course homepage</a></p>
 
-The seven labs put you in different roles: attacker, data-release auditor,
-anonymous evaluator, library maintainer, data publisher, and protocol
-implementer. Some are compact challenges; others ask you to work in a real
-privacy codebase. Together they contribute 30% of the course grade.
+The four labs put you in different roles: privacy attacker, agent designer,
+library maintainer, and privacy-system designer. All four labs are completed
+individually. Each lab contributes 10% of the course grade, for a total of 40%.
 
 | Lab | Weight | Timing |
 |---|---:|---|
-| 1. Model Privacy CTF | 3% | Weeks 2-3 |
-| 2. Linkage and Reconstruction | 4% | Weeks 3-5 |
-| 3. LLM Privacy Attack Arena | 4% | Weeks 4-6 |
-| 4. DP Training Systems | 5% | Weeks 6-9 |
-| 5. DPSynth Feature Sprint | 6% | Weeks 8-11 |
-| 6. Synthetic Data Arena | 5% | Weeks 10-13 |
-| 7. Compute Without Seeing | 3% | Weeks 11-14 |
+| 1. Privacy Attack Warm-up | 10% | Weeks 2-4 |
+| 2. Two-Agent Secret Arena | 10% | Weeks 4-6 |
+| 3. DP Library Extension Challenge | 10% | Weeks 6-11 |
+| 4. Compute Without Seeing | 10% | Weeks 11-15 |
+{: .lab-summary }
 
-The weights reflect expected scope. Lab 1 is a short introduction; Lab 5 is the
-largest coding assignment.
+The point values are equal, but the formats are intentionally different. Lab 1
+is a compact warm-up; later labs involve longer-lived systems, larger
+codebases, or more design freedom.
 
-## Hidden evaluation and arenas
+## Lab 1: Privacy Attack Warm-up
 
-Selected labs include instructor-only cases in addition to public examples.
-Hidden evaluation varies inputs and boundary conditions promised by the lab
-specification; it does not depend on undocumented package trivia. The number,
-mix, and nature of hidden cases are not announced. Some instances are clean or
-do not contain enough evidence for a definitive claim. A correct abstention can
-receive full credit when the evidence supports it.
-
-Labs 3 and 6 use the [lab arenas](arena.html). They run on private systems or
-workloads under a common interface and resource budget. Arena rank is feedback,
-not a winner-take-all grade; course points use fixed criteria and instructor
-baselines. The final project remains fully open and has no leaderboard.
-
-## Lab 1: Model Privacy CTF
-
-Implement a small attack runner against a documented query interface. You will
-recover a memorized canary, compare target and reference scores for membership
-evidence, control false positives, and transfer the attack to a changed private
-instance. A solved-flags display may appear after the lab closes, but speed does
+Implement one compact attack runner across small model and data privacy
+challenges. You will recover a memorized canary, evaluate membership evidence,
+link synthetic records with calibrated abstention, and test one bounded
+reconstruction claim. Randomized hidden instances change canaries, score
+calibration, missingness, candidate pools, and whether a unique conclusion is
+possible. A solved-flags display may appear after the lab closes, but speed does
 not affect the grade.
 
-## Lab 2: Linkage and Reconstruction
+## Lab 2: Two-Agent Secret Arena
 
-Measure singling-out risk, link a released table to synthetic auxiliary data,
-and reconstruct selected attributes from bounded statistics. Your program must
-represent ambiguity and insufficient evidence instead of forcing every target
-to have an answer. You will repeat part of the attack after a differentially
-private release.
+Build one small agent that both attacks and defends. Each student submits an
+agent; in each four-round match, two submissions alternate messages under the
+same model and turn budget. Each tries to induce the other to reveal a
+synthetic secret while preventing exact, punctuation-stripped, or encoded
+disclosure of its own secret. Pairings run anonymously and in both turn orders.
 
-An optional extension replaces the scripted matching rule with an LLM that
-infers attributes from unstructured auxiliary text, and asks whether that
-changes who can be singled out. Report calibrated confidence, not anecdotes.
+The course harness owns model calls, secrets, transcripts, budgets, and
+scoring. Student code uses plain Python to construct the direct chat-completion
+request and filter its outgoing message. A public offline backend makes the
+protocol testable without a paid account, while a separate hidden benign
+evaluator checks allowed facts and secret-derived outputs. An agent that
+refuses every request may defend well but receives no utility credit.
 
-## Lab 3: LLM Privacy Attack Arena
+The 10 points cover contract compliance and reproducibility (1), defense (3),
+offense (2), hidden benign-task utility (3), and boundary explanation (1).
+Arena rank is feedback rather than a winner-take-all grade. The target workload
+is 3-4 hours.
 
-Attack instructor-hosted LLM agents that hold synthetic user memories, read
-untrusted retrieved documents, and call tools with declared permissions. The
-declared surfaces are the ones that carry private data in real deployments:
+## Lab 3: DP Library Extension Challenge
 
-- **Memory isolation**: can one user or session recover another's stored notes?
-- **Indirect prompt injection**: does an instruction planted in a retrieved
-  document redirect the agent's behavior?
-- **Tool-permission enforcement**: can a read-only session reach a write or send
-  tool, and can a tool call become an exfiltration channel?
-- **Context and system-prompt extraction**: what does the agent disclose about
-  its own instructions, retrieved documents, or prior turns?
+First trace one small path through each course library:
 
-Model and defense identities are hidden during evaluation. Exact canaries verify
-real leakage, so a refusal that merely looks bypassed does not count as an
-attack. Anonymous pairwise reviews compare the severity and evidence of attack
-transcripts. A small arena audit then checks whether pair order, superficial
-rewriting, or target-family fingerprinting can bias those judgments. See the
-[arena specification](arena.html).
+- [Opacus](https://opacus.ai/) for private training in PyTorch;
+- [JAX Privacy](https://jax-privacy.readthedocs.io/) for sampling and privacy
+  accounting in JAX; and
+- [Google DPSynth](https://github.com/google/dpsynth) for private synthetic data.
 
-## Lab 4: DP Training Systems
+Then work in one pinned repository and add an approved algorithm, mechanism, or
+algorithmic feature. Possible tracks include training mechanisms, accounting
+events or guards, synthesis and relational operations, and cross-library
+adapters. Each ticket has a published mathematical and behavioral contract.
+Your patch must include focused tests, a baseline comparison, compatibility
+notes, and a short code walkthrough. Hidden CI tests vary shapes, seeds,
+sampling and resume boundaries, schemas, optional dependencies, and unsupported
+inputs promised by the contract.
 
-Everyone first builds and traces a small private training run with
-[Opacus](https://opacus.ai/). Teams then receive a bounded maintainer task in
-either Opacus or [JAX Privacy](https://jax-privacy.readthedocs.io/). The main
-question is whether sampling, accumulation, optimizer updates, and accountant
-events describe the same training process. Code and regression tests matter
-more than a long report.
+## Lab 4: Compute Without Seeing
 
-## Lab 5: DPSynth Feature Sprint
+Complete two required privacy-enhancing technology exercises: a small Yao
+comparison using garbled circuits and oblivious transfer, and private linear
+inference in a real three-party MP-SPDZ runtime. Both tasks make the reveal
+boundary explicit and test that no input or intermediate value crosses it.
 
-Work against a pinned snapshot of
-[Google DPSynth](https://github.com/google/dpsynth) and complete one approved
-feature or repair. DPSynth already includes experimental relational synthesis,
-so possible work may extend a typed adapter, diagnostics, a bounded constraint,
-evaluation coverage, or an optional-dependency boundary rather than simply
-"adding multi-table support." You will write the executable contract first,
-then make a focused patch and test it on a second setting.
+Then choose one extension: encrypted aggregation with Paillier homomorphic
+encryption, verification of a synthetic TEE attestation report, or a miniature
+Path ORAM read/write implementation. The TEE path teaches attestation logic but
+does not claim that a notebook simulates enclave security. The ORAM path must
+state what access-pattern information remains visible and what a production
+position map would require.
 
-## Lab 6: Synthetic Data Arena
+Each student completes a five-minute individual oral check during class or
+office hours. You will identify the reveal operation, explain one nontrivial
+component, and respond to one small change in the policy or threat model. The
+oral check is part of the Lab 4 grade, not a separate exam.
 
-Build a privacy-valid single-table release with Google DPSynth under a common
-privacy and compute budget. A private validity audit checks adjacency, domains,
-contribution bounds, private-data access, composition, caching, and provenance.
-Valid releases then run on held-out schemas and utility workloads. See the
-[arena specification](arena.html).
+## Individual submissions
 
-## Lab 7: Compute Without Seeing
-
-Complete a small two-party protocol and private linear inference task in a
-prebuilt MPC environment. Hidden tests check both functional results and the
-declared reveal boundary: inputs and intermediate values must not become extra
-outputs.
-
-## Teams and submissions
-
-- Labs may be completed in teams of 2 or individually.
-- A team submits one shared code bundle and contribution statement.
-- Every student remains responsible for understanding the complete artifact.
+- Each student submits their own code bundle and supporting explanation.
+- High-level discussion is welcome, but submitted code, results, and written
+  answers must be the student's own work.
 - Each lab defines a compact structured result, test suite, or manifest rather
-  than requiring the same report format seven times.
+  than requiring the same report format four times.
 - When AI materially shapes a lab, include 3-5 consequential entries in an AI
   Decision Ledger: the suggestion, how it was checked, and the decision. Full
   chat transcripts are not required.

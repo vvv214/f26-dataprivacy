@@ -5,17 +5,28 @@
 
 <p class="overview-back"><a href="index.html">Back to the course homepage</a></p>
 
-The final project is an open opportunity to go deeper on a privacy topic. You
-choose the question, method, and form of the contribution. Strong undergraduate
-projects are well scoped, technically correct, supported by evidence, and
-honest about limitations.
-
-There is no project leaderboard, arena, or required peer attack. Some labs use
-hidden evaluation or controlled arenas; the project does not.
+The final project asks you to develop and evaluate an innovative privacy
+contribution. It may be a system or focused tool, a new attack or defense, a
+privacy monitor or auditor, or a research project whose primary artifact is a
+paper. Strong undergraduate projects are interesting, technically complete,
+supported by evidence, and honest about limitations.
 
 ## Project scope
 
-Projects should connect to one or more course themes:
+Every project must:
+
+- identify a target user, system, or scientific setting; a protected asset; and
+  a privacy failure or limitation;
+- deliver a concrete contribution appropriate to the project: a runnable
+  prototype, attack implementation, defense, monitor/auditor, method, dataset,
+  or research paper with auditable technical evidence;
+- state an innovation claim: what new capability, attack, defense, measurement,
+  insight, or design does the project provide?;
+- compare against a meaningful baseline or current workflow; and
+- evaluate the main claim with relevant privacy, utility, reliability,
+  statistical, performance, or usability evidence.
+
+The contribution should connect to one or more course themes:
 
 - privacy attacks and auditing;
 - differential privacy;
@@ -24,24 +35,39 @@ Projects should connect to one or more course themes:
   homomorphic encryption (HE), trusted execution environments (TEEs), or
   network privacy.
 
-Novel research is not required. A careful reproduction, useful negative result,
-or well-supported comparison can be as strong as a new prototype.
+You may build on existing papers, libraries, models, and codebases, but the
+project contribution cannot be only a reproduction, port, benchmark comparison,
+standalone audit, or incremental extension of an existing artifact. Those may
+be inputs or baselines for the project, not the final contribution.
 
-## Possible project formats
+Publication-level novelty is not required. Here, innovation means asking a
+non-obvious question or making and defending a nontrivial technical choice that
+creates a distinct capability, attack, defense, measurement, or insight. The
+proposal must answer: what becomes newly possible, measurable, or defensible
+relative to the baseline?
 
-- **Replication and extension**: reproduce a paper, system, or benchmark, then
-  add a meaningful extension, ablation, or new setting.
-- **Comparative evaluation**: compare privacy attacks, defenses, or tools on a
-  shared task and explain the trade-offs.
-- **Build or application**: implement a small privacy-aware tool, pipeline, or
-  demo and evaluate where it works and fails.
-- **Audit or case study**: investigate a concrete system, dataset, or privacy
-  claim using a clearly defined threat model and reproducible evidence.
-- **Analytical project**: study a theoretical, legal-technical, measurement, or
-  design question when the proposed method supports a rigorous conclusion.
+## What can be innovative?
 
-These are examples, not tracks. Other formats are welcome when the proposal
-defines a feasible question and a credible way to evaluate it.
+- **Workflow**: protect a real action that existing privacy research leaves
+  awkward or manual.
+- **Integration**: connect a privacy mechanism to a browser, local model,
+  developer tool, data pipeline, or agent system in a technically meaningful
+  way.
+- **Interaction**: help a user understand, configure, or override a privacy
+  decision without exposing more information.
+- **Policy or architecture**: enforce a new boundary across users, memories,
+  tools, data releases, or trust domains.
+- **Defense**: combine detection, transformation, access control, accounting,
+  or verification into a protection with measurable behavior.
+- **Attack or measurement**: expose a previously untested privacy boundary or
+  develop a more informative way to observe leakage.
+- **Research insight**: formulate and support an original empirical,
+  theoretical, or systems claim in a paper with auditable evidence.
+
+These are examples, not tracks. The contribution can be compact, especially for
+an individual project, but it must go beyond moving an existing technique to a
+new library, platform, model, or dataset without a substantive new question or
+design.
 
 ## Team policy
 
@@ -55,72 +81,38 @@ defines a feasible question and a credible way to evaluate it.
 
 | Milestone | Week(s) | Format | Weight |
 |---|---|---|---:|
-| Topic check-in | 7 | one-page memo or lightning talk | 3% |
-| Proposal | 10 | written technical plan | 5% |
-| Progress checkpoint | 12 | working artifact or evidence package and update | 7% |
-| Poster/demo | 15 | poster-style presentation or live demo | 5% |
-| Final report | 16 | written report | 10% |
+| Project pitch | 7 | short in-class presentation | 10% |
+| Proposal | 11 | written plan with current artifact or evidence | 5% |
+| Poster/demo | 16 | poster-style presentation or live demo in the final class | 10% |
+| Final report | 16 | focused written report | 5% |
 
 For milestone logistics, see the [project milestone guide](project-present.html).
 For grading details, see the [project rubric](project-rubric.html).
 
-During the Week 15 poster/demo sessions, each student also completes the second
-brief individual written artifact check using an instructor-selected excerpt
-from the team's project. It counts toward participation, not the project grade.
-
 ## Suggested directions
 
-- Compare extraction or membership-inference attacks across simple model
-  settings.
-- Benchmark privacy-utility trade-offs for DP training on a small task.
-- Audit the privacy risks of a logging, telemetry, or recommendation workflow.
-- Compare MPC, HE, and TEEs for a toy inference or analytics pipeline.
-- Build a small teaching demo that illustrates a privacy mechanism or attack.
-- Build a claim-verification tool that connects natural-language conclusions to
-  code, data, logs, and executable evidence.
+These examples are starting points, not a fixed menu. Students may define any
+original privacy-related direction that fits the project scope.
 
-### LLM and agent privacy
-
-Assistants that carry memory, retrieve documents, and call tools create privacy
-surfaces that classical threat models do not cover. Lab 3 attacks these systems
-under a fixed contract; a project can go further, take the defender's side, or
-measure something the lab only samples. All of these are feasible on small
-open models or a bounded API budget with synthetic data.
-
-- **Memory isolation under adversarial use**: plant canaries in one session or
-  user profile and measure recovery from another. Compare isolation strategies
-  (per-user namespaces, summarization, retrieval filters) on both leakage and
-  assistant usefulness.
-- **Indirect prompt injection as an exfiltration channel**: measure how often a
-  planted instruction in a retrieved document reaches a tool that can send or
-  write. The interesting variable is tool permission design, not phrasing.
-- **What actually leaks from RAG**: distinguish verbatim document disclosure,
-  paraphrased disclosure, and membership evidence about the index. State what a
-  document-level guarantee would require and whether your defense provides it.
-- **Deletion and unlearning for assistant memory**: after a deletion request,
-  test whether the fact survives in summaries, embeddings, caches, or logs.
-- **Agent traces and telemetry**: audit what a trace, log, or eval dataset
-  captures; build a scrubber and report its false-negative and false-positive
-  rates rather than examples.
-- **PII redaction filters under stress**: measure where detectors fail
-  (unusual name forms, non-English text, indirect identifiers, encodings) and
-  what that implies for systems that rely on them.
-- **LLM-assisted re-identification**: compare an LLM inference pipeline against
-  a classical linkage baseline on the same synthetic population. The question is
-  whether the capability changes the risk, and by how much.
-- **Shared-infrastructure side channels**: study whether response timing or
-  cache behavior reveals another tenant's prompt prefix in a locally hosted
-  serving stack. Ambitious; narrow the claim carefully.
-- **DP for text pipelines**: DP fine-tuning or DP synthetic text on a small
-  model, reporting the utility cost honestly at usable privacy parameters.
-
-## Scope guardrails
-
-- Avoid projects that depend on frontier-scale training or expensive compute.
-- Prefer reproducible datasets, lightweight models, and a clear baseline.
-- If the topic is ambitious, narrow the evaluation rather than overpromising.
-- A careful negative or inconclusive result is acceptable when the execution
-  and analysis are strong.
+- **Browser or local privacy tools**, such as a privacy guard or local LLM
+  rewriter.
+- **Agent privacy**, including memory isolation, tool permissions, RAG
+  disclosure control, privacy firewalls, and sandboxing.
+- **Privacy leakage monitors or auditors** for model internals, caches, logs,
+  data pipelines, or deployed systems.
+- **New privacy attacks or defenses** for models, agents, applications, or data
+  releases.
+- **Private data and DP systems**, including release assistants, implementation
+  auditors, synthetic data, or private training workflows.
+- **PET-backed applications** using MPC, HE, TEEs, ORAM, or related techniques.
+- **Privacy-preserving evaluation systems**, such as a safer LLM leaderboard or
+  an auditable human/AI evaluation platform.
+- **Evidence-backed privacy research tools** that connect claims to code, data,
+  logs, and executable checks.
+- **Privacy policy and contextual-integrity tools** for resolving inappropriate
+  information flows across users, platforms, and AI systems.
+- **Original research**, including an empirical, systems, theoretical, attack,
+  or defense paper supported by a new technical contribution.
 
 ## Evidence expectations
 
@@ -160,34 +152,43 @@ Be careful with privacy claims:
 ## Proposal and final report template
 
 Use this structure for the proposal, then expand it as appropriate for the
-final report.
+final report. Because the proposal is submitted in Week 11, it must distinguish
+completed work from planned work and include current evidence or a concrete
+artifact snapshot.
 
 1. **Title and team**: project title, members, and roles.
-2. **Question and motivation**: what you are studying and why it matters.
-3. **Setting or threat model**: data, model, system, protocol, or analytical
-   setting and the privacy property of interest.
-4. **Related work**: the main work or tools you build on.
-5. **Approach**: what you will implement, compare, measure, prove, or analyze.
-6. **Evaluation plan**: evidence, datasets, metrics, baselines, and criteria for
-   a supported, unsupported, or inconclusive result.
-7. **Risks and limitations**: likely validity, privacy, engineering, compute, or
+2. **Target and setting**: who or what system is affected, and what workflow or
+   scientific question will the project change?
+3. **Privacy problem and threat model**: protected asset, attacker or unwanted
+   flow, observations, trust boundary, and failure condition.
+4. **Innovation claim**: what capability or design is new relative to the
+   baseline?
+5. **Related systems and baseline**: what you build on and what current workflow
+   you will compare against.
+6. **Technical design**: architecture, interface, method, data flow, attack or
+   defense logic, trust assumptions, and the artifact you will implement.
+7. **Evaluation plan**: privacy, utility, reliability, latency, or usability
+   evidence, including meaningful baselines and failure cases.
+8. **Risks and limitations**: likely validity, privacy, engineering, compute, or
    data constraints.
-8. **Scope and execution plan**: milestones, fallback scope, and what will be
+9. **Scope and execution plan**: milestones, fallback system, and what will be
    left out if time becomes tight.
-9. **Evidence log**: expected counts, splits, seeds, artifacts, and examples,
-   where applicable.
-10. **Contribution statement**: who is doing what.
+10. **Current status**: what has been built or tested, current evidence or
+    failures, and the next technical risk to resolve.
+11. **Contribution statement**: who is doing what.
 
 ## Deliverable expectations
 
-- **Topic check-in**: a feasible idea with enough technical detail for useful
-  feedback.
-- **Proposal**: a concrete method and evaluation plan with realistic scope.
-- **Progress checkpoint**: meaningful technical progress, initial evidence, a
-  reproducible snapshot, and a revised plan for the remaining work.
-- **Poster/demo**: a clear account of the question, method, evidence, and
-  limitations.
-- **Final report**: a focused technical write-up whose claims match the evidence.
+- **Project pitch**: a short in-class argument for the privacy problem,
+  innovative contribution, technical approach, and feasible evaluation.
+- **Proposal**: a concrete technical design and evaluation plan, together with
+  the current artifact or evidence and a realistic plan for the remaining
+  weeks. This submission also serves as the project's progress and scope check.
+- **Poster/demo**: a demonstration or technically concrete presentation of the
+  contribution, privacy behavior, evidence, and limitations.
+- **Final submission**: the system, tool, attack, defense, monitor, auditor, or
+  research artifact, plus a focused technical report whose claims match the
+  evidence.
 - **AI Decision Ledger**: include one with any milestone materially shaped by
   AI. For each of 5-10 consequential decisions, record the suggestion received,
   how it was checked, and what was decided.

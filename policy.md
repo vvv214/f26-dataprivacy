@@ -9,12 +9,13 @@
 
 ### Collaboration
 
-- Labs may be completed in pairs or individually.
-- Quizzes, Canvas check-ins, and written artifact checks are individual work.
-- High-level discussion across teams is fine, but do not share code, filled-in tables, or polished written answers.
-- Arena submissions and private feedback may not be shared across teams before
+- Labs, quizzes, and Canvas exit surveys/check-ins are individual work.
+- Projects may be completed individually or in teams of up to 2.
+- High-level discussion with classmates is fine, but do not share lab code,
+  filled-in tables, or polished written answers.
+- Arena submissions and private feedback may not be shared before
   the final submission closes.
-- Every submitted assignment should clearly list collaborators.
+- Every submitted assignment should clearly list permitted collaborators.
 
 ### Use of GenAI
 
@@ -27,8 +28,8 @@ Generative AI tools may be used for brainstorming, debugging, or polishing, but 
   each, record the suggestion received, how it was checked, and what was
   decided. Complete chat transcripts are not required.
 - Quizzes must be completed without GenAI.
-- During lab arenas, systems may use only the tools and resource budget supplied
-  for that lab.
+- During the Lab 2 arena, systems may use only the model interface and resource
+  budget supplied for the lab.
 
 ### Quizzes
 
@@ -43,55 +44,46 @@ Generative AI tools may be used for brainstorming, debugging, or polishing, but 
 - An approved absence receives an equivalent makeup arrangement. A makeup may
   use different examples while assessing the same skills.
 
-### Participation and written artifact checks
+### Exit surveys and check-ins
 
-- Regular Canvas check-ins and structured in-class work contribute 6% of the
-  course grade. The two lowest regular Canvas check-ins are dropped.
-- Two individual written artifact checks contribute 4% total, 2% each. They are
-  10-minute, in-class paper exercises based on a short excerpt selected from the
-  student's submitted lab or project artifact.
-- A check may ask the student to locate a component, explain its behavior,
-  connect a claim to evidence, or predict the effect of a small change. Students
-  receive the same prompt family with excerpts of comparable difficulty,
-  including clean or insufficient-evidence cases where appropriate.
-- Written artifact checks are closed book and closed notes. Computers, phones,
-  AI tools, and other electronic aids may not be used.
-- The first check follows the DP Training Systems lab. The second takes place
-  during the Week 15 poster/demo sessions. These checks are participation work,
-  not additional project milestones.
-- An approved absence receives an equivalent prompt at an arranged time.
+- Short individual exit surveys and check-ins submitted through Canvas
+  contribute 10% of the course grade.
+- A check-in may ask for a conclusion, remaining question, interpretation of a
+  small result, or progress update on a current lab or project.
+- Check-ins receive credit for timely, good-faith completion.
+- Contact the instructor about an extended absence.
 
 ### Late work
 
 - Each student has 3 late days for the semester.
-- Late days may be used on Labs 1, 2, 4, and 5, the topic check-in, and the
-  project proposal.
+- Late days may be used on Labs 1 and 3 and the project proposal.
 - No more than 2 late days may be used on a single assignment.
-- Late days may not be used for quizzes, the synchronized Lab 3 or Lab 6 arena
-  submissions, Lab 7, written artifact checks, project progress presentations,
-  poster/demo days, final reports, or end-of-semester deadlines.
+- Late days may not be used for quizzes, the synchronized Lab 2 arena
+  submission, the in-class project pitch, the Lab 4 individual oral check, the
+  poster/demo session, final reports, or end-of-semester deadlines.
 - If you have a documented conflict or a serious issue, contact the instructor as early as possible.
 
 ### Regrades
 
 - Regrade requests must be submitted within 7 days after a grade is released and
   may result in review of the entire submission.
-- The result of a regrade request for a team submission applies to the full team.
+- The result of a regrade request for a project team submission applies to the
+  full team.
 
 ### Project contributions
 
 - Teams must include a short contribution statement for every project milestone.
 - Shared grades are the default, but substantial contribution imbalances may lead to adjustments.
 
-### Lab arena conduct
+### Lab 2 arena conduct
 
 - Arena work must stay within the published lab interface, privacy budget, and
   resource limits.
 - Deliberate malware, persistence, resource exhaustion, credential access, and
   attempts to retrieve private grading material are prohibited.
 - Students may not attempt to retrieve private arena data, hidden workloads,
-  evaluator code, or another team's submission.
-- Private feedback and another team's artifacts may not be redistributed.
+  evaluator code, or another student's submission.
+- Private feedback and another student's artifacts may not be redistributed.
 
 ## University policies and resources
 
@@ -146,6 +138,6 @@ advance of such an event, you may choose either:
 2. delaying assignment, exam, or quiz dates until at least 48 hours after your
    return.
 
-Extensions will not normally be granted for a team activity when only one member
-is traveling, and no delay will extend beyond the last day of finals for the
-semester.
+Extensions will not normally be granted for a project team activity when only
+one member is traveling, and no delay will extend beyond the last day of finals
+for the semester.

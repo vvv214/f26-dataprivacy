@@ -5,42 +5,55 @@
 
 <p class="overview-back"><a href="index.html">Back to the course homepage</a></p>
 
-This page covers the presentation-style and checkpoint-style project milestones
-for Fall 2026. Projects remain open in topic and method; these milestones keep
-the work scoped and provide feedback without putting projects into a shared
-competition. All grading criteria are centralized in the
+This page covers the four project milestones for Fall 2026. Projects remain
+open in topic and method, but each project must make an innovative privacy
+contribution. The milestones provide an early public pitch, one written
+proposal that also checks progress, and two final deliverables without putting
+projects into a shared competition. All grading criteria are centralized in the
 [project rubric](project-rubric.html).
 
-## 1. Topic check-in (Week 7, 3%)
+## 1. Project pitch (Week 7, 10%)
 
 **Objective**
 
-Get feedback before the project becomes too large or too vague.
+Make a concise case for an interesting privacy contribution and get feedback
+before committing to the full design.
 
 **Format**
 
-- one-page memo; or
-- short lightning talk if class time permits.
+- The class devotes one full meeting to live pitches.
+- Each project receives a short timed slot; exact timing will be announced once
+  teams are finalized.
+- Use one slide. All team members should be present and ready to answer a brief
+  question.
 
 **Expectations**
 
-- State the privacy question clearly.
-- Name the dataset, model, system, protocol, or analytical setting.
-- Identify a plausible method and one or two sources or baselines.
-- Identify one obvious risk to feasibility.
+- State the target user or setting and privacy problem clearly.
+- Identify the closest existing system, method, or workflow and its limitation.
+- State what system, tool, attack, defense, monitor/auditor, or research
+  contribution you propose to create.
+- Explain the core technical idea and what would become newly possible,
+  measurable, or defensible.
+- Name the main evidence you would collect and one serious feasibility risk.
 
-## 2. Proposal (Week 10, 5%)
+## 2. Proposal (Week 11, 5%)
 
 **Objective**
 
-Define a realistic technical plan and the evidence needed to support the final
-claim.
+Turn the pitch into a realistic technical plan while showing enough current
+work to identify problems before the final weeks.
 
 **Expectations**
 
 - Write 1-2 pages.
-- Include the question, motivation, related work, method, evaluation plan, and
-  scope control.
+- Include the problem, motivation, related work, innovation claim, technical
+  design, evaluation plan, and scope control.
+- Separate completed work from planned work. Include a current artifact,
+  experiment, proof component, dataset instrument, or other concrete evidence
+  appropriate to the project.
+- Report an initial result, failure, or unresolved technical question rather
+  than showing only a best case.
 - Define the relevant threat model or privacy property when the project needs
   one.
 - State what evidence would support, weaken, or leave the main claim
@@ -49,48 +62,29 @@ claim.
   seeds, and artifacts when applicable.
 - Include a timeline, fallback scope, and contribution statement for a team.
 
-## 3. Progress checkpoint (Week 12, 7%)
-
-**Objective**
-
-Demonstrate substantial progress early enough to correct the method, evaluation,
-or scope before the final submission.
-
-**Submit or present**
-
-- a working artifact, analysis pipeline, proof outline, dataset, or other
-  evidence package appropriate to the project;
-- a reproducible snapshot with the version, environment, commands, inputs, and
-  current outputs, when the project includes code;
-- preliminary results, including failures or inconclusive findings rather than
-  only the best case;
-- a short account of what the evidence currently supports and what remains
-  uncertain; and
-- a revised plan for the final weeks, including any justified scope change.
-
-The checkpoint is evaluated against the project's own approved question and
-method. It is not a competition, peer attack, or common leaderboard.
-
-## 4. Poster/demo (Week 15, 5%)
+## 3. Poster/demo (Week 16, 10%)
 
 **Objective**
 
 Present the project clearly to classmates who may not know the exact topic.
+The class holds one poster/demo session during the final meeting.
 
 **Expectations**
 
 - Use a research-style poster or a structured live demo.
 - Cover the question, setup, method, main evidence, and limitations.
+- Make the contribution and what is new relative to the baseline easy to see.
 - Include a representative failure, negative result, or boundary case when it
   helps explain the conclusion.
 - Make plots and tables readable from a normal viewing distance.
 - Be ready to explain what each team member contributed.
 
-## 5. Final report (Week 16, 10%)
+## 4. Final report (Week 16, 5%)
 
 **Objective**
 
-Submit the full technical write-up.
+Submit a focused technical write-up whose claims match the completed artifact
+and evidence.
 
 **Expectations**
 
@@ -102,6 +96,8 @@ Submit the full technical write-up.
 **Final report checklist**
 
 - State the privacy question or technical objective clearly.
+- State the innovation claim and compare the completed contribution with the
+  closest baseline or prior workflow.
 - Describe the data, model, system, protocol, or analytical setting.
 - Explain the method in enough detail to evaluate it.
 - Report exact counts, splits, seeds, queries, or trials when they matter.
@@ -120,6 +116,8 @@ Submit the full technical write-up.
 
 Common pitfalls to avoid:
 
+- A reproduction, routine comparison, literature review, mechanical port, or
+  incremental extension alone does not satisfy the project requirement.
 - Do not call a heuristic defense differential privacy unless you define the
   released output, adjacency, sensitivity (or clipping and public bounds), and
   privacy accounting.

@@ -15,7 +15,6 @@ Published site:
 - `syllabus.md`
 - `lab.md`
 - `project.md`
-- `arena.md` (Lab 3 and Lab 6 controlled arenas)
 - `project-rubric.md`
 - `project-present.md`
 - `policy.md`
