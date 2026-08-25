@@ -37,7 +37,7 @@ before committing to the full design.
   measurable, or defensible.
 - Name the main evidence you would collect and one serious feasibility risk.
 
-## 2. Proposal (Week 11, 5%)
+## 2. Proposal (Week 10, 5%)
 
 **Objective**
 

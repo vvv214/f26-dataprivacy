@@ -69,27 +69,21 @@ matters.
 
 ### AI access
 
-No paid AI subscription is required for this course. Students currently have
-several optional access paths:
-
 - [Gemini and NotebookLM through UVA](https://learningtech.virginia.edu/tools/gemini)
   are available to UVA faculty, staff, and students at no additional student
   cost.
 - [UVA Copilot Chat](https://learningtech.virginia.edu/tools/copilot) is also
   university-licensed and available at no additional student cost.
-- Eligible U.S. college students can claim the
-  [2026 ChatGPT student offer](https://chatgpt.com/students/2026/) for four free
-  months of ChatGPT Plus. The offer must be claimed by October 31, 2026,
-  requires SheerID verification and a payment method, and renews at the regular
-  monthly price unless canceled.
+- Eligible U.S. college students can claim
+  [one year of Google AI Pro](https://gemini.google.com/students) at no cost and
+  [four free months of ChatGPT Plus](https://chatgpt.com/students/2026/). The
+  offers must be claimed by December 31 and October 31, 2026, respectively;
+  both require student verification and a payment method and become paid
+  subscriptions unless canceled.
 - [UVA RC GenAI](https://learning.rc.virginia.edu/notes/uva-rc-genai/) provides
   Kimi K2.5 through a browser and API at no charge to eligible Research
   Computing users. RC currently restricts this service to research use; it is
   not available for ordinary class assignments.
-
-Access terms may change. Check the linked provider or UVA page before relying
-on a particular service, and follow the course rules for private materials and
-sensitive data.
 
 ### Courses
 

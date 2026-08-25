@@ -82,7 +82,7 @@ design.
 | Milestone | Week(s) | Format | Weight |
 |---|---|---|---:|
 | Project pitch | 7 | short in-class presentation | 10% |
-| Proposal | 11 | written plan with current artifact or evidence | 5% |
+| Proposal | 10 | written plan with current artifact or evidence | 5% |
 | Poster/demo | 16 | poster-style presentation or live demo in the final class | 10% |
 | Final report | 16 | focused written report | 5% |
 
@@ -152,7 +152,7 @@ Be careful with privacy claims:
 ## Proposal and final report template
 
 Use this structure for the proposal, then expand it as appropriate for the
-final report. Because the proposal is submitted in Week 11, it must distinguish
+final report. Because the proposal is submitted in Week 10, it must distinguish
 completed work from planned work and include current evidence or a concrete
 artifact snapshot.
 

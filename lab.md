@@ -11,10 +11,10 @@ individually. Each lab contributes 10% of the course grade, for a total of 40%.
 
 | Lab | Weight | Timing |
 |---|---:|---|
-| 1. Privacy Attack Warm-up | 10% | Weeks 2-4 |
-| 2. Two-Agent Secret Arena | 10% | Weeks 4-6 |
-| 3. DP Library Extension Challenge | 10% | Weeks 6-11 |
-| 4. Compute Without Seeing | 10% | Weeks 11-15 |
+| 1. Privacy Attack Warm-up | 10% | Weeks 3-5 |
+| 2. Two-Agent Secret Arena | 10% | Weeks 5-9 |
+| 3. DP Library Extension Challenge | 10% | Weeks 9-12 |
+| 4. Compute Without Seeing | 10% | Weeks 12-15 |
 {: .lab-summary }
 
 The point values are equal, but the formats are intentionally different. Lab 1

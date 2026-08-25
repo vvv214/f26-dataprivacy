@@ -147,10 +147,10 @@ insufficient evidence, so a correct abstention can receive full credit.
 
 | Lab | Weight | Release week | Due week |
 |---|---:|---:|---:|
-| Privacy Attack Warm-up | 10% | 2 | 4 |
-| Two-Agent Secret Arena | 10% | 4 | 6 |
-| DP Library Extension Challenge | 10% | 6 | 11 |
-| Compute Without Seeing | 10% | 11 | 15 |
+| Privacy Attack Warm-up | 10% | 3 | 5 |
+| Two-Agent Secret Arena | 10% | 5 | 9 |
+| DP Library Extension Challenge | 10% | 9 | 12 |
+| Compute Without Seeing | 10% | 12 | 15 |
 
 Private materials are distributed through Canvas; any course Drive link will
 be posted there. Raw notebooks, instances, hidden cases, evaluator files,
@@ -174,7 +174,7 @@ to a meaningful baseline.
 
 The project has no leaderboard, arena, or required peer attack. The in-class
 project pitch occurs in Week 7, the written proposal serves as a progress and
-scope checkpoint in Week 11, and the poster/demo and final report are due in
+scope checkpoint in Week 10, and the poster/demo and final report are due in
 Week 16.
 See the
 [milestone guide](project-present.html) and [project rubric](project-rubric.html).
@@ -308,15 +308,19 @@ through [Just Report It](https://justreportit.virginia.edu/).
 | Date | Course plan |
 |---|---|
 | August 25 | First class |
+| September 10 | Lab 1 released |
+| September 24 | Lab 1 due and Lab 2 released |
 | October 6 | No class: Fall Reading Days |
 | October 8 | In-class project pitch presentations |
-| October 13 | Guest lecture: oblivious RAM (ORAM) |
+| October 13 | Guest lecture: TEEs and confidential LLM serving |
 | October 15 | Quiz 1 |
+| October 22 | Lab 2 due and Lab 3 released |
+| October 29 | Project proposal |
 | November 3 | No class: Election Day |
-| November 5 | Project proposal; Lab 3 due and Lab 4 released |
-| November 17 | Guest lecture: TEEs and confidential LLM serving |
+| November 12 | Lab 3 due and Lab 4 released |
+| November 17 | Guest lecture: oblivious RAM (ORAM) |
 | November 19 | Quiz 2 |
-| November 24 | ORAM, TEEs, and private AI systems; Lab 4 oral-check window |
+| November 24 | Network privacy and contextual integrity; Lab 4 oral-check window |
 | November 25-29 | Thanksgiving recess |
 | December 1 and 3 | Guest lectures; Lab 4 due December 3 |
 | December 8 | Poster/demo session, last class, and final report |
