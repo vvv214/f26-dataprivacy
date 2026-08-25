@@ -20,10 +20,12 @@ exclude:
   - materials
   - labs
   - grading
+  - solutions
   - project/
   - note.md
   - Gemfile
   - Gemfile.lock
+  - README.md
   - AGENTS.md
   - GEMINI.md
   - CLAUDE.md

@@ -9,13 +9,15 @@ Published site:
 ## Public pages
 
 - `index.md`
+- `overview.md`
+- `assets/images/` (source-grounded overview images)
 - `schedule.md`
 - `syllabus.md`
 - `lab.md`
 - `project.md`
+- `arena.md` (Lab 3 and Lab 6 controlled arenas)
 - `project-rubric.md`
 - `project-present.md`
-- `oral.md`
 - `policy.md`
 
 ## Lab files

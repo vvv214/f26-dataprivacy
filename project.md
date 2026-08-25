@@ -3,109 +3,191 @@
 
 # Project
 
-The final project is meant to help students go deeper on one privacy topic without turning the course into a full research seminar. The strongest undergraduate projects are usually well-scoped, technically correct, and honest about limitations. The project develops through a build-break-repair-transfer cycle rather than one final submission.
+<p class="overview-back"><a href="index.html">Back to the course homepage</a></p>
+
+The final project is an open opportunity to go deeper on a privacy topic. You
+choose the question, method, and form of the contribution. Strong undergraduate
+projects are well scoped, technically correct, supported by evidence, and
+honest about limitations.
+
+There is no project leaderboard, arena, or required peer attack. Some labs use
+hidden evaluation or controlled arenas; the project does not.
 
 ## Project scope
 
 Projects should connect to one or more course themes:
 
-- privacy attacks and auditing
-- differential privacy
-- privacy in machine learning systems
-- privacy-enhancing technologies such as MPC, HE, TEE, or network privacy
+- privacy attacks and auditing;
+- differential privacy;
+- privacy in machine-learning or AI systems; or
+- privacy-enhancing technologies such as secure multi-party computation (MPC),
+  homomorphic encryption (HE), trusted execution environments (TEEs), or
+  network privacy.
 
-Projects do not need to be novel research. A strong project can reproduce an existing result, compare methods carefully, build a small prototype, or apply a known method to a new setting.
+Novel research is not required. A careful reproduction, useful negative result,
+or well-supported comparison can be as strong as a new prototype.
 
-## Recommended project tracks
+## Possible project formats
 
-- **Replication + extension**: reproduce one paper, system, or benchmark, then add one meaningful extension or ablation.
-- **Comparative evaluation**: compare several privacy attacks or defenses on a shared task and explain the trade-offs.
-- **Build / application**: implement a small privacy-aware tool, pipeline, or demo and evaluate where it works and where it breaks.
+- **Replication and extension**: reproduce a paper, system, or benchmark, then
+  add a meaningful extension, ablation, or new setting.
+- **Comparative evaluation**: compare privacy attacks, defenses, or tools on a
+  shared task and explain the trade-offs.
+- **Build or application**: implement a small privacy-aware tool, pipeline, or
+  demo and evaluate where it works and fails.
+- **Audit or case study**: investigate a concrete system, dataset, or privacy
+  claim using a clearly defined threat model and reproducible evidence.
+- **Analytical project**: study a theoretical, legal-technical, measurement, or
+  design question when the proposed method supports a rigorous conclusion.
 
-## Project cycle
-
-1. **Build**: create a working baseline and a claim that can be checked against code, data, and outputs.
-2. **Break**: exchange a frozen challenge bundle with another team. The reviewing team produces one bounded, reproducible failure or an evidence-backed clean or insufficient finding.
-3. **Repair**: explain the root cause, make a focused repair, and add a regression test. The repair may narrow the original claim.
-4. **Transfer**: apply the system and its checks to one changed dataset, threat model, tool boundary, or operating condition.
-
-The break exchange is a formative course activity. The instructor will scope and pair the exchanges; teams are not expected to audit an arbitrary large repository or reveal private data. The final individual [oral defense](oral.html) checks ownership of selected decisions.
+These are examples, not tracks. Other formats are welcome when the proposal
+defines a feasible question and a credible way to evaluate it.
 
 ## Team policy
 
 - Teams of up to 2 are allowed.
 - Individual projects are welcome and may have narrower scope.
-- Teams of 2 are expected to show broader execution than individuals, but the grading standard is still correctness, clarity, and evidence rather than raw project size.
+- Teams of 2 are expected to show broader execution than individuals, but the
+  standard remains correctness, clarity, and evidence rather than raw size.
 - Every submission must include a short contribution statement for each member.
 
 ## Milestones at a glance
 
 | Milestone | Week(s) | Format | Weight |
-|---|---|---|---|
-| Topic check-in | 7 | one-page memo or lightning talk | 5% |
-| Proposal | 10 | written plan (1-2 pages) | 5% |
-| Poster / demo | 15 | poster-style presentation or live demo | 5% |
+|---|---|---|---:|
+| Topic check-in | 7 | one-page memo or lightning talk | 3% |
+| Proposal | 10 | written technical plan | 5% |
+| Progress checkpoint | 12 | working artifact or evidence package and update | 7% |
+| Poster/demo | 15 | poster-style presentation or live demo | 5% |
 | Final report | 16 | written report | 10% |
 
-For milestone logistics, see [project milestone guide](project-present.html).
-For grading details, see [project rubric](project-rubric.html).
+For milestone logistics, see the [project milestone guide](project-present.html).
+For grading details, see the [project rubric](project-rubric.html).
 
-## Suggested project directions
+During the Week 15 poster/demo sessions, each student also completes the second
+brief individual written artifact check using an instructor-selected excerpt
+from the team's project. It counts toward participation, not the project grade.
 
-- Compare extraction or membership inference attacks across simple model settings.
-- Benchmark privacy / utility trade-offs for DP training on a small task.
+## Suggested directions
+
+- Compare extraction or membership-inference attacks across simple model
+  settings.
+- Benchmark privacy-utility trade-offs for DP training on a small task.
 - Audit the privacy risks of a logging, telemetry, or recommendation workflow.
-- Compare MPC, HE, and TEE for a toy inference or analytics pipeline.
-- Study privacy risks in RAG, agent traces, or retrieval logs using a scoped benchmark.
+- Compare MPC, HE, and TEEs for a toy inference or analytics pipeline.
 - Build a small teaching demo that illustrates a privacy mechanism or attack.
+- Build a claim-verification tool that connects natural-language conclusions to
+  code, data, logs, and executable evidence.
+
+### LLM and agent privacy
+
+Assistants that carry memory, retrieve documents, and call tools create privacy
+surfaces that classical threat models do not cover. Lab 3 attacks these systems
+under a fixed contract; a project can go further, take the defender's side, or
+measure something the lab only samples. All of these are feasible on small
+open models or a bounded API budget with synthetic data.
+
+- **Memory isolation under adversarial use**: plant canaries in one session or
+  user profile and measure recovery from another. Compare isolation strategies
+  (per-user namespaces, summarization, retrieval filters) on both leakage and
+  assistant usefulness.
+- **Indirect prompt injection as an exfiltration channel**: measure how often a
+  planted instruction in a retrieved document reaches a tool that can send or
+  write. The interesting variable is tool permission design, not phrasing.
+- **What actually leaks from RAG**: distinguish verbatim document disclosure,
+  paraphrased disclosure, and membership evidence about the index. State what a
+  document-level guarantee would require and whether your defense provides it.
+- **Deletion and unlearning for assistant memory**: after a deletion request,
+  test whether the fact survives in summaries, embeddings, caches, or logs.
+- **Agent traces and telemetry**: audit what a trace, log, or eval dataset
+  captures; build a scrubber and report its false-negative and false-positive
+  rates rather than examples.
+- **PII redaction filters under stress**: measure where detectors fail
+  (unusual name forms, non-English text, indirect identifiers, encodings) and
+  what that implies for systems that rely on them.
+- **LLM-assisted re-identification**: compare an LLM inference pipeline against
+  a classical linkage baseline on the same synthetic population. The question is
+  whether the capability changes the risk, and by how much.
+- **Shared-infrastructure side channels**: study whether response timing or
+  cache behavior reveals another tenant's prompt prefix in a locally hosted
+  serving stack. Ambitious; narrow the claim carefully.
+- **DP for text pipelines**: DP fine-tuning or DP synthetic text on a small
+  model, reporting the utility cost honestly at usable privacy parameters.
 
 ## Scope guardrails
 
 - Avoid projects that depend on frontier-scale training or expensive compute.
 - Prefer reproducible datasets, lightweight models, and a clear baseline.
-- If you choose an ambitious topic, narrow the evaluation rather than overpromising.
-- A careful negative result is acceptable if the execution and analysis are strong.
+- If the topic is ambitious, narrow the evaluation rather than overpromising.
+- A careful negative or inconclusive result is acceptable when the execution
+  and analysis are strong.
 
 ## Evidence expectations
 
-Strong projects make the evidence easy to audit. In the proposal and final report, be concrete about:
+The right evidence depends on the project. Define it in the proposal and make
+it easy to audit in the final report. Where relevant, report:
 
-- **Scale**: report dataset size, number of prompts or queries, number of trials, number of seeds, and any train/test split.
-- **Threat model**: state who the attacker is, what they observe, what they are allowed to query, and what counts as a privacy failure.
-- **Baselines**: compare against at least one simple baseline. If your project is a defense, include a no-defense or weak-defense condition.
-- **Uncertainty**: use repeated runs, error bars, confidence intervals, or exact count tables when the result depends on sampling.
-- **Artifacts**: include enough detail for review: code link if appropriate, configs, prompts, judge prompts, representative logs, or example outputs. Do not include private student or sensitive data.
-- **Failures and repairs**: include the challenge input, root-cause evidence, repair, and a regression test. A clean or insufficient-evidence result is acceptable when justified.
-- **Transfer**: distinguish what generalized to the changed setting from what still required new public assumptions, configuration, or evidence.
-- **Visuals**: figures and tables should be readable without zooming. Captions should explain the takeaway, not just name the plot.
+- **Scale**: dataset size, prompts or queries, trials, seeds, and data splits.
+- **Threat model**: the protected asset, attacker, observations, capabilities,
+  and failure condition.
+- **Baselines**: at least one meaningful point of comparison, including a
+  no-defense or weak-defense condition for defense projects when appropriate.
+- **Uncertainty**: repeated runs, error bars, confidence intervals, sensitivity
+  analysis, or exact counts when sampling matters.
+- **Artifacts**: code, configs, prompts, representative logs, examples, proofs,
+  or other material needed to check the result. Do not publish sensitive data.
+- **Limitations**: failed cases, unsupported claims, and conditions under which
+  the result may not generalize.
+- **Visuals**: readable figures and tables whose captions explain the takeaway.
 
 Be careful with privacy claims:
 
-- A heuristic defense is fine, but do not call it differential privacy unless you define adjacency, sensitivity or clipping/public bounds, privacy accounting, and the released output.
-- For RAG systems, adding noise to retrieval scores and returning raw private documents is not the same thing as document-level DP.
-- For side-channel projects, avoid random splits that leak information across the same session, capture, user, or trace. Use grouped splits when the threat model requires generalization.
-- If you use an LLM judge, validate it with examples, manual spot checks, or a clear calibration procedure.
+- Do not call a heuristic defense differential privacy unless you define the
+  released output, adjacency, sensitivity (or clipping and public bounds), and
+  privacy accounting.
+- For RAG systems, adding noise to retrieval scores while returning raw private
+  documents is not document-level DP.
+- For side-channel projects, use grouped splits when random splits would leak
+  information across the same user, session, capture, or trace.
+- If you use an LLM judge, validate it with examples, manual checks, or a clear
+  calibration procedure.
+- For attacks on LLM or agent systems, count a leak only when a planted secret
+  is verified. A refused request that was talked around, a plausible-looking
+  name, or a guessed value is not evidence. Report the query and token budget,
+  the number of attempts, and how many independent targets you tested, since a
+  single lucky transcript says almost nothing.
 
 ## Proposal and final report template
 
-Use this structure for the proposal, then expand it for the final report.
+Use this structure for the proposal, then expand it as appropriate for the
+final report.
 
-1. **Title + team**: project title, members, and roles.
-2. **Motivation**: what problem you are studying and why it matters.
-3. **Setting / threat model**: what data, model, or system you consider and what privacy risk you focus on.
-4. **Related work**: the main prior work you build on.
-5. **Approach**: what you will implement, compare, or analyze.
-6. **Evaluation plan**: datasets, metrics, baselines, and what evidence will count as success.
-7. **Break and repair plan**: what artifact another team can challenge and what regression evidence a repair should produce.
-8. **Transfer plan**: one related condition that tests whether the system generalizes.
-9. **Scope control**: what you will leave out if time or compute becomes tight.
-10. **Evidence log**: expected sample/query/trial counts, splits, seeds, artifacts, and examples you will report.
-11. **Contribution statement**: who is doing what.
+1. **Title and team**: project title, members, and roles.
+2. **Question and motivation**: what you are studying and why it matters.
+3. **Setting or threat model**: data, model, system, protocol, or analytical
+   setting and the privacy property of interest.
+4. **Related work**: the main work or tools you build on.
+5. **Approach**: what you will implement, compare, measure, prove, or analyze.
+6. **Evaluation plan**: evidence, datasets, metrics, baselines, and criteria for
+   a supported, unsupported, or inconclusive result.
+7. **Risks and limitations**: likely validity, privacy, engineering, compute, or
+   data constraints.
+8. **Scope and execution plan**: milestones, fallback scope, and what will be
+   left out if time becomes tight.
+9. **Evidence log**: expected counts, splits, seeds, artifacts, and examples,
+   where applicable.
+10. **Contribution statement**: who is doing what.
 
 ## Deliverable expectations
 
-- **Topic check-in**: a feasible idea with enough technical detail to get feedback early.
-- **Proposal**: a concrete build, evaluation, break, and transfer plan with realistic scope.
-- **Break exchange**: a compact challenge bundle and one reproducible, evidence-backed review of another team's frozen artifact.
-- **Poster / demo**: clear communication of the question, evidence, failure, repair, and remaining limitations.
-- **Final report**: technical write-up covering the complete cycle, transfer result, evidence, and limitations.
+- **Topic check-in**: a feasible idea with enough technical detail for useful
+  feedback.
+- **Proposal**: a concrete method and evaluation plan with realistic scope.
+- **Progress checkpoint**: meaningful technical progress, initial evidence, a
+  reproducible snapshot, and a revised plan for the remaining work.
+- **Poster/demo**: a clear account of the question, method, evidence, and
+  limitations.
+- **Final report**: a focused technical write-up whose claims match the evidence.
+- **AI Decision Ledger**: include one with any milestone materially shaped by
+  AI. For each of 5-10 consequential decisions, record the suggestion received,
+  how it was checked, and what was decided.

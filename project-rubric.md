@@ -3,66 +3,82 @@
 
 # Project rubric
 
-The course project contributes **25%** of the course grade, split across four milestones:
+<p class="overview-back"><a href="index.html">Back to the course homepage</a></p>
 
-- **Topic check-in (5%)**
+The open project contributes **30%** of the course grade, split across five
+milestones:
+
+- **Topic check-in (3%)**
 - **Proposal (5%)**
-- **Poster / demo (5%)**
+- **Progress checkpoint (7%)**
+- **Poster/demo (5%)**
 - **Final report (10%)**
 
-For milestone logistics and expectations, see [project milestone guide](project-present.html).
+Projects are assessed against their approved question, method, and evidence.
+There is no project competition or common leaderboard. For logistics, see the
+[project milestone guide](project-present.html).
 
-## 1. Topic check-in (5 points)
+## 1. Topic check-in (3 points)
 
-| Criteria | Points | Description |
-|---|---|---|
-| Relevance | 2 | The idea clearly fits the course and identifies a concrete privacy question. |
-| Feasibility | 2 | The scope is realistic for one semester and the available tools. |
-| Planning | 1 | The memo or talk identifies an initial path, not just a broad topic area. |
+| Criterion | Points | Description |
+|---|---:|---|
+| Privacy question | 1 | The idea fits the course and identifies a concrete question. |
+| Feasibility | 1 | The scope is realistic for the remaining weeks and available resources. |
+| Initial plan | 1 | The memo or talk identifies a technical path, not just a broad topic. |
 
 ## 2. Proposal (5 points)
 
-| Criteria | Points | Description |
-|---|---|---|
-| Problem framing | 2 | Clear motivation, setting, and threat model. |
-| Method and baselines | 2 | Specific plan for what will be implemented, compared, or measured. |
-| Scope control | 1 | Realistic milestones, risks, and fallback plan. |
+| Criterion | Points | Description |
+|---|---:|---|
+| Question and setting | 1 | The objective, motivation, and relevant privacy setting or threat model are clear. |
+| Grounding | 1 | The proposal identifies relevant prior work, tools, data, or technical assumptions. |
+| Method and evaluation | 2 | The planned implementation, analysis, proof, comparison, evidence, and baselines can answer the question. |
+| Feasibility and scope | 1 | The timeline, risks, fallback scope, and team responsibilities are realistic. |
 
-## 3. Poster / demo (5 points)
+## 3. Progress checkpoint (7 points)
 
-| Criteria | Points | Description |
-|---|---|---|
-| Technical content | 2 | The core question, method, and evidence are understandable and technically sound. |
-| Break and repair | 1 | The team shows a reproducible challenge, root cause, and repair or a justified clean/insufficient finding. |
-| Results and honesty | 1 | The team shows actual results, limitations, and residual risk without overclaiming. |
-| Communication and contributions | 1 | The presentation is clear and team member roles are visible. |
+| Criterion | Points | Description |
+|---|---:|---|
+| Technical progress | 2 | A working artifact, analysis, proof outline, dataset, or equivalent result shows substantial progress. |
+| Preliminary evidence | 2 | Initial results, comparisons, failures, or inconclusive findings are relevant to the approved question. |
+| Reproducibility | 1 | Versions, inputs, commands, assumptions, and current outputs are recorded as appropriate. |
+| Interpretation | 1 | The team distinguishes what the evidence supports from what remains uncertain. |
+| Revised plan | 1 | The remaining work and any scope changes are specific and justified. |
 
-## 4. Final report (10 points)
+## 4. Poster/demo (5 points)
 
-| Criteria | Points | Description |
-|---|---|---|
-| Technical correctness | 3 | Methods match the stated threat model; privacy claims, DP claims, and metrics are technically justified. |
-| Evidence, failure, and repair | 3 | Results include concrete scale and baselines plus a reproducible challenge, root-cause analysis, repair, and regression evidence. |
-| Transfer and limitations | 2 | The changed setting tests generalization, and the report states what transferred, what did not, and the residual risks. |
-| Writing and artifacts | 2 | The report is organized, properly cited, and supported by clear figures, tables, configs, tests, and contribution notes. |
+| Criterion | Points | Description |
+|---|---:|---|
+| Technical substance | 2 | The question, method, and core result are understandable and technically sound. |
+| Evidence | 1 | The presentation shows concrete results or analytical support rather than only a proposed idea. |
+| Clarity | 1 | The visual or live presentation is readable, focused, and well organized. |
+| Limitations and questions | 1 | The team answers questions accurately and states limitations without overclaiming. |
+
+## 5. Final report (10 points)
+
+| Criterion | Points | Description |
+|---|---:|---|
+| Technical execution | 3 | The method is correctly implemented or carried out and fits the stated question and assumptions. |
+| Evidence and baselines | 3 | Results use appropriate comparisons, scale, uncertainty, and auditable evidence. |
+| Analysis and limitations | 2 | Conclusions match the evidence and address failures, residual risks, and threats to validity. |
+| Writing and presentation | 1 | The report is organized, cited, and supported by readable figures or tables. |
+| Artifacts and contributions | 1 | Supporting materials and team contributions are documented appropriately. |
 
 ## Additional notes
 
-1. **Novelty is not required**
-   - This is an undergraduate course project, not a conference submission.
-   - Strong reproduction, benchmarking, or application projects can earn top marks.
-2. **Claims should match evidence**
-   - A narrow but carefully tested claim is stronger than a broad claim with thin evidence.
-   - Be precise with differential privacy, RAG privacy, side-channel generalization, and LLM-judge results.
-3. **Auditability matters**
-   - Reports should include enough detail to check the result: counts, splits, seeds, prompts, configs, examples, or logs as appropriate.
-   - If code or artifacts are shared, they should support the report without exposing private or sensitive data.
-4. **Visuals count as communication**
-   - Figures and tables should be readable and should make the main comparison or failure case easy to see.
-   - Visual polish cannot replace weak evidence, but unclear visuals can make strong work hard to evaluate.
-5. **Individual vs. group**
-   - Individuals may submit narrower projects.
-   - Teams of 2 should show either broader experiments, stronger comparisons, or a more polished system.
-6. **Contribution statements**
-   - Every project submission should include a short contribution note for each member.
-   - If there is a serious contribution imbalance, grades may be adjusted.
+1. **Novelty is not required.** Strong reproduction, benchmarking, audit,
+   analytical, or application projects can earn full credit.
+2. **Claims should match evidence.** A narrow, carefully tested conclusion is
+   stronger than a broad claim with thin support.
+3. **Auditability matters.** Include counts, splits, seeds, prompts, configs,
+   examples, derivations, or logs as appropriate to the project.
+4. **Different formats need different evidence.** An implementation may need
+   tests and benchmarks; an empirical study needs a defensible design; an
+   analytical project needs precise assumptions and reasoning.
+5. **Visuals support communication.** Figures and tables should make the main
+   comparison or conclusion easy to see, but polish cannot replace evidence.
+6. **Individual and group scope may differ.** Individuals may submit narrower
+   projects. Teams of 2 should show broader experiments, stronger comparisons,
+   or a more complete system.
+7. **Contribution statements are required.** Substantial contribution
+   imbalances may lead to adjusted individual grades.
