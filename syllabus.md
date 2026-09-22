@@ -44,11 +44,12 @@ the data? This course studies concrete privacy attacks, practical defenses, and
 the engineering contracts that connect privacy claims to data, code,
 configuration, accounting, and tests.
 
-We begin with extraction, membership inference, linkage, and reconstruction.
-We then develop differential privacy and privacy-utility trade-offs, private
+We begin with privacy attacks, then study ML security threats and defenses
+before returning to anonymization and its limits. We then develop differential
+privacy and privacy-utility trade-offs, private
 machine learning, synthetic data, and privacy-enhancing technologies including
 secure multi-party computation, homomorphic encryption, trusted execution
-environments, and network privacy tools. The course is designed for
+environments, and oblivious RAM. The course is designed for
 undergraduates with the preparation listed below and emphasizes technical
 judgment, reproducible evidence, and clear communication rather than
 graduate-level novelty.
@@ -189,6 +190,20 @@ a claim using code, data, or a system description. An instructor-supplied
 formula sheet and a practice set will be provided before each quiz. The covered
 topics and any other permitted basic supplies will be announced in advance.
 
+The planned coverage follows the revised lecture schedule:
+
+- Quiz 1 (October 15): privacy attacks, ML security, anonymization, and DP
+  definitions and sensitivity, through the October 1 lecture. Laplace and
+  Gaussian mechanisms are taught afterward and are not included.
+- Quiz 2 (November 19): DP mechanisms, composition and accounting, private
+  learning, cryptography, and introductory MPC (garbled circuits and oblivious
+  transfer), through the November 12 lecture. MPC secret sharing and security
+  models, and homomorphic encryption, are taught afterward and are not included.
+
+Guest lectures and optional readings are not part of these quiz scopes.
+If lectures move again, the announced scope will reflect material actually
+covered with time to prepare.
+
 Students with an approved absence will receive an equivalent makeup
 arrangement. The makeup may use different examples while assessing the same
 skills.
@@ -308,8 +323,10 @@ through [Just Report It](https://justreportit.virginia.edu/).
 | Date | Course plan |
 |---|---|
 | August 25 | First class |
-| September 10 | Lab 1 released |
-| September 24 | Lab 1 due and Lab 2 released |
+| September 8 | Privacy attacks completed |
+| September 10 | ML security begins; Lab 1 released |
+| September 22 | No class |
+| September 24 | ML security continues; Lab 1 due and Lab 2 released |
 | October 6 | No class: Fall Reading Days |
 | October 8 | In-class project pitch presentations |
 | October 13 | Guest lecture: TEEs and confidential LLM serving |
@@ -320,10 +337,17 @@ through [Just Report It](https://justreportit.virginia.edu/).
 | November 12 | Lab 3 due and Lab 4 released |
 | November 17 | Guest lecture: oblivious RAM (ORAM) |
 | November 19 | Quiz 2 |
-| November 24 | Network privacy and contextual integrity; Lab 4 oral-check window |
+| November 24 | MPC: secret sharing and security models; Lab 4 oral-check window |
 | November 25-29 | Thanksgiving recess |
-| December 1 and 3 | Guest lectures; Lab 4 due December 3 |
+| December 1 | Guest lecture: privacy in industry |
+| December 3 | Homomorphic encryption and private computation; Lab 4 due |
 | December 8 | Poster/demo session, last class, and final report |
+
+Local DP, zero-knowledge proofs, verifiable computation, and network privacy
+are optional extensions rather than scheduled core lectures. The September 22
+class is canceled, and subsequent regular lectures move to the next available
+lecture slot, using the former December 3 review slot. Guest lectures, quizzes,
+and lab and project deadlines are unchanged.
 
 The [full schedule](schedule.html) is tentative. Exact deadlines will appear in
 Canvas. Changes after the start of the term will be communicated in writing and
