@@ -29,13 +29,40 @@ There is no project competition or common leaderboard. For logistics, see the
 
 ## 2. Proposal (5 points)
 
-| Criterion | Points | Description |
-|---|---:|---|
-| Problem and threat model | 1 | The objective, motivation, protected asset, and relevant privacy setting or threat model are clear. |
-| Innovation and grounding | 1 | The proposal identifies relevant prior work and explains the distinct capability, attack, defense, measurement, or insight it will add. |
-| Current technical work | 1 | A concrete artifact, method, experiment, proof component, or other current work demonstrates that the project has moved beyond an idea. |
-| Evidence and evaluation | 1 | Initial evidence or a documented failure is presented, and the remaining baselines, cases, and decision criteria can test the main claim. |
-| Remaining scope | 1 | The revised plan, risks, fallback scope, reproducibility needs, and team responsibilities are realistic for the final weeks. |
+The proposal has **10 checks worth 0.5 points each**. Each row below is worth
+1 point: 0.5 for check A and 0.5 for check B. The total is 5 points, contributing
+5% of the course grade.
+
+| Criterion | Check A: 0.5 points | Check B: 0.5 points |
+|---|---|---|
+| Problem and threat model | Names the target user or system, the protected data or asset, and the concrete problem the project will address. | Specifies the attacker or unwanted disclosure, what can be observed or queried, and the trust boundary and failure condition. A theoretical or non-adversarial project may instead specify its privacy property, protected unit, released information, and assumptions. |
+| Innovation and grounding | Names and cites at least one closest existing method, system, or result, and identifies a specific limitation relevant to this project. | States one proposed technical difference from that baseline and gives a concrete example, testable hypothesis, or formal statement that would distinguish the contribution from it. The difference must address the identified limitation. |
+| Current technical work | Describes the proposed method's inputs, outputs, and main processing or reasoning steps, including where private information is accessed or released when applicable. | Provides one inspectable current artifact, such as a code snapshot, experiment log, instrumented dataset, or proof component. Points to the relevant file, output, or excerpt and labels what is completed and what is planned. |
+| Evidence and evaluation | Reports at least one current test, measurement, worked example, or checked proof step. Gives the setup, observed result or documented failure, and what it supports or leaves unresolved. | Specifies the remaining test cases or data, at least one baseline, a primary metric or formal verification target, and an explicit rule for deciding whether the main claim is supported, weakened, or inconclusive. Includes the planned test scale, splits, and seeds when applicable. |
+| Remaining scope | Lists at least two dated remaining milestones with a deliverable for each, leading to the final submission. Assigns an owner to each task, including for an individual project. | Names at least one technical, data, or compute risk, a condition that would trigger a scope change, and the concrete fallback deliverable. Identifies the code/configuration, data, or assumptions needed to reproduce or check the final evidence. |
+
+**How points are assigned**
+
+- Award **0.5** for a check when all its listed components are present,
+  specific to the project, and technically consistent with the stated setting.
+  Current-work and evidence claims must be supported by the cited artifact or
+  excerpt. Otherwise award **0** for that check. This gives each row a score of
+  **0, 0.5, or 1**.
+- Record each check separately. For a check receiving 0, identify the missing
+  or unsupported component and its location in the submission, or state that
+  it is absent. Sum the ten checks to obtain the score.
+- A documented failure or negative result can earn full evidence credit when
+  its setup, observation, and interpretation meet the check. At this milestone,
+  the proposed improvement may remain unproven; a testable evaluation plan and
+  accurate current status satisfy the corresponding checks.
+- Code volume, visual polish, model size, and a positive result do not add
+  proposal points. Choose evidence appropriate to the format: a theory project
+  can supply a checked derivation or counterexample; a system or empirical
+  project can supply a test, log, or pilot measurement.
+
+In the 1-2 page proposal, make these checks easy to locate. Supporting artifacts
+may be identified by a link, filename and version, or a labeled excerpt; ten
+separate sections are not required.
 
 ## 3. Poster/demo (10 points)
 

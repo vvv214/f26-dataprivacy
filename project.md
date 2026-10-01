@@ -156,6 +156,12 @@ final report. Because the proposal is submitted in Week 10, it must distinguish
 completed work from planned work and include current evidence or a concrete
 artifact snapshot.
 
+For the proposal, use the
+[ten scoring checks](project-rubric.html#2-proposal-5-points) to make the required
+information easy to locate. Each check is worth 0.5 points. Link or label the
+current artifact and initial evidence, and include dated remaining milestones,
+task owners, and a trigger for switching to the fallback scope.
+
 1. **Title and team**: project title, members, and roles.
 2. **Target and setting**: who or what system is affected, and what workflow or
    scientific question will the project change?
