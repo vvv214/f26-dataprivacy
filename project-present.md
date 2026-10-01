@@ -47,8 +47,6 @@ work to identify problems before the final weeks.
 **Expectations**
 
 - Write 1-2 pages.
-- Use the [ten checks in the proposal rubric](project-rubric.html#2-proposal-5-points)
-  to organize the submission. Each check is worth 0.5 points.
 - Include the problem, motivation, related work, innovation claim, technical
   design, evaluation plan, and scope control.
 - Separate completed work from planned work. Include a current artifact,
@@ -62,9 +60,7 @@ work to identify problems before the final weeks.
   inconclusive.
 - Include expected datasets, metrics, baselines, sample or query counts, splits,
   seeds, and artifacts when applicable.
-- Include at least two dated remaining milestones with deliverables and task
-  owners, a risk with a scope-change trigger and fallback deliverable, and a
-  contribution statement for each member.
+- Include a timeline, fallback scope, and contribution statement for each member.
 
 ## 3. Poster/demo (Week 16, 10%)
 
