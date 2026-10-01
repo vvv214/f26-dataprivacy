@@ -192,13 +192,12 @@ topics and any other permitted basic supplies will be announced in advance.
 
 The planned coverage follows the revised lecture schedule:
 
-- Quiz 1 (October 15): privacy attacks, ML security, anonymization, and DP
-  definitions and sensitivity, through the October 1 lecture. Laplace and
-  Gaussian mechanisms are taught afterward and are not included.
+- Quiz 1 (October 15): privacy attacks, ML security, anonymization, and the DP
+  material actually covered through the October 1 lecture. The final topic
+  list will be confirmed after that class.
 - Quiz 2 (November 19): DP mechanisms, composition and accounting, private
-  learning, cryptography, and introductory MPC (garbled circuits and oblivious
-  transfer), through the November 12 lecture. MPC secret sharing and security
-  models, and homomorphic encryption, are taught afterward and are not included.
+  learning, cryptography, and MPC, through the November 12 lecture. Homomorphic
+  encryption, taught afterward, is not included.
 
 Guest lectures and optional readings are not part of these quiz scopes.
 If lectures move again, the announced scope will reflect material actually
@@ -325,8 +324,11 @@ through [Just Report It](https://justreportit.virginia.edu/).
 | August 25 | First class |
 | September 8 | Privacy attacks completed |
 | September 10 | ML security begins; Lab 1 released |
-| September 22 | No class |
-| September 24 | ML security continues; Lab 1 due and Lab 2 released |
+| September 17 | Poisoning, backdoors, and ML security defenses |
+| September 22 | No class: break |
+| September 24 | Anonymization, linkage, and k-anonymity; Lab 1 due and Lab 2 released |
+| September 29 | Differential privacy: definitions |
+| October 1 | Differential privacy (continued) |
 | October 6 | No class: Fall Reading Days |
 | October 8 | In-class project pitch presentations |
 | October 13 | Guest lecture: TEEs and confidential LLM serving |
@@ -337,17 +339,19 @@ through [Just Report It](https://justreportit.virginia.edu/).
 | November 12 | Lab 3 due and Lab 4 released |
 | November 17 | Guest lecture: oblivious RAM (ORAM) |
 | November 19 | Quiz 2 |
-| November 24 | MPC: secret sharing and security models; Lab 4 oral-check window |
+| November 24 | Homomorphic encryption and private computation; Lab 4 oral-check window |
 | November 25-29 | Thanksgiving recess |
 | December 1 | Guest lecture: privacy in industry |
-| December 3 | Homomorphic encryption and private computation; Lab 4 due |
+| December 3 | Privacy applications and review; Lab 4 due |
 | December 8 | Poster/demo session, last class, and final report |
 
 Local DP, zero-knowledge proofs, verifiable computation, and network privacy
-are optional extensions rather than scheduled core lectures. The September 22
-class is canceled, and subsequent regular lectures move to the next available
-lecture slot, using the former December 3 review slot. Guest lectures, quizzes,
-and lab and project deadlines are unchanged.
+are optional extensions rather than scheduled core lectures. The schedule
+reflects security material completed September 17, anonymization beginning
+September 24, and DP definitions introduced September 29 and continued
+October 1; September 22 is a break.
+December 3 is a flexible session for applications, unfinished material,
+and review. Guest lectures, quizzes, and lab and project deadlines are unchanged.
 
 The [full schedule](schedule.html) is tentative. Exact deadlines will appear in
 Canvas. Changes after the start of the term will be communicated in writing and
