@@ -331,7 +331,7 @@ through [Just Report It](https://justreportit.virginia.edu/).
 | October 1 | Differential privacy (continued) |
 | October 6 | No class: Fall Reading Days |
 | October 8 | In-class project pitch presentations |
-| October 13 | Guest lecture: TEEs and confidential LLM serving |
+| October 13 | Guest lecture: privacy in industry |
 | October 15 | Quiz 1 |
 | October 22 | Lab 2 due and Lab 3 released |
 | October 29 | Project proposal |
@@ -341,7 +341,7 @@ through [Just Report It](https://justreportit.virginia.edu/).
 | November 19 | Quiz 2 |
 | November 24 | Homomorphic encryption and private computation; Lab 4 oral-check window |
 | November 25-29 | Thanksgiving recess |
-| December 1 | Guest lecture: privacy in industry |
+| December 1 | Guest lecture: TEEs and confidential LLM serving |
 | December 3 | Privacy applications and review; Lab 4 due |
 | December 8 | Poster/demo session, last class, and final report |
 
