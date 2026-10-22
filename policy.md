@@ -13,8 +13,6 @@
 - Projects may be completed individually or in teams of up to 2.
 - High-level discussion with classmates is fine, but do not share lab code,
   filled-in tables, or polished written answers.
-- Arena submissions and private feedback may not be shared before
-  the final submission closes.
 - Every submitted assignment should clearly list permitted collaborators.
 
 ### Use of GenAI
@@ -23,13 +21,7 @@ Generative AI tools may be used for brainstorming, debugging, or polishing, but 
 
 - You remain responsible for correctness, citations, privacy, and policy compliance.
 - Do not paste private course materials or sensitive data into external tools unless explicitly permitted.
-- If GenAI materially shaped a lab submission, include an AI Decision Ledger
-  covering 3-5 consequential decisions. Project ledgers use 5-10 entries. For
-  each, record the suggestion received, how it was checked, and what was
-  decided. Complete chat transcripts are not required.
 - Quizzes must be completed without GenAI.
-- During the Lab 2 arena, systems may use only the model interface and resource
-  budget supplied for the lab.
 
 ### Quizzes
 
@@ -58,9 +50,9 @@ Generative AI tools may be used for brainstorming, debugging, or polishing, but 
 - Each student has 3 late days for the semester.
 - Late days may be used on Labs 1 and 3 and the project proposal.
 - No more than 2 late days may be used on a single assignment.
-- Late days may not be used for quizzes, the synchronized Lab 2 arena
-  submission, the in-class project pitch, the Lab 4 individual oral check, the
-  poster/demo session, final reports, or end-of-semester deadlines.
+- Late days may not be used for quizzes, the in-class project pitch, the Lab 4
+  individual oral check, the poster/demo session, final reports, or
+  end-of-semester deadlines.
 - If you have a documented conflict or a serious issue, contact the instructor as early as possible.
 
 ### Regrades
@@ -74,16 +66,6 @@ Generative AI tools may be used for brainstorming, debugging, or polishing, but 
 
 - Teams must include a short contribution statement for every project milestone.
 - Shared grades are the default, but substantial contribution imbalances may lead to adjustments.
-
-### Lab 2 arena conduct
-
-- Arena work must stay within the published lab interface, privacy budget, and
-  resource limits.
-- Deliberate malware, persistence, resource exhaustion, credential access, and
-  attempts to retrieve private grading material are prohibited.
-- Students may not attempt to retrieve private arena data, hidden workloads,
-  evaluator code, or another student's submission.
-- Private feedback and another student's artifacts may not be redistributed.
 
 ## University policies and resources
 

@@ -111,8 +111,6 @@ and evidence.
 - Link code, configs, notebooks, or other artifacts when appropriate, without
   publishing sensitive data.
 - Include a short contribution statement for each team member.
-- If AI materially shaped the work, include an AI Decision Ledger with 5-10
-  consequential suggestions, how each was checked, and what was decided.
 
 Common pitfalls to avoid:
 

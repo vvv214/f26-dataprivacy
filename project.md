@@ -189,6 +189,3 @@ artifact snapshot.
 - **Final submission**: the system, tool, attack, defense, monitor, auditor, or
   research artifact, plus a focused technical report whose claims match the
   evidence.
-- **AI Decision Ledger**: include one with any milestone materially shaped by
-  AI. For each of 5-10 consequential decisions, record the suggestion received,
-  how it was checked, and what was decided.

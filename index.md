@@ -55,7 +55,7 @@ matters.
 
 ## Grading
 
-- [Labs](lab.html) (40%): four individual, equally weighted challenges covering privacy attacks, a two-agent secret arena, hidden tests, extensions to large DP codebases, and privacy-enhancing technologies.
+- [Labs](lab.html) (40%): four individual, equally weighted labs covering privacy attacks on LLMs, adversarial attacks, private data releases with DP libraries, and privacy-enhancing technologies.
 - [Project](project.html) (30%): an innovative privacy system, tool, attack, defense, monitor/auditor, or research contribution, with an in-class project pitch (10%), proposal (5%), poster/demo (10%), and final report (5%). See the [milestone guide](project-present.html) and [project rubric](project-rubric.html).
 - Quizzes (20%): two individual, in-class, closed-book paper quizzes worth 10% each.
 - Exit surveys / check-ins (10%): short individual Canvas submissions completed across the semester for completion credit.

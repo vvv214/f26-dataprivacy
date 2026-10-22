@@ -102,9 +102,10 @@ The course combines four forms of work:
 
 - Lectures and short practicals introduce attacks, mechanisms, systems, and
   evaluation methods.
-- Four equally weighted labs use privacy-attack, direct agent-arena,
-  industrial-code, and bounded open-design formats. Required systems include
-  Opacus, JAX Privacy, Google DPSynth, and MP-SPDZ. All labs are individual.
+- Four equally weighted labs cover privacy attacks on LLMs, adversarial
+  attacks on image and text models, private releases with real DP libraries,
+  and bounded open design. Required systems include JAX Privacy, Google
+  DPSynth, and MP-SPDZ. All labs are individual.
 - A team or individual project asks students to make an innovative privacy
   contribution as a system, focused tool, attack, defense, monitor/auditor, or
   research paper.
@@ -122,7 +123,7 @@ small CPU-compatible code bundles outside class.
 
 | Component | Weight | Basis |
 |---|---:|---|
-| [Labs](lab.html) | 40% | Four labs worth 10% each; selected labs use hidden cases and Lab 2 uses a direct arena |
+| [Labs](lab.html) | 40% | Four labs worth 10% each; selected labs use hidden cases |
 | [Project](project.html) | 30% | Project pitch 10%, proposal 5%, poster/demo 10%, final report 5% |
 | Quizzes | 20% | Two individual, in-class, closed-book paper quizzes at 10% each |
 | Exit surveys / check-ins | 10% | Short individual Canvas submissions graded for completion |
@@ -135,22 +136,50 @@ official syllabus.
 ### Labs
 
 All labs are completed individually. They deliberately use different work
-products: a privacy-attack runner, a two-agent secret-arena submission, a
-regression-tested library extension, and a private-computation artifact with
-an oral check.
+products: privacy experiments on supplied GPT models, adversarial attacks on
+image and text models, a private-release notebook built on JAX Privacy and
+DPSynth, and a private-computation artifact with an oral check.
+
+Lab 1's regular rubric covers a CTF warm-up (2 points) and classifier MIA (8 points).
+The warm-up awards 1 point for the flag and 1 point for the two-model loss
+comparison with evidence.
+The MIA work includes training a small classifier and shadow model on synthetic
+data, implementing two membership methods, computing threshold counts and rates,
+and building ROC curves with AUC and low-FPR results. Its 8 points cover
+training (1), confidence baseline (1), learned classifier (2), threshold evaluation (1), ROC evaluation
+(1), design philosophy (1), and method performance (1). The design philosophy
+is 3-5 sentences on design choices, shadow-data validation, and a failure mode.
+With the supplied data and settings, training
+benchmarks are 95% train accuracy and 70% test accuracy for each model.
+Each method's performance credit increases linearly from 0 at AUC 0.50 to
+0.5 points at AUC 0.60, capped at 0.5. Implementation and evaluation credit
+are separate; no minimum low-FPR TPR is required. The notebook summarizes grading.
+Keep total target, shadow, and membership-classifier training within 10 minutes
+on a standard Colab CPU runtime; no GPU is needed.
+Hidden evaluation reuses the same MIA and ROC functions on similar unpublished
+synthetic datasets. Improve the existing methods using shadow data, without
+fitting on target membership labels or hard-coding visible examples. The five
+highest-ranked submissions earn a separate +2 AUC bonus. Ranking uses the higher
+of the two methods' mean AUC across all hidden datasets; a method must return
+valid scores on every dataset. Ties use that method's mean TPR at FPR <= 1%,
+then the design philosophy. ROC checks count toward the existing implementation
+points.
+Hidden cases retain three-class probability inputs but vary data, seeds,
+sample counts, and row order. The lab's base course weight remains 10%.
+A second +2 bonus goes to the five strongest training-inference submissions,
+judged by evidence, experiment, and reasoning, including a reproducible
+comparison with an alternative explanation. The two bonus categories are
+ranked separately and can stack, for a maximum of 14/10; the denominator remains 10.
 
 Selected labs use instructor-only hidden cases in addition to visible tests;
-the number and mix of those cases are not announced. Lab 2 uses direct
-two-agent matches with a separate hidden utility evaluator. Arena rankings are
-feedback, not winner-take-all grades; course points use fixed criteria and
-instructor baselines. Some instances are intentionally clean or contain
-insufficient evidence, so a correct abstention can receive full credit.
+the number and mix of those cases are not announced. Course points use
+fixed criteria; bonus rankings are separate.
 
 | Lab | Weight | Release week | Due week |
 |---|---:|---:|---:|
-| Privacy Attack Warm-up | 10% | 3 | 5 |
-| Two-Agent Secret Arena | 10% | 5 | 9 |
-| DP Library Extension Challenge | 10% | 9 | 12 |
+| Privacy attacks on LLMs | 10% | 3 | 5 |
+| Adversarial attacks | 10% | 5 | 9 |
+| Two ways to release a sensitive dataset | 10% | 9 | 12 |
 | Compute Without Seeing | 10% | 12 | 15 |
 
 Private materials are distributed through Canvas; any course Drive link will
@@ -173,7 +202,7 @@ research insight. Publication-level novelty is not required, but the proposal
 must explain what becomes newly possible, measurable, or defensible relative
 to a meaningful baseline.
 
-The project has no leaderboard, arena, or required peer attack. The in-class
+The project has no leaderboard or required peer attack. The in-class
 project pitch occurs in Week 7, the written proposal serves as a progress and
 scope checkpoint in Week 10, and the poster/demo and final report are due in
 Week 16.
@@ -247,20 +276,14 @@ ownership.
   policy compliance.
 - Private course bundles or sensitive data may not be uploaded to external
   tools unless explicitly permitted.
-- When AI materially shapes a lab, submit an AI Decision Ledger with 3-5
-  consequential decisions. Project ledgers use 5-10 entries. Record the
-  suggestion, how it was checked, and the resulting decision. Complete chat
-  transcripts are not required.
 - Quizzes are completed without GenAI.
-- During the Lab 2 arena, systems may use only the course-provided model
-  interface and common resource budget defined by the lab specification.
 
 ## Collaboration and academic integrity
 
 Labs, quizzes, and Canvas exit surveys/check-ins are individual. Projects may
 be completed individually or in teams of up to 2. High-level discussion across
 the class is welcome, but students may not share lab code, completed tables,
-polished written answers, arena submissions, or private arena feedback. Every
+or polished written answers. Every
 submission must identify permitted collaborators; project teams must include a
 contribution statement where required.
 
@@ -275,8 +298,7 @@ submission.
 - Each student has 3 late days for the semester, with no more than 2 used on one
   assignment.
 - Late days may be used on Labs 1 and 3 and the project proposal. They may not
-  be used for the synchronized Lab 2 arena submission, the in-class project
-  pitch, the Lab 4 individual oral check, quizzes, the poster/demo session, the
+  be used for the in-class project pitch, the Lab 4 individual oral check, quizzes, the poster/demo session, the
   final report, or other end-of-semester deadlines.
 - Regrade requests must be submitted within 7 days after a grade is released
   and may result in review of the entire submission.
@@ -333,7 +355,8 @@ through [Just Report It](https://justreportit.virginia.edu/).
 | October 8 | In-class project pitch presentations |
 | October 13 | Guest lecture: privacy in industry |
 | October 15 | Quiz 1 |
-| October 22 | Lab 2 due and Lab 3 released |
+| October 22 | Lab 3 released |
+| October 23 | Lab 2 due |
 | October 29 | Project proposal |
 | November 3 | No class: Election Day |
 | November 12 | Lab 3 due and Lab 4 released |
