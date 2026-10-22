@@ -5,69 +5,95 @@
 
 <p class="overview-back"><a href="index.html">Back to the course homepage</a></p>
 
-The four labs put you in different roles: privacy attacker, agent designer,
-library maintainer, and privacy-system designer. All four labs are completed
+The four labs put you in different roles: privacy attacker, adversary,
+data publisher, and privacy-system designer. All four labs are completed
 individually. Each lab contributes 10% of the course grade, for a total of 40%.
 
 | Lab | Weight | Timing |
 |---|---:|---|
-| 1. Privacy Attack Warm-up | 10% | Weeks 3-5 |
-| 2. Two-Agent Secret Arena | 10% | Weeks 5-9 |
-| 3. DP Library Extension Challenge | 10% | Weeks 9-12 |
+| 1. Privacy attacks on LLMs | 10% | Weeks 3-5 |
+| 2. Adversarial attacks | 10% | Weeks 5-9 |
+| 3. Two ways to release a sensitive dataset | 10% | Weeks 9-12 |
 | 4. Compute Without Seeing | 10% | Weeks 12-15 |
 {: .lab-summary }
 
 The point values are equal, but the formats are intentionally different. Lab 1
-is a compact warm-up; later labs involve longer-lived systems, larger
-codebases, or more design freedom.
+starts with experiments on supplied GPT models; later labs attack image and
+text models, build private releases with real DP libraries, or give more
+design freedom.
 
-## Lab 1: Privacy Attack Warm-up
+## Lab 1: Privacy attacks on LLMs
 
-Implement one compact attack runner across small model and data privacy
-challenges. You will recover a memorized canary, evaluate membership evidence,
-link synthetic records with calibrated abstention, and test one bounded
-reconstruction claim. Randomized hidden instances change canaries, score
-calibration, missingness, candidate pools, and whether a unique conclusion is
-possible. A solved-flags display may appear after the lab closes, but speed does
-not affect the grade.
+Run the supplied GPT models to study training-data extraction and memorization.
+For membership inference, train a small classifier and shadow
+model on synthetic data, compare confidence-based and learned methods, and
+implement threshold counts and ROC evaluation, including low-FPR metrics.
+Hidden evaluation runs the same MIA and ROC functions on new classifier
+instances, with different data, seeds, sample counts, and row order.
 
-## Lab 2: Two-Agent Secret Arena
+The 10 regular points cover the CTF warm-up (2) and classifier MIA (8).
+AI assistance is allowed. The warm-up awards 1 point for the flag and
+1 point for the two-model loss comparison with evidence.
 
-Build one small agent that both attacks and defends. Each student submits an
-agent; in each four-round match, two submissions alternate messages under the
-same model and turn budget. Each tries to induce the other to reveal a
-synthetic secret while preventing exact, punctuation-stripped, or encoded
-disclosure of its own secret. Pairings run anonymously and in both turn orders.
+Classifier MIA includes target/shadow training (1), confidence baseline (1),
+learned classifier (2), threshold counts and rates (1), ROC evaluation (1), design philosophy (1),
+and method performance (1). In 3-5 sentences, explain the method's design,
+shadow-data validation, and a failure mode considered.
+On the supplied data and settings, each target/shadow model should reach
+95% train accuracy and 70% test accuracy. Each membership method earns its
+full 0.5 performance points at AUC >= 0.60; credit increases linearly from
+0 at AUC 0.50 to 0.5 at AUC 0.60. Correct implementation and evaluation code
+are graded separately from method performance. Low-FPR TPR must be reported,
+but has no minimum performance threshold. The notebook summarizes grading.
+Keep total target, shadow, and membership-classifier training within 10 minutes
+on a standard Colab CPU runtime; no GPU is needed.
+Hidden evaluation reuses these functions on similar, unpublished synthetic
+datasets. Improve the existing methods using shadow data, without fitting on
+target membership labels or hard-coding visible examples. The top five earn
+a separate +2 AUC bonus, ranked by the higher of the two methods' mean AUC
+across all hidden datasets. A method must return valid scores on every dataset.
+Ties use that method's mean TPR at FPR <= 1%, then the design philosophy.
+ROC checks count toward the existing implementation points.
 
-The course harness owns model calls, secrets, transcripts, budgets, and
-scoring. Student code uses plain Python to construct the direct chat-completion
-request and filter its outgoing message. A public offline backend makes the
-protocol testable without a paid account, while a separate hidden benign
-evaluator checks allowed facts and secret-derived outputs. An agent that
-refuses every request may defend well but receives no utility credit.
+The training-inference bonus awards +2 to the five strongest explanations of
+how a supplied GPT was trained, judged by evidence, experiment, and reasoning.
+Include a reproducible comparison with an alternative explanation. The two
+bonus categories are ranked separately and can stack: the maximum is 14/10,
+with the base score still out of 10.
 
-The 10 points cover contract compliance and reproducibility (1), defense (3),
-offense (2), hidden benign-task utility (3), and boundary explanation (1).
-Arena rank is feedback rather than a winner-take-all grade. The target workload
-is 3-4 hours.
+## Lab 2: Adversarial attacks
 
-## Lab 3: DP Library Extension Challenge
+Can small changes to an input change a model's prediction? Implement a PGD
+evasion attack on an MNIST classifier, compare L0, L1, L2 and L∞
+budgets, and design a more efficient image attack. Then append a
+short suffix of neutral words, punctuation and special tokens to a positive
+movie review so that a fixed classifier predicts NEGATIVE: start from a greedy
+baseline, beat it, and freeze the attack to test how it transfers. Finally,
+compare data poisoning with a backdoor: plant a marker, vary the contamination
+rate, and remove the marker feature.
 
-First trace one small path through each course library:
+The 10 points cover the image evasion attack (4), the text suffix attack (4),
+and poisoning and backdoors (2). The top five in the image efficiency challenge
+and the top five in the text challenge each earn +2; the maximum is 14/10.
 
-- [Opacus](https://opacus.ai/) for private training in PyTorch;
-- [JAX Privacy](https://jax-privacy.readthedocs.io/) for sampling and privacy
-  accounting in JAX; and
-- [Google DPSynth](https://github.com/google/dpsynth) for private synthetic data.
+## Lab 3: Two ways to release a sensitive dataset
 
-Then work in one pinned repository and add an approved algorithm, mechanism, or
-algorithmic feature. Possible tracks include training mechanisms, accounting
-events or guards, synthesis and relational operations, and cross-library
-adapters. Each ticket has a published mathematical and behavioral contract.
-Your patch must include focused tests, a baseline comparison, compatibility
-notes, and a short code walkthrough. Hidden CI tests vary shapes, seeds,
-sampling and resume boundaries, schemas, optional dependencies, and unsupported
-inputs promised by the contract.
+Release a census dataset (UCI Adult) privately in two ways, with
+[JAX Privacy](https://github.com/google-parfait/jax_privacy) and
+[DPSynth](https://github.com/google-parfait/dpsynth) in one Colab notebook.
+First write DP-SGD from scratch for gradients stored as JAX pytrees: per-example
+norms, clipping, the noisy average, one step with Poisson sampling, and the
+training loop, checked against JAX Privacy's implementation. Then price it with
+an accountant: build its privacy event and calibrate the noise for a target
+ε by bisection. Finally, release a synthetic table with AIM inside
+DPSynth: choose public bins for the numerical attributes, write the
+exponential mechanism and AIM's selection step, and retrain DP-SGD on the
+public domains.
+
+All 10 points come from hidden tests on the functions you write: DP-SGD (5),
+accounting (1.5), and AIM (3.5). The five binnings with the lowest error on
+reserved data earn +2, and approved pull requests to JAX Privacy or DPSynth
+earn +1 each, up to +5; the maximum is 17/10.
 
 ## Lab 4: Compute Without Seeing
 
@@ -95,9 +121,6 @@ oral check is part of the Lab 4 grade, not a separate exam.
   answers must be the student's own work.
 - Each lab defines a compact structured result, test suite, or manifest rather
   than requiring the same report format four times.
-- When AI materially shapes a lab, include 3-5 consequential entries in an AI
-  Decision Ledger: the suggestion, how it was checked, and the decision. Full
-  chat transcripts are not required.
 
 ## Distribution
 
