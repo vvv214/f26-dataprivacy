@@ -297,9 +297,8 @@ submission.
 
 - Each student has 3 late days for the semester, with at most 2 on any one
   assignment.
-- Late days can be used on any lab or project submission. They do not apply to
-  in-class activities: quizzes, exit surveys and check-ins, the project pitch,
-  the poster/demo session, and oral checks.
+- Late days can be used on any lab or project submission, but not on in-class
+  activities.
 - Regrade requests must be submitted within 7 days after a grade is released
   and may result in review of the entire submission.
 - The result of a regrade request for a project team submission applies to the
