@@ -110,8 +110,8 @@ The course combines four forms of work:
   contribution as a system, focused tool, attack, defense, monitor/auditor, or
   research paper.
 - Two individual, in-class, closed-book paper quizzes check conceptual and
-  applied reasoning. Short individual exit surveys and check-ins are submitted
-  through Canvas across the semester.
+  applied reasoning. Short individual exit surveys are submitted through Canvas
+  across the semester.
 
 Guest lectures will connect course mechanisms to industry privacy practice and
 recent academic work. Their topics and speakers will be updated on the
@@ -126,7 +126,7 @@ small CPU-compatible code bundles outside class.
 | [Labs](lab.html) | 40% | Four labs worth 10% each; selected labs use hidden cases |
 | [Project](project.html) | 30% | Project pitch 10%, proposal 5%, poster/demo 10%, final report 5% |
 | Quizzes | 20% | Two individual, in-class, closed-book paper quizzes at 10% each |
-| Exit surveys / check-ins | 10% | Short individual Canvas submissions graded for completion |
+| Exit surveys | 10% | Short individual Canvas submissions graded for completion |
 | Total | 100% | |
 
 Final grades use the [UVA grading basis](https://virginia.service-now.com/its?id=itsweb_kb_article&sys_id=1153c16fdba41f444f32fb671d961934).
@@ -236,12 +236,11 @@ Students with an approved absence will receive an equivalent makeup
 arrangement. The makeup may use different examples while assessing the same
 skills.
 
-### Exit surveys and check-ins
+### Exit surveys
 
-Short individual exit surveys and check-ins submitted through Canvas contribute
-10%. They ask students to record a conclusion, identify a remaining question,
-interpret a small result, or check progress on a current lab or project. Each
-submission receives credit for timely, good-faith completion.
+Short individual exit surveys submitted through Canvas contribute 10%. They ask
+students to record a conclusion, identify a remaining question, or interpret a
+small result. Each submission receives credit for timely, good-faith completion.
 
 ## Materials and technology
 
@@ -280,7 +279,7 @@ ownership.
 
 ## Collaboration and academic integrity
 
-Labs, quizzes, and Canvas exit surveys/check-ins are individual. Projects may
+Labs, quizzes, and Canvas exit surveys are individual. Projects may
 be completed individually or in teams of up to 2. High-level discussion across
 the class is welcome, but students may not share lab code, completed tables,
 or polished written answers. Every

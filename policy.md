@@ -9,7 +9,7 @@
 
 ### Collaboration
 
-- Labs, quizzes, and Canvas exit surveys/check-ins are individual work.
+- Labs, quizzes, and Canvas exit surveys are individual work.
 - Projects may be completed individually or in teams of up to 2.
 - High-level discussion with classmates is fine, but do not share lab code,
   filled-in tables, or polished written answers.
@@ -36,13 +36,13 @@ Generative AI tools may be used for brainstorming, debugging, or polishing, but 
 - An approved absence receives an equivalent makeup arrangement. A makeup may
   use different examples while assessing the same skills.
 
-### Exit surveys and check-ins
+### Exit surveys
 
-- Short individual exit surveys and check-ins submitted through Canvas
-  contribute 10% of the course grade.
-- A check-in may ask for a conclusion, remaining question, interpretation of a
-  small result, or progress update on a current lab or project.
-- Check-ins receive credit for timely, good-faith completion.
+- Short individual exit surveys submitted through Canvas contribute 10% of the
+  course grade.
+- An exit survey may ask for a conclusion, a remaining question, or an
+  interpretation of a small result.
+- Exit surveys receive credit for timely, good-faith completion.
 - Contact the instructor about an extended absence.
 
 ### Late work

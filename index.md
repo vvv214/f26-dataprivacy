@@ -45,7 +45,7 @@ is ungraded and is not an enrollment requirement.
 - Time: Tuesdays and Thursdays, 2:00-3:15 PM
 - Dates: August 25-December 8, 2026
 - Canvas: [course site](https://canvas.its.virginia.edu/courses/190753)
-- Format: in-person lectures, short practicals, four varied labs, quizzes, Canvas check-ins, and a scoped final project
+- Format: in-person lectures, short practicals, four varied labs, quizzes, Canvas exit surveys, and a scoped final project
 - Syllabus: [Fall 2026 syllabus](syllabus.html)
 - Policies: [course policies](policy.html)
 
@@ -58,7 +58,7 @@ matters.
 - [Labs](lab.html) (40%): four individual, equally weighted labs covering privacy attacks on LLMs, adversarial attacks, private data releases with DP libraries, and privacy-enhancing technologies.
 - [Project](project.html) (30%): an innovative privacy system, tool, attack, defense, monitor/auditor, or research contribution, with an in-class project pitch (10%), proposal (5%), poster/demo (10%), and final report (5%). See the [milestone guide](project-present.html) and [project rubric](project-rubric.html).
 - Quizzes (20%): two individual, in-class, closed-book paper quizzes worth 10% each.
-- Exit surveys / check-ins (10%): short individual Canvas submissions completed across the semester for completion credit.
+- Exit surveys (10%): short individual Canvas submissions completed across the semester for completion credit.
 - Grading basis: we use the [UVA grading basis](https://virginia.service-now.com/its?id=itsweb_kb_article&sys_id=1153c16fdba41f444f32fb671d961934); letter-grade thresholds will appear in the [syllabus](syllabus.html).
 
 ## Schedule
