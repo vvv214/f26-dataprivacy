@@ -22,8 +22,7 @@ before committing to the full design.
 **Format**
 
 - The class devotes one full meeting to live pitches.
-- Each project receives a short timed slot; exact timing will be announced once
-  teams are finalized.
+- Each project receives a short timed slot.
 - Use one slide. All team members should be present and ready to answer a brief
   question.
 
@@ -60,7 +59,7 @@ work to identify problems before the final weeks.
   inconclusive.
 - Include expected datasets, metrics, baselines, sample or query counts, splits,
   seeds, and artifacts when applicable.
-- Include a timeline, fallback scope, and contribution statement for each member.
+- Include a timeline and fallback scope.
 
 ## 3. Poster/demo (Week 16, 10%)
 
@@ -77,7 +76,6 @@ The class holds one poster/demo session during the final meeting.
 - Include a representative failure, negative result, or boundary case when it
   helps explain the conclusion.
 - Make plots and tables readable from a normal viewing distance.
-- Be ready to explain what each team member contributed.
 
 ## 4. Final report (Week 16, 5%)
 
@@ -110,7 +108,6 @@ and evidence.
 - Explain limitations, residual risks, and threats to validity plainly.
 - Link code, configs, notebooks, or other artifacts when appropriate, without
   publishing sensitive data.
-- Include a short contribution statement for each team member.
 
 Common pitfalls to avoid:
 

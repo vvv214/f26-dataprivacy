@@ -19,8 +19,8 @@ individually. Each lab contributes 10% of the course grade, for a total of 40%.
 
 The point values are equal, but the formats are intentionally different. Lab 1
 starts with experiments on supplied GPT models; later labs attack image and
-text models, build private releases with real DP libraries, or give more
-design freedom.
+text models, build private releases with real DP libraries, and compute on
+data without seeing it.
 
 ## Lab 1: Privacy attacks on LLMs
 
@@ -108,11 +108,6 @@ Path ORAM read/write implementation. The TEE path teaches attestation logic but
 does not claim that a notebook simulates enclave security. The ORAM path must
 state what access-pattern information remains visible and what a production
 position map would require.
-
-Each student completes a five-minute individual oral check during class or
-office hours. You will identify the reveal operation, explain one nontrivial
-component, and respond to one small change in the policy or threat model. The
-oral check is part of the Lab 4 grade, not a separate exam.
 
 ## Individual submissions
 

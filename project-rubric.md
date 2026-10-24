@@ -50,7 +50,7 @@ A documented failure can earn full evidence credit.
 | Innovation | 2 | The presentation demonstrates a meaningful difference from the closest baseline or prior workflow. |
 | Evidence | 2 | The presentation shows concrete results, comparisons, failures, or analytical support rather than only describing an idea. |
 | Poster or demonstration quality | 2 | The poster or live demo makes the workflow and main result easy to inspect and is readable or reliable in the presentation setting. |
-| Limitations and response | 1 | The team answers questions accurately, states limitations without overclaiming, and identifies each member's contribution. |
+| Limitations and response | 1 | The team answers questions accurately and states limitations without overclaiming. |
 
 ## 4. Final report (5 points)
 
@@ -59,7 +59,7 @@ A documented failure can earn full evidence credit.
 | Technical execution and contribution | 2 | The report explains a correctly executed method and the completed contribution relative to the baseline. |
 | Evidence and baselines | 1 | Results use appropriate comparisons and auditable evidence at a scale suitable for the claim. |
 | Analysis and limitations | 1 | Conclusions match the evidence and address failures, residual risks, and threats to validity. |
-| Clarity, artifacts, and contributions | 1 | The report is organized and cited, and supporting artifacts and team contributions are documented appropriately. |
+| Clarity and artifacts | 1 | The report is organized and cited, and supporting artifacts are documented appropriately. |
 
 ## Additional notes
 
@@ -82,5 +82,4 @@ A documented failure can earn full evidence credit.
 6. **Individual and group scope may differ.** Individuals may submit narrower
    projects. Teams of 2 should show broader experiments, stronger comparisons,
    or a more complete system.
-7. **Contribution statements are required.** Substantial contribution
-   imbalances may lead to adjusted individual grades.
+7. **Both team members receive the same grade.**

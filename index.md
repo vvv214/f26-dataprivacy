@@ -43,6 +43,7 @@ is ungraded and is not an enrollment requirement.
 - Email: [tianhao@virginia.edu](mailto:tianhao@virginia.edu)
 - Location: Olsson Hall 011
 - Time: Tuesdays and Thursdays, 2:00-3:15 PM
+- Office hours: instructor after each class, 3:30-4:30 PM; TA by appointment
 - Dates: August 25-December 8, 2026
 - Canvas: [course site](https://canvas.its.virginia.edu/courses/190753)
 - Format: in-person lectures, short practicals, four varied labs, quizzes, Canvas exit surveys, and a scoped final project
@@ -59,7 +60,7 @@ matters.
 - [Project](project.html) (30%): an innovative privacy system, tool, attack, defense, monitor/auditor, or research contribution, with an in-class project pitch (10%), proposal (5%), poster/demo (10%), and final report (5%). See the [milestone guide](project-present.html) and [project rubric](project-rubric.html).
 - Quizzes (20%): two individual, in-class, closed-book paper quizzes worth 10% each.
 - Exit surveys (10%): short individual Canvas submissions completed across the semester for completion credit.
-- Grading basis: we use the [UVA grading basis](https://virginia.service-now.com/its?id=itsweb_kb_article&sys_id=1153c16fdba41f444f32fb671d961934); letter-grade thresholds will appear in the [syllabus](syllabus.html).
+- Letter grades: the standard [UVA grading scale](https://virginia.service-now.com/its?id=itsweb_kb_article&sys_id=1153c16fdba41f444f32fb671d961934).
 
 ## Schedule
 
@@ -119,7 +120,6 @@ matters.
 
 #### Lab and course libraries
 
-- [Opacus](https://opacus.ai/) for private training in PyTorch.
 - [JAX Privacy](https://jax-privacy.readthedocs.io/) for auditable DP training in JAX and Keras.
 - [Google DPSynth](https://github.com/google/dpsynth) for differentially private tabular synthesis.
 - [MP-SPDZ](https://github.com/data61/MP-SPDZ) for secure multi-party computation.

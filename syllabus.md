@@ -7,14 +7,7 @@
 
 <p class="overview-back"><a href="index.html">Back to the course homepage</a></p>
 
-<p class="syllabus-subtitle">Fall 2026 syllabus | Planning draft | Updated August 25, 2026</p>
-
-<div class="syllabus-draft">
-This page is the working syllabus for Fall 2026. Before it becomes the official
-first-day version, the instructor will confirm office hours, assignment dates,
-letter-grade thresholds, and assignment logistics. Changes will be
-dated and communicated through Canvas.
-</div>
+<p class="syllabus-subtitle">Fall 2026 syllabus | Updated October 23, 2026</p>
 
 ## Course information
 
@@ -26,7 +19,7 @@ dated and communicated through Canvas.
 | Meetings | Tuesdays and Thursdays, 2:00-3:15 PM |
 | Classroom | Olsson Hall 011 |
 | Term | August 25-December 8, 2026 |
-| Office hours | To be confirmed before the first day of class; appointments will also be available |
+| Office hours | Instructor after each class, 3:30-4:30 PM; TA by appointment |
 | Public course site | [tianhao.wang/f26-dataprivacy](https://tianhao.wang/f26-dataprivacy/) |
 | Canvas | [canvas.its.virginia.edu/courses/190753](https://canvas.its.virginia.edu/courses/190753) |
 
@@ -104,8 +97,8 @@ The course combines four forms of work:
   evaluation methods.
 - Four equally weighted labs cover privacy attacks on LLMs, adversarial
   attacks on image and text models, private releases with real DP libraries,
-  and bounded open design. Required systems include JAX Privacy, Google
-  DPSynth, and MP-SPDZ. All labs are individual.
+  and privacy-enhancing technologies. Required systems include JAX Privacy,
+  Google DPSynth, and MP-SPDZ. All labs are individual.
 - A team or individual project asks students to make an innovative privacy
   contribution as a system, focused tool, attack, defense, monitor/auditor, or
   research paper.
@@ -113,9 +106,8 @@ The course combines four forms of work:
   applied reasoning. Short individual exit surveys are submitted through Canvas
   across the semester.
 
-Guest lectures will connect course mechanisms to industry privacy practice and
-recent academic work. Their topics and speakers will be updated on the
-[course schedule](schedule.html) as they are confirmed. Students should expect
+Guest lectures connect course mechanisms to industry privacy practice and
+recent academic work. Students should expect
 to read short technical material before selected meetings and to work with
 small CPU-compatible code bundles outside class.
 
@@ -129,47 +121,15 @@ small CPU-compatible code bundles outside class.
 | Exit surveys | 10% | Short individual Canvas submissions graded for completion |
 | Total | 100% | |
 
-Final grades use the [UVA grading basis](https://virginia.service-now.com/its?id=itsweb_kb_article&sys_id=1153c16fdba41f444f32fb671d961934).
-Exact letter-grade thresholds will be added before this draft becomes the
-official syllabus.
+Final letter grades use the standard [UVA grading scale](https://virginia.service-now.com/its?id=itsweb_kb_article&sys_id=1153c16fdba41f444f32fb671d961934).
 
 ### Labs
 
 All labs are completed individually. They deliberately use different work
 products: privacy experiments on supplied GPT models, adversarial attacks on
 image and text models, a private-release notebook built on JAX Privacy and
-DPSynth, and a private-computation artifact with an oral check.
-
-Lab 1's regular rubric covers a CTF warm-up (2 points) and classifier MIA (8 points).
-The warm-up awards 1 point for the flag and 1 point for the two-model loss
-comparison with evidence.
-The MIA work includes training a small classifier and shadow model on synthetic
-data, implementing two membership methods, computing threshold counts and rates,
-and building ROC curves with AUC and low-FPR results. Its 8 points cover
-training (1), confidence baseline (1), learned classifier (2), threshold evaluation (1), ROC evaluation
-(1), design philosophy (1), and method performance (1). The design philosophy
-is 3-5 sentences on design choices, shadow-data validation, and a failure mode.
-With the supplied data and settings, training
-benchmarks are 95% train accuracy and 70% test accuracy for each model.
-Each method's performance credit increases linearly from 0 at AUC 0.50 to
-0.5 points at AUC 0.60, capped at 0.5. Implementation and evaluation credit
-are separate; no minimum low-FPR TPR is required. The notebook summarizes grading.
-Keep total target, shadow, and membership-classifier training within 10 minutes
-on a standard Colab CPU runtime; no GPU is needed.
-Hidden evaluation reuses the same MIA and ROC functions on similar unpublished
-synthetic datasets. Improve the existing methods using shadow data, without
-fitting on target membership labels or hard-coding visible examples. The five
-highest-ranked submissions earn a separate +2 AUC bonus. Ranking uses the higher
-of the two methods' mean AUC across all hidden datasets; a method must return
-valid scores on every dataset. Ties use that method's mean TPR at FPR <= 1%,
-then the design philosophy. ROC checks count toward the existing implementation
-points.
-Hidden cases retain three-class probability inputs but vary data, seeds,
-sample counts, and row order. The lab's base course weight remains 10%.
-A second +2 bonus goes to the five strongest training-inference submissions,
-judged by evidence, experiment, and reasoning, including a reproducible
-comparison with an alternative explanation. The two bonus categories are
-ranked separately and can stack, for a maximum of 14/10; the denominator remains 10.
+DPSynth, and a private-computation artifact. The [labs page](lab.html) gives
+each lab's tasks, points, and bonuses.
 
 Selected labs use instructor-only hidden cases in addition to visible tests;
 the number and mix of those cases are not announced. Course points use
@@ -192,7 +152,8 @@ The project contributes 30%. Its topic and method remain open, but it must make
 an innovative privacy contribution. Students may build a system or focused
 tool, develop an attack or defense, create a privacy monitor or auditor, or
 complete a research project whose primary artifact is a paper. Teams of up to
-2 are allowed; individual projects may use a narrower scope.
+2 are allowed, and both members receive the same grade; individual projects
+may use a narrower scope.
 
 Projects may build on existing papers, libraries, and code, but a reproduction,
 routine comparison, literature review, mechanical port, or incremental
@@ -219,11 +180,10 @@ a claim using code, data, or a system description. An instructor-supplied
 formula sheet and a practice set will be provided before each quiz. The covered
 topics and any other permitted basic supplies will be announced in advance.
 
-The planned coverage follows the revised lecture schedule:
+Coverage:
 
 - Quiz 1 (October 15): privacy attacks, ML security, anonymization, and the DP
-  material actually covered through the October 1 lecture. The final topic
-  list will be confirmed after that class.
+  material covered through the October 1 lecture.
 - Quiz 2 (November 19): DP mechanisms, composition and accounting, private
   learning, cryptography, and MPC, through the November 12 lecture. Homomorphic
   encryption, taught afterward, is not included.
@@ -244,20 +204,10 @@ small result. Each submission receives credit for timely, good-faith completion.
 
 ## Materials and technology
 
-No required textbook or paid AI subscription is planned. Readings, starter
-environments, and private assignment bundles will be supplied through Canvas;
+No textbook or paid AI subscription is required. Readings, starter
+environments, and private assignment bundles are supplied through Canvas;
 any course Drive link will be posted there. The public site lists optional
 books, courses, software, and current [AI access options](index.html#ai-access).
-
-UVA students currently have no-additional-cost access to
-[Gemini and NotebookLM](https://learningtech.virginia.edu/tools/gemini) and
-[Copilot Chat](https://learningtech.virginia.edu/tools/copilot). Eligible U.S.
-college students may also claim OpenAI's
-[2026 student offer](https://chatgpt.com/students/2026/) for four free months of
-ChatGPT Plus by October 31, 2026; it requires student verification and a payment
-method and renews at the regular monthly price unless canceled. UVA RC GenAI
-provides Kimi K2.5 to eligible Research Computing users, but RC currently
-restricts that service to research rather than ordinary class assignments.
 
 Students need regular access to a computer that can run Python and a web
 browser. Required lab paths are designed for CPU execution with pinned
@@ -267,15 +217,8 @@ arranged.
 
 ## Generative AI
 
-Generative AI may be used for brainstorming, debugging, code explanation, and
-polishing unless an assignment says otherwise. It does not replace technical
-ownership.
-
-- Students remain responsible for correctness, citations, privacy, and course
-  policy compliance.
-- Private course bundles or sensitive data may not be uploaded to external
-  tools unless explicitly permitted.
-- Quizzes are completed without GenAI.
+AI tools may be used on all assignments except quizzes. Students remain
+responsible for everything they submit.
 
 ## Collaboration and academic integrity
 
@@ -283,8 +226,7 @@ Labs, quizzes, and Canvas exit surveys are individual. Projects may
 be completed individually or in teams of up to 2. High-level discussion across
 the class is welcome, but students may not share lab code, completed tables,
 or polished written answers. Every
-submission must identify permitted collaborators; project teams must include a
-contribution statement where required.
+submission must identify permitted collaborators.
 
 Students are expected to follow the University
 [Honor Code](https://honor.virginia.edu/) and its guidance on
@@ -302,14 +244,14 @@ submission.
   and may result in review of the entire submission.
 - The result of a regrade request for a project team submission applies to the
   full team.
-- Regular participation is expected because class activities and peer review
-  contribute to the course. Students should communicate documented conflicts
+- Regular participation is expected because class activities contribute to
+  the course. Students should communicate documented conflicts
   or serious circumstances as early as possible.
 - Approved absences from a quiz receive an equivalent makeup arrangement.
   Contact the instructor about extended absences.
 
 The full [course policy](policy.html) provides the detailed collaboration,
-regrade, project-contribution, and career-related travel rules.
+regrade, project-team, and career-related travel rules.
 
 ## Accessibility and academic accommodations
 
@@ -336,7 +278,7 @@ The instructor and any TAs are Responsible Employees under
 reporting obligations and confidential resources; reports may be submitted
 through [Just Report It](https://justreportit.virginia.edu/).
 
-## Key dates and changes
+## Key dates
 
 | Date | Course plan |
 |---|---|
@@ -359,19 +301,15 @@ through [Just Report It](https://justreportit.virginia.edu/).
 | November 12 | Lab 3 due and Lab 4 released |
 | November 17 | Guest lecture: oblivious RAM (ORAM) |
 | November 19 | Quiz 2 |
-| November 24 | Homomorphic encryption and private computation; Lab 4 oral-check window |
+| November 24 | Homomorphic encryption and private computation |
 | November 25-29 | Thanksgiving recess |
 | December 1 | Guest lecture: TEEs and confidential LLM serving |
 | December 3 | Privacy applications and review; Lab 4 due |
 | December 8 | Poster/demo session, last class, and final report |
 
 Local DP, zero-knowledge proofs, verifiable computation, and network privacy
-are optional extensions rather than scheduled core lectures. The schedule
-reflects security material completed September 17, anonymization beginning
-September 24, and DP definitions introduced September 29 and continued
-October 1; September 22 is a break.
-December 3 is a flexible session for applications, unfinished material,
-and review. Guest lectures, quizzes, and lab and project deadlines are unchanged.
+are optional extensions rather than scheduled core lectures. December 3 is a
+flexible session for applications, unfinished material, and review.
 
 The [full schedule](schedule.html) is tentative. Exact deadlines will appear in
 Canvas. Changes after the start of the term will be communicated in writing and

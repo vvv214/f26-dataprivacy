@@ -93,7 +93,7 @@ will release: an answer, a trained model, or a reusable dataset.
     <div class="defense-story-copy">
       <h3>Bound influence during model training</h3>
       <p>DP-SGD limits each training example's influence before a model update. It computes per-example gradients, clips each one to a fixed norm, aggregates them, and adds Gaussian noise. A privacy accountant then tracks the cumulative cost across many training steps.</p>
-      <p>The diagram is simple; a correct implementation is not. Sampling assumptions, clipping location, record boundaries, noise calibration, and accounting must agree. You will use Opacus and JAX Privacy to trace those choices from configuration to code and test whether a claimed guarantee matches the training run.</p>
+      <p>The diagram is simple; a correct implementation is not. Sampling assumptions, clipping location, record boundaries, noise calibration, and accounting must agree. You will use JAX Privacy to trace those choices from configuration to code and test whether a claimed guarantee matches the training run.</p>
     </div>
   </section>
   <section class="defense-story">
@@ -125,6 +125,6 @@ You will study privacy failures, measure their impact in scoped exercises, and
 test defenses ranging from data minimization and access boundaries to
 differential privacy, private machine learning, and synthetic data. We will
 also survey secure multi-party computation (MPC), homomorphic encryption (HE),
-trusted execution environments (TEEs), and network privacy tools. The emphasis
+trusted execution environments (TEEs), and oblivious RAM (ORAM). The emphasis
 is on technical understanding, experimental reasoning, and clear communication
 rather than graduate-level novelty.

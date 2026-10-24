@@ -17,11 +17,8 @@
 
 ### Use of GenAI
 
-Generative AI tools may be used for brainstorming, debugging, or polishing, but they do not replace understanding.
-
-- You remain responsible for correctness, citations, privacy, and policy compliance.
-- Do not paste private course materials or sensitive data into external tools unless explicitly permitted.
-- Quizzes must be completed without GenAI.
+- AI tools may be used on all assignments except quizzes.
+- You remain responsible for everything you submit.
 
 ### Quizzes
 
@@ -60,10 +57,9 @@ Generative AI tools may be used for brainstorming, debugging, or polishing, but 
 - The result of a regrade request for a project team submission applies to the
   full team.
 
-### Project contributions
+### Project teams
 
-- Teams must include a short contribution statement for every project milestone.
-- Shared grades are the default, but substantial contribution imbalances may lead to adjustments.
+- Both team members receive the same grade.
 
 ## University policies and resources
 

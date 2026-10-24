@@ -33,7 +33,7 @@ The contribution should connect to one or more course themes:
 - privacy in machine-learning or AI systems; or
 - privacy-enhancing technologies such as secure multi-party computation (MPC),
   homomorphic encryption (HE), trusted execution environments (TEEs), or
-  network privacy.
+  oblivious RAM (ORAM).
 
 You may build on existing papers, libraries, models, and codebases, but the
 project contribution cannot be only a reproduction, port, benchmark comparison,
@@ -75,7 +75,7 @@ design.
 - Individual projects are welcome and may have narrower scope.
 - Teams of 2 are expected to show broader execution than individuals, but the
   standard remains correctness, clarity, and evidence rather than raw size.
-- Every submission must include a short contribution statement for each member.
+- Both team members receive the same grade.
 
 ## Milestones at a glance
 
@@ -175,7 +175,6 @@ artifact snapshot.
    left out if time becomes tight.
 10. **Current status**: what has been built or tested, current evidence or
     failures, and the next technical risk to resolve.
-11. **Contribution statement**: who is doing what.
 
 ## Deliverable expectations
 
