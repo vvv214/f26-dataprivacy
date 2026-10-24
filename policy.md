@@ -47,12 +47,11 @@ Generative AI tools may be used for brainstorming, debugging, or polishing, but 
 
 ### Late work
 
-- Each student has 3 late days for the semester.
-- Late days may be used on Labs 1 and 3 and the project proposal.
-- No more than 2 late days may be used on a single assignment.
-- Late days may not be used for quizzes, the in-class project pitch, the Lab 4
-  individual oral check, the poster/demo session, final reports, or
-  end-of-semester deadlines.
+- Each student has 3 late days for the semester, with at most 2 on any one
+  assignment.
+- Late days can be used on any lab or project submission. They do not apply to
+  in-class activities: quizzes, exit surveys and check-ins, the project pitch,
+  the poster/demo session, and oral checks.
 - If you have a documented conflict or a serious issue, contact the instructor as early as possible.
 
 ### Regrades

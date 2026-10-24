@@ -295,11 +295,11 @@ submission.
 
 ## Late work, regrades, and attendance
 
-- Each student has 3 late days for the semester, with no more than 2 used on one
+- Each student has 3 late days for the semester, with at most 2 on any one
   assignment.
-- Late days may be used on Labs 1 and 3 and the project proposal. They may not
-  be used for the in-class project pitch, the Lab 4 individual oral check, quizzes, the poster/demo session, the
-  final report, or other end-of-semester deadlines.
+- Late days can be used on any lab or project submission. They do not apply to
+  in-class activities: quizzes, exit surveys and check-ins, the project pitch,
+  the poster/demo session, and oral checks.
 - Regrade requests must be submitted within 7 days after a grade is released
   and may result in review of the entire submission.
 - The result of a regrade request for a project team submission applies to the
@@ -307,9 +307,8 @@ submission.
 - Regular participation is expected because class activities and peer review
   contribute to the course. Students should communicate documented conflicts
   or serious circumstances as early as possible.
-- Approved absences from a quiz receive an equivalent makeup arrangement; late
-  days do not apply to in-class quizzes. Contact the instructor about extended
-  absences.
+- Approved absences from a quiz receive an equivalent makeup arrangement.
+  Contact the instructor about extended absences.
 
 The full [course policy](policy.html) provides the detailed collaboration,
 regrade, project-contribution, and career-related travel rules.
