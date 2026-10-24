@@ -128,12 +128,7 @@ Final letter grades use the standard [UVA grading scale](https://virginia.servic
 All labs are completed individually. They deliberately use different work
 products: privacy experiments on supplied GPT models, adversarial attacks on
 image and text models, a private-release notebook built on JAX Privacy and
-DPSynth, and a private-computation artifact. The [labs page](lab.html) gives
-each lab's tasks, points, and bonuses.
-
-Selected labs use instructor-only hidden cases in addition to visible tests;
-the number and mix of those cases are not announced. Course points use
-fixed criteria; bonus rankings are separate.
+DPSynth, and a private-computation artifact.
 
 | Lab | Weight | Release week | Due week |
 |---|---:|---:|---:|
@@ -141,6 +136,97 @@ fixed criteria; bonus rankings are separate.
 | Adversarial attacks | 10% | 5 | 9 |
 | Two ways to release a sensitive dataset | 10% | 9 | 12 |
 | Compute Without Seeing | 10% | 12 | 15 |
+
+#### Lab 1: Privacy attacks on LLMs
+
+Run the supplied GPT models to study training-data extraction and memorization.
+For membership inference, train a small classifier and shadow
+model on synthetic data, compare confidence-based and learned methods, and
+implement threshold counts and ROC evaluation, including low-FPR metrics.
+Hidden evaluation runs the same MIA and ROC functions on new classifier
+instances, with different data, seeds, sample counts, and row order.
+
+The 10 regular points cover the CTF warm-up (2) and classifier MIA (8).
+AI assistance is allowed. The warm-up awards 1 point for the flag and
+1 point for the two-model loss comparison with evidence.
+
+Classifier MIA includes target/shadow training (1), confidence baseline (1),
+learned classifier (2), threshold counts and rates (1), ROC evaluation (1), design philosophy (1),
+and method performance (1). In 3-5 sentences, explain the method's design,
+shadow-data validation, and a failure mode considered.
+On the supplied data and settings, each target/shadow model should reach
+95% train accuracy and 70% test accuracy. Each membership method earns its
+full 0.5 performance points at AUC >= 0.60; credit increases linearly from
+0 at AUC 0.50 to 0.5 at AUC 0.60. Correct implementation and evaluation code
+are graded separately from method performance. Low-FPR TPR must be reported,
+but has no minimum performance threshold. The notebook summarizes grading.
+Keep total target, shadow, and membership-classifier training within 10 minutes
+on a standard Colab CPU runtime; no GPU is needed.
+Hidden evaluation reuses these functions on similar, unpublished synthetic
+datasets. Improve the existing methods using shadow data, without fitting on
+target membership labels or hard-coding visible examples. The top five earn
+a separate +2 AUC bonus, ranked by the higher of the two methods' mean AUC
+across all hidden datasets. A method must return valid scores on every dataset.
+Ties use that method's mean TPR at FPR <= 1%, then the design philosophy.
+ROC checks count toward the existing implementation points.
+
+The training-inference bonus awards +2 to the five strongest explanations of
+how a supplied GPT was trained, judged by evidence, experiment, and reasoning.
+Include a reproducible comparison with an alternative explanation. The two
+bonus categories are ranked separately and can stack: the maximum is 14/10,
+with the base score still out of 10.
+
+#### Lab 2: Adversarial attacks
+
+Can small changes to an input change a model's prediction? Implement a PGD
+evasion attack on an MNIST classifier, compare L0, L1, L2 and L∞
+budgets, and design a more efficient image attack. Then append a
+short suffix of neutral words, punctuation and special tokens to a positive
+movie review so that a fixed classifier predicts NEGATIVE: start from a greedy
+baseline, beat it, and freeze the attack to test how it transfers. Finally,
+compare data poisoning with a backdoor: plant a marker, vary the contamination
+rate, and remove the marker feature.
+
+The 10 points cover the image evasion attack (4), the text suffix attack (4),
+and poisoning and backdoors (2). The top five in the image efficiency challenge
+and the top five in the text challenge each earn +2; the maximum is 14/10.
+
+#### Lab 3: Two ways to release a sensitive dataset
+
+Release a census dataset (UCI Adult) privately in two ways, with
+[JAX Privacy](https://github.com/google-parfait/jax_privacy) and
+[DPSynth](https://github.com/google-parfait/dpsynth) in one Colab notebook.
+First write DP-SGD from scratch for gradients stored as JAX pytrees: per-example
+norms, clipping, the noisy average, one step with Poisson sampling, and the
+training loop, checked against JAX Privacy's implementation. Then price it with
+an accountant: build its privacy event and calibrate the noise for a target
+ε by bisection. Finally, release a synthetic table with AIM inside
+DPSynth: choose public bins for the numerical attributes, write the
+exponential mechanism and AIM's selection step, and retrain DP-SGD on the
+public domains.
+
+All 10 points come from hidden tests on the functions you write: DP-SGD (5),
+accounting (1.5), and AIM (3.5). The five binnings with the lowest error on
+reserved data earn +2, and approved pull requests to JAX Privacy or DPSynth
+earn +1 each, up to +5; the maximum is 17/10.
+
+#### Lab 4: Compute Without Seeing
+
+Complete two required privacy-enhancing technology exercises: a small Yao
+comparison using garbled circuits and oblivious transfer, and private linear
+inference in a real three-party MP-SPDZ runtime. Both tasks make the reveal
+boundary explicit and test that no input or intermediate value crosses it.
+
+Then choose one extension: encrypted aggregation with Paillier homomorphic
+encryption, verification of a synthetic TEE attestation report, or a miniature
+Path ORAM read/write implementation. The TEE path teaches attestation logic but
+does not claim that a notebook simulates enclave security. The ORAM path must
+state what access-pattern information remains visible and what a production
+position map would require.
+
+Selected labs use instructor-only hidden cases in addition to visible tests;
+the number and mix of those cases are not announced. Course points use
+fixed criteria; bonus rankings are separate.
 
 Private materials are distributed through Canvas; any course Drive link will
 be posted there. Raw notebooks, instances, hidden cases, evaluator files,
@@ -209,6 +295,18 @@ environments, and private assignment bundles are supplied through Canvas;
 any course Drive link will be posted there. The public site lists optional
 books, courses, software, and current [AI access options](index.html#ai-access).
 
+UVA students currently have no-additional-cost access to
+[Gemini and NotebookLM](https://learningtech.virginia.edu/tools/gemini) and
+[Copilot Chat](https://learningtech.virginia.edu/tools/copilot). Eligible U.S.
+college students may also claim
+[one year of Google AI Pro](https://gemini.google.com/students) at no cost by
+December 31, 2026, and OpenAI's
+[2026 student offer](https://chatgpt.com/students/2026/) for four free months of
+ChatGPT Plus by October 31, 2026; both require student verification and a
+payment method and become paid subscriptions unless canceled. UVA RC GenAI
+provides Kimi K2.5 to eligible Research Computing users, but RC currently
+restricts that service to research rather than ordinary class assignments.
+
 Students need regular access to a computer that can run Python and a web
 browser. Required lab paths are designed for CPU execution with pinned
 environments. If access to hardware, software, or an assigned format creates a
@@ -253,6 +351,20 @@ submission.
 The full [course policy](policy.html) provides the detailed collaboration,
 regrade, project-team, and career-related travel rules.
 
+## Career-related travel
+
+Your career development path may take you beyond UVA for an internship interview
+or a technical conference. If you notify the instructor at least one week in
+advance of such an event, you may choose either:
+
+1. completing assignments remotely; or
+2. delaying assignment, exam, or quiz dates until at least 48 hours after your
+   return.
+
+Extensions will not normally be granted for a project team activity when only
+one member is traveling, and no delay will extend beyond the last day of finals
+for the semester.
+
 ## Accessibility and academic accommodations
 
 The goal is a learning environment that is accessible and usable by all
@@ -278,13 +390,17 @@ The instructor and any TAs are Responsible Employees under
 reporting obligations and confidential resources; reports may be submitted
 through [Just Report It](https://justreportit.virginia.edu/).
 
-## Key dates
+## Schedule and key dates
 
 | Date | Course plan |
 |---|---|
-| August 25 | First class |
-| September 8 | Privacy attacks completed |
-| September 10 | ML security begins; Lab 1 released |
+| August 25 | Course introduction; optional readiness self-check |
+| August 27 | Privacy definitions and attack taxonomy |
+| September 1 | Extraction and memorization |
+| September 3 | Membership inference and attack evaluation |
+| September 8 | Privacy attacks: conclusions and discussion |
+| September 10 | Security notions and adversarial ML overview; Lab 1 released |
+| September 15 | Adversarial examples and robustness |
 | September 17 | Poisoning, backdoors, and ML security defenses |
 | September 22 | No class: break |
 | September 24 | Anonymization, linkage, and k-anonymity; Lab 1 due and Lab 2 released |
@@ -294,18 +410,22 @@ through [Just Report It](https://justreportit.virginia.edu/).
 | October 8 | In-class project pitch presentations |
 | October 13 | Guest lecture: privacy in industry |
 | October 15 | Quiz 1 |
-| October 22 | Lab 3 released |
+| October 20 | Private selection: report noisy max and the exponential mechanism |
+| October 22 | Sparse vector, range queries, DP-SGD, and AIM; Lab 3 released |
 | October 23 | Lab 2 due |
-| October 29 | Project proposal |
+| October 27 | PETs and symmetric-key cryptography: hashes and MACs |
+| October 29 | Public-key cryptography and Diffie-Hellman; project proposal |
 | November 3 | No class: Election Day |
-| November 12 | Lab 3 due and Lab 4 released |
+| November 5 | RSA, digital signatures, and timing attacks |
+| November 10 | Secure multiparty computation: garbled circuits and oblivious transfer |
+| November 12 | MPC: secret sharing and security models; Lab 3 due and Lab 4 released |
 | November 17 | Guest lecture: oblivious RAM (ORAM) |
 | November 19 | Quiz 2 |
 | November 24 | Homomorphic encryption and private computation |
 | November 25-29 | Thanksgiving recess |
 | December 1 | Guest lecture: TEEs and confidential LLM serving |
 | December 3 | Privacy applications and review; Lab 4 due |
-| December 8 | Poster/demo session, last class, and final report |
+| December 8 | Poster/demo session and course recap; final report |
 
 Local DP, zero-knowledge proofs, verifiable computation, and network privacy
 are optional extensions rather than scheduled core lectures. December 3 is a
