@@ -84,6 +84,21 @@ The class holds one poster/demo session during the final meeting.
 Submit a focused technical write-up whose claims match the completed artifact
 and evidence.
 
+**Format**
+
+- Write the report in LaTeX with the ACM conference template (`acmart` with
+  the `sigconf` option; Overleaf provides it).
+- Keep the main text to at most 6 pages. References and appendices do not
+  count, but the main text must stand on its own.
+- Include an overview figure of the setting: the system, the attacker or
+  unwanted flow, and the trust boundary.
+- Show the main results as figures or tables, each with a caption that states
+  the takeaway. AI tools are welcome here, for example to write the plotting
+  code from your result files, but every plotted number must come from your
+  own results.
+- Include a full reference list.
+- Submit one PDF on Canvas, with a link to the code or other artifacts.
+
 **Expectations**
 
 - Explain the question, setup, method, evidence, and limitations.

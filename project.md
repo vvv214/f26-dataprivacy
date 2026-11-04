@@ -84,7 +84,7 @@ design.
 | Project pitch | 7 | short in-class presentation | 10% |
 | Proposal | 10 | written plan with current artifact or evidence | 5% |
 | Poster/demo | 16 | poster-style presentation or live demo in the final class | 10% |
-| Final report | 16 | focused written report | 5% |
+| Final report | 16 | report of at most 6 pages in the ACM LaTeX template | 5% |
 
 For milestone logistics, see the [project milestone guide](project-present.html).
 For grading details, see the [project rubric](project-rubric.html).

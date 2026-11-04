@@ -253,6 +253,18 @@ The project has no leaderboard or required peer attack. The in-class
 project pitch occurs in Week 7, the written proposal serves as a progress and
 scope checkpoint in Week 10, and the poster/demo and final report are due in
 Week 16.
+
+The final report is written in LaTeX with the ACM conference template
+(`acmart` with the `sigconf` option). The main text is at most 6 pages;
+references and appendices do not count, but the main text must stand on its
+own. It includes an overview figure of the setting (the system, the attacker or
+unwanted flow, and the trust boundary) and shows the main results as figures or
+tables whose captions state the takeaway. AI tools may help make these figures,
+for example by writing the plotting code from the project's result files, but
+every plotted number must come from the project's own results. The report
+includes a full reference list and is submitted as one PDF on Canvas with a
+link to the code or other artifacts.
+
 See the
 [milestone guide](project-present.html) and [project rubric](project-rubric.html).
 
