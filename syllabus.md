@@ -426,11 +426,11 @@ through [Just Report It](https://justreportit.virginia.edu/).
 | October 22 | Sparse vector, range queries, DP-SGD, and AIM; Lab 3 released |
 | October 23 | Lab 2 due |
 | October 27 | PETs and symmetric-key cryptography: hashes and MACs |
-| October 29 | Public-key cryptography and Diffie-Hellman; project proposal |
+| October 29 | Public-key cryptography: Diffie-Hellman, RSA, and signatures; project proposal |
 | November 3 | No class: Election Day |
-| November 5 | RSA, digital signatures, and timing attacks |
-| November 10 | Secure multiparty computation: garbled circuits and oblivious transfer |
-| November 12 | MPC: secret sharing and security models; Lab 3 due and Lab 4 released |
+| November 5 | Secure multiparty computation: garbled circuits, oblivious transfer, and secret sharing |
+| November 10 | MPC: the GMW protocol and multiplication triples |
+| November 12 | MPC security models: malicious parties and cut-and-choose; Lab 3 due and Lab 4 released |
 | November 17 | Guest lecture: oblivious RAM (ORAM) |
 | November 19 | Quiz 2 |
 | November 24 | Homomorphic encryption and private computation |
