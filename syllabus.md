@@ -428,10 +428,10 @@ through [Just Report It](https://justreportit.virginia.edu/).
 | October 27 | PETs and symmetric-key cryptography: hashes and MACs |
 | October 29 | Public-key cryptography: Diffie-Hellman, RSA, and signatures; project proposal |
 | November 3 | No class: Election Day |
-| November 5 | Secure multiparty computation: garbled circuits, oblivious transfer, and secret sharing |
-| November 10 | MPC: the GMW protocol and multiplication triples |
-| November 12 | MPC security models: malicious parties and cut-and-choose; Lab 3 due and Lab 4 released |
-| November 17 | Guest lecture: oblivious RAM (ORAM) |
+| November 5 | Secure multiparty computation: two-party computation and garbled circuits |
+| November 10 | Yao's protocol: oblivious transfer and other gates; the GMW protocol |
+| November 12 | GMW and multiplication triples; zero-knowledge proofs; Lab 3 due and Lab 4 released |
+| November 17 | TEEs and oblivious RAM (ORAM) |
 | November 19 | Quiz 2 |
 | November 24 | Homomorphic encryption and private computation |
 | November 25-29 | Thanksgiving recess |
@@ -439,7 +439,7 @@ through [Just Report It](https://justreportit.virginia.edu/).
 | December 3 | Privacy applications and review; Lab 4 due |
 | December 8 | Poster/demo session and course recap; final report |
 
-Local DP, zero-knowledge proofs, verifiable computation, and network privacy
+Local DP, verifiable computation, and network privacy
 are optional extensions rather than scheduled core lectures. December 3 is a
 flexible session for applications, unfinished material, and review.
 
