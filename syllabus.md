@@ -118,7 +118,7 @@ small CPU-compatible code bundles outside class.
 | [Labs](lab.html) | 40% | Four labs worth 10% each; selected labs use hidden cases |
 | [Project](project.html) | 30% | Project pitch 10%, proposal 5%, poster/demo 10%, final report 5% |
 | Quizzes | 20% | Two individual, in-class, closed-book paper quizzes at 10% each |
-| Exit surveys | 10% | Short individual Canvas submissions graded for completion |
+| Exit surveys | 10% | About 13-15 short Canvas submissions graded for completion; any 10 earn full credit |
 | Total | 100% | |
 
 Final letter grades use the standard [UVA grading scale](https://virginia.service-now.com/its?id=itsweb_kb_article&sys_id=1153c16fdba41f444f32fb671d961934).
@@ -296,9 +296,12 @@ skills.
 
 ### Exit surveys
 
-Short individual exit surveys submitted through Canvas contribute 10%. They ask
-students to record a conclusion, identify a remaining question, or interpret a
-small result. Each submission receives credit for timely, good-faith completion.
+Short individual exit surveys submitted through Canvas contribute 10%. There
+will be about 13-15 exit surveys across the semester. Each submission counts
+1%, and any 10 submissions earn the full 10%; submissions beyond 10 add no
+further credit. They ask students to record a conclusion, identify a remaining
+question, or interpret a small result. Each submission receives credit for
+timely, good-faith completion.
 
 ## Materials and technology
 
@@ -426,22 +429,22 @@ through [Just Report It](https://justreportit.virginia.edu/).
 | October 22 | Sparse vector, range queries, DP-SGD, and AIM; Lab 3 released |
 | October 23 | Lab 2 due |
 | October 27 | PETs and symmetric-key cryptography: hashes and MACs |
-| October 29 | Public-key cryptography: Diffie-Hellman, RSA, and signatures; project proposal |
+| October 29 | Public-key cryptography: Diffie-Hellman, RSA, and signatures |
+| October 30 | Project proposal due |
 | November 3 | No class: Election Day |
 | November 5 | Secure multiparty computation: two-party computation and garbled circuits |
 | November 10 | Yao's protocol: oblivious transfer and other gates; the GMW protocol |
 | November 12 | GMW and multiplication triples; zero-knowledge proofs; Lab 3 due and Lab 4 released |
-| November 17 | TEEs and oblivious RAM (ORAM) |
+| November 17 | TEEs and oblivious RAM (ORAM), on Zoom; link on Canvas |
 | November 19 | Quiz 2 |
 | November 24 | Homomorphic encryption and private computation |
 | November 25-29 | Thanksgiving recess |
-| December 1 | Guest lecture: TEEs and confidential LLM serving |
-| December 3 | Privacy applications and review; Lab 4 due |
+| December 1 | Guest lecture by Yitian Cheng (Perplexity) |
+| December 3 | Guest lecture by Lipika Ramaswamy (NVIDIA); Lab 4 due |
 | December 8 | Poster/demo session and course recap; final report |
 
 Local DP, verifiable computation, and network privacy
-are optional extensions rather than scheduled core lectures. December 3 is a
-flexible session for applications, unfinished material, and review.
+are optional extensions rather than scheduled core lectures.
 
 The [full schedule](schedule.html) is tentative. Exact deadlines will appear in
 Canvas. Changes after the start of the term will be communicated in writing and

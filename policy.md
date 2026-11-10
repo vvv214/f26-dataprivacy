@@ -37,6 +37,8 @@
 
 - Short individual exit surveys submitted through Canvas contribute 10% of the
   course grade.
+- There will be about 13-15 exit surveys. Each submission counts 1%, and any 10
+  submissions earn the full 10%.
 - An exit survey may ask for a conclusion, a remaining question, or an
   interpretation of a small result.
 - Exit surveys receive credit for timely, good-faith completion.

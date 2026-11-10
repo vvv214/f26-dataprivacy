@@ -59,7 +59,7 @@ matters.
 - [Labs](lab.html) (40%): four individual, equally weighted labs covering privacy attacks on LLMs, adversarial attacks, private data releases with DP libraries, and privacy-enhancing technologies.
 - [Project](project.html) (30%): an innovative privacy system, tool, attack, defense, monitor/auditor, or research contribution, with an in-class project pitch (10%), proposal (5%), poster/demo (10%), and final report (5%). See the [milestone guide](project-present.html) and [project rubric](project-rubric.html).
 - Quizzes (20%): two individual, in-class, closed-book paper quizzes worth 10% each.
-- Exit surveys (10%): short individual Canvas submissions completed across the semester for completion credit.
+- Exit surveys (10%): about 13-15 short individual Canvas submissions across the semester, graded for completion; any 10 earn full credit.
 - Letter grades: the standard [UVA grading scale](https://virginia.service-now.com/its?id=itsweb_kb_article&sys_id=1153c16fdba41f444f32fb671d961934).
 
 ## Schedule
