@@ -283,8 +283,9 @@ Coverage:
 - Quiz 1 (October 15): privacy attacks, ML security, anonymization, and the DP
   material covered through the October 1 lecture.
 - Quiz 2 (November 19): DP mechanisms, composition and accounting, private
-  learning, cryptography, and MPC, through the November 12 lecture. Homomorphic
-  encryption, taught afterward, is not included.
+  learning, cryptography, MPC, and oblivious RAM, through the November 12
+  lecture. Zero-knowledge proofs, TEEs, and homomorphic encryption are not
+  included.
 
 Guest lectures and optional readings are not part of these quiz scopes.
 If lectures move again, the announced scope will reflect material actually
@@ -434,8 +435,8 @@ through [Just Report It](https://justreportit.virginia.edu/).
 | November 3 | No class: Election Day |
 | November 5 | Secure multiparty computation: two-party computation and garbled circuits |
 | November 10 | Yao's protocol: oblivious transfer and other gates; the GMW protocol |
-| November 12 | GMW and multiplication triples; zero-knowledge proofs; Lab 3 due and Lab 4 released |
-| November 17 | TEEs and oblivious RAM (ORAM), on Zoom; link on Canvas |
+| November 12 | GMW and multiplication triples; oblivious RAM (ORAM); zero-knowledge proofs; Lab 3 due and Lab 4 released |
+| November 17 | Trusted execution environments (TEEs) and ORAM inside a TEE, on Zoom; link on Canvas |
 | November 19 | Quiz 2 |
 | November 24 | Homomorphic encryption and private computation |
 | November 25-29 | Thanksgiving recess |
