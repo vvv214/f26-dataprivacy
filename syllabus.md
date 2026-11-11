@@ -435,10 +435,10 @@ through [Just Report It](https://justreportit.virginia.edu/).
 | November 3 | No class: Election Day |
 | November 5 | Secure multiparty computation: two-party computation and garbled circuits |
 | November 10 | Yao's protocol: oblivious transfer and other gates; the GMW protocol |
-| November 12 | GMW and multiplication triples; oblivious RAM (ORAM); zero-knowledge proofs; Lab 3 due and Lab 4 released |
-| November 17 | Trusted execution environments (TEEs) and ORAM inside a TEE, on Zoom; link on Canvas |
+| November 12 | GMW and multiplication triples; branches and loops in a circuit; oblivious RAM (ORAM); Lab 3 due and Lab 4 released |
+| November 17 | Zero-knowledge proofs and homomorphic encryption, on Zoom; link on Canvas |
 | November 19 | Quiz 2 |
-| November 24 | Homomorphic encryption and private computation |
+| November 24 | Trusted execution environments (TEEs) and ORAM inside a TEE |
 | November 25-29 | Thanksgiving recess |
 | December 1 | Guest lecture by Yitian Cheng (Perplexity) |
 | December 3 | Guest lecture by Lipika Ramaswamy (NVIDIA); Lab 4 due |
