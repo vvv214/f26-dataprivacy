@@ -7,7 +7,7 @@
 
 <p class="overview-back"><a href="index.html">Back to the course homepage</a></p>
 
-<p class="syllabus-subtitle">Fall 2026 syllabus | Updated October 23, 2026</p>
+<p class="syllabus-subtitle">Fall 2026 syllabus | Updated November 16, 2026</p>
 
 ## Course information
 
@@ -212,17 +212,23 @@ earn +1 each, up to +5; the maximum is 17/10.
 
 #### Lab 4: Compute Without Seeing
 
-Complete two required privacy-enhancing technology exercises: a small Yao
-comparison using garbled circuits and oblivious transfer, and private linear
-inference in a real three-party MP-SPDZ runtime. Both tasks make the reveal
-boundary explicit and test that no input or intermediate value crosses it.
+How can parties compute on private inputs without handing them to anyone?
+First, encryption: build AES counter mode and a hash function
+from the AES block cipher, then let Alice and Bob agree on a key with
+Diffie-Hellman and send a bid under it. Next, build Yao's
+protocol for a 2-bit comparison of two bids: garble every gate with AES as in
+lecture, transfer the evaluator's input labels by oblivious transfer from
+Diffie-Hellman, and evaluate the garbled circuit. Finally, write two small
+MP-SPDZ programs for three servers with Shamir secret sharing: private linear
+inference, and a joint random sample (a biased coin and a categorical draw from
+the same random byte).
 
-Then choose one extension: encrypted aggregation with Paillier homomorphic
-encryption, verification of a synthetic TEE attestation report, or a miniature
-Path ORAM read/write implementation. The TEE path teaches attestation logic but
-does not claim that a notebook simulates enclave security. The ORAM path must
-state what access-pattern information remains visible and what a production
-position map would require.
+All 10 points come from hidden tests on the functions you write: encryption
+(3), Yao's protocol (4), and MP-SPDZ (3). Three bonuses pay for meeting their
+targets: baby step, giant step against 32-38-bit exponents (+1), a man in the
+middle of unauthenticated Diffie-Hellman (+1), and an LLM prompt recovered from
+the table cells its tokenizer reads (+2); the maximum is 14/10. The attacks run
+against new instances whose secrets stay with the grader.
 
 Selected labs use instructor-only hidden cases in addition to visible tests;
 the number and mix of those cases are not announced. Course points use
@@ -435,8 +441,8 @@ through [Just Report It](https://justreportit.virginia.edu/).
 | November 3 | No class: Election Day |
 | November 5 | Secure multiparty computation: two-party computation and garbled circuits |
 | November 10 | Yao's protocol: oblivious transfer and other gates; the GMW protocol |
-| November 12 | GMW and multiplication triples; branches and loops in a circuit; oblivious RAM (ORAM); Lab 3 due and Lab 4 released |
-| November 17 | Zero-knowledge proofs and homomorphic encryption, on Zoom; link on Canvas |
+| November 12 | GMW and multiplication triples; branches and loops in a circuit; oblivious RAM (ORAM); Lab 3 due |
+| November 17 | Zero-knowledge proofs and homomorphic encryption, on Zoom; link on Canvas; Lab 4 released |
 | November 19 | Quiz 2 |
 | November 24 | Trusted execution environments (TEEs) and ORAM inside a TEE |
 | November 25-29 | Thanksgiving recess |

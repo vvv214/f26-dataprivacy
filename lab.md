@@ -97,17 +97,22 @@ earn +1 each, up to +5; the maximum is 17/10.
 
 ## Lab 4: Compute Without Seeing
 
-Complete two required privacy-enhancing technology exercises: a small Yao
-comparison using garbled circuits and oblivious transfer, and private linear
-inference in a real three-party MP-SPDZ runtime. Both tasks make the reveal
-boundary explicit and test that no input or intermediate value crosses it.
+How can parties compute on private inputs without handing them to anyone?
+First, encryption and key agreement: implement AES counter mode and a hash
+function from the AES block cipher, and combine them with Diffie-Hellman key
+exchange to send an encrypted bid. Next, build Yao's
+garbled-circuit protocol to compare two 2-bit sealed bids: garble every gate
+with AES, transfer the evaluator's input wire labels via Diffie-Hellman
+oblivious transfer, and evaluate the circuit. Finally, write two 3-server
+MP-SPDZ programs using Shamir secret sharing: private linear model inference,
+and joint random sampling of a biased coin and a 3-way categorical variable.
 
-Then choose one extension: encrypted aggregation with Paillier homomorphic
-encryption, verification of a synthetic TEE attestation report, or a miniature
-Path ORAM read/write implementation. The TEE path teaches attestation logic but
-does not claim that a notebook simulates enclave security. The ORAM path must
-state what access-pattern information remains visible and what a production
-position map would require.
+All 10 base points come from hidden tests on your code: encryption (3), Yao's
+protocol (4), and MP-SPDZ (3). Three criterion-based bonuses are available:
+Shanks's baby-step giant-step discrete log on 32-38-bit exponents (+1), a
+man-in-the-middle attack on unauthenticated Diffie-Hellman (+1), and recovering
+a text prompt from the memory access pattern of a lookup table (+2), for a
+maximum of 14/10.
 
 ## Individual submissions
 
